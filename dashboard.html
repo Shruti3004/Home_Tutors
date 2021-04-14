@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/bd43ee06c8.js" crossorigin="anonymous"></script>
+
+  <!-- Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+    integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+    integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFYuN5rik=" crossorigin="anonymous"></script>
+
+  <!-- Charts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"
+    integrity="sha512-ttHne44lbbucAUVjyStgbDTTqvNVQdIGN9gqZeai69i4OXSDNjlBd1tyCVXI/a/DqITpj9gXi84dcyG2vz4jhw=="
+    crossorigin="anonymous"></script>
+
+
+  <!-- Title -->
+  <title>Home Tutors</title>
+
+<body>
+
+  <!-- Sidebar -->
+  <input type="checkbox" id="check" />
+  <label for="check">
+    <i class="fas fa-bars" id="btn"></i>
+    <i class="fas fa-times" id="cancel"></i>
+  </label>
+  <div class="sidebar">
+    <header class="font-bold">Home Tutors</header>
+    <ul>
+      <li class="text-white font-demi">
+        <a href="#"><i class="fas fa-qrcode"></i>Dashboard</a>
+      </li>
+      <li class="text-white font-demi">
+        <a href="#"><i class="fas fa-link"></i>Shortcuts</a>
+      </li>
+      <li class="text-white font-demi">
+        <a href="#"><i class="fas fa-stream"></i>Overview</a>
+      </li>
+      <li class="text-white font-demi">
+        <a href="#"><i class="fas fa-calendar-week"></i>Events</a>
+      </li>
+      <li class="text-white font-demi">
+        <a href="#"><i class="far fa-question-circle"></i>About</a>
+      </li>
+      <li class="text-white font-demi">
+        <a href="#"><i class="fas fa-sliders-h"></i>Services</a>
+      </li>
+      <li class="text-white font-demi">
+        <a href="#"><i class="far fa-envelope"></i>Contact</a>
+      </li>
+    </ul>
+  </div>
+
+  <section class="mt-5">
+    
+    <!-- Statistics of students and teachers -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-12 col-sm-12 col-12 h-100">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12 mt-3">
+              <div class="card bg-primaryColor text-white font-regular p-3">
+                <h5 class="text-center font-demi mb-4">Total Students</h5>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                    aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                </div>
+                <p class="text-white font-25 font-demi text-center py-3">193374</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12 mt-3">
+              <div class="card bg-primaryColor text-white font-regular p-3">
+                <h5 class="text-center font-demi mb-4">New Students</h5>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                </div>
+                <p class="text-white font-25 font-demi text-center py-3">100+</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12 mt-3">
+              <div class="card bg-primaryColor text-white font-regular p-3">
+                <h5 class="text-center font-demi mb-4">Total Teachers</h5>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                </div>
+                <p class="text-white font-25 font-demi text-center py-3">1000</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12 mt-3">
+              <div class="card bg-primaryColor text-white font-regular p-3">
+                <h5 class="text-center font-demi mb-4">New Teachers</h5>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                </div>
+                <p class="text-white font-25 font-demi text-center py-3">25+</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Income Expense Report -->
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-4">
+              <div class="card bg-primaryColor text-white font-regular p-2">
+                <h4 class="text-center font-demi my-3">Income/Expense Report</h4>
+                <canvas id="myChart"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Courses Offered and Fees Collection -->
+        <div class="col-lg-4 col-md-12 col-sm-12 col-12 mt-3">
+          <div class="card bg-primaryColor font-regular p-2">
+            <h4 class="text-center font-demi my-3 text-white">Courses Offered</h4>
+            <canvas id="myChart2" class="center"></canvas>
+          </div>
+          <div class="card bg-primaryColor font-regular mt-4">
+            <h4 class="text-center font-demi my-3 text-white">Fees Collection</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Teachers Information -->
+    <div class="container mb-4">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12 col-12 mt-4">
+          <div class="card bg-primaryColor font-regular px-3 pt-3 pb-4" style="height: 100%">
+            <h4 class="text-center font-demi mb-3 text-white">Professors List</h4>
+            <div style="overflow-y: scroll; height: 200px;" class="mb-0">
+              <table class="table table-responsive-sm text-white font-regular bg-baseColor text-center">
+                <thead>
+                  <tr>
+                    <th scope="col">Profile</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Subjects</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><img src="./images/teacher1.jpg" alt="teacher 1" style="border-radius: 50%; height: 40px;"></td>
+                    <td>Dr. Ramesh Srivastava</td>
+                    <td>Physics</td>
+                  </tr>
+                  <tr>
+                    <td><img src="./images/teacher1.jpg" alt="teacher 1" style="border-radius: 50%; height: 40px;"></td>
+                    <td>Dr. Anuranjan Singhania</td>
+                    <td>Chemistry</td>
+                  </tr>
+                  <tr>
+                    <td><img src="./images/teacher1.jpg" alt="teacher 1" style="border-radius: 50%; height: 40px;"></td>
+                    <td>Dr. Sheweta Singh</td>
+                    <td>Mathematics</td>
+                  </tr>
+                  <tr>
+                    <td><img src="./images/teacher1.jpg" alt="teacher 1" style="border-radius: 50%; height: 40px;"></td>
+                    <td>Dr. Anuranjan Singhania</td>
+                    <td>Physics</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Students Information -->
+        <div class="col-lg-6 col-md-12 col-sm-12 col-12 mt-4">
+          <div class="card bg-primaryColor font-regular px-3 pt-3 pb-4" style="height: 100%">
+            <h4 class="text-center font-demi mb-3 text-white">Students List</h4>
+            <div style="overflow-y: scroll; height: 200px;" class="mb-0">
+              <table class="table table-responsive-sm text-white font-regular bg-baseColor text-center">
+                <thead>
+                  <tr>
+                    <th scope="col">Profile</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Subjects</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><img src="./images/teacher1.jpg" alt="teacher 1" style="border-radius: 50%; height: 40px;"></td>
+                    <td>Dr. Ramesh Srivastava</td>
+                    <td>Physics</td>
+                  </tr>
+                  <tr>
+                    <td><img src="./images/teacher1.jpg" alt="teacher 1" style="border-radius: 50%; height: 40px;"></td>
+                    <td>Dr. Anuranjan Singhania</td>
+                    <td>Chemistry</td>
+                  </tr>
+                  <tr>
+                    <td><img src="./images/teacher1.jpg" alt="teacher 1" style="border-radius: 50%; height: 40px;"></td>
+                    <td>Dr. Sheweta Singh</td>
+                    <td>Mathematics</td>
+                  </tr>
+                  <tr>
+                    <td><img src="./images/teacher1.jpg" alt="teacher 1" style="border-radius: 50%; height: 40px;"></td>
+                    <td>Dr. Anuranjan Singhania</td>
+                    <td>Physics</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+  <script src="./js/dashboard/script.js"></script>
+</body>
+
+</html>
