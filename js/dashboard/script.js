@@ -17,7 +17,7 @@ const barConfig = {
     options: {
         legend: {
             labels: {
-                fontColor: "#ffffff",
+                fontColor: "#091244",
                 fontSize: 16,
                 fontFamily: 'Avenir-regular',
             },
@@ -26,7 +26,7 @@ const barConfig = {
             yAxes: [
                 {
                     ticks: {
-                        fontColor: "#ffffff",
+                        fontColor: "#091244",
                         fontSize: 14,
                         fontFamily: 'Avenir-regular',
                     },
@@ -35,7 +35,7 @@ const barConfig = {
             xAxes: [
                 {
                     ticks: {
-                        fontColor: "#ffffff",
+                        fontColor: "#091244",
                         fontSize: 14,
                         fontFamily: 'Avenir-regular',
                     },
@@ -68,7 +68,7 @@ const doughnutConfig = {
     options: {
         legend: {
             labels: {
-                fontColor: "#ffffff",
+                fontColor: "#091244",
                 fontSize: 16,
                 fontFamily: 'Avenir-regular',
             },
