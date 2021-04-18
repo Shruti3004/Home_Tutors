@@ -5,7 +5,7 @@
 
 body {
   font-family: Avenir-regular;
-  background-image: url(../../../images/bg-location-right.png);
+  background-image: url(../../../images/bg-what-right.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -50,9 +50,8 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
 }
-.input-field {  
+.input-field {
   width: 100%;
   background-color: #f0f0f0;
   margin: 10px 0;
@@ -83,11 +82,33 @@ body {
   color: #333;
 }
 
-.input-field input::placeholder {
+::placeholder {
   color: #aaa;
-  font-weight: 500;
+  background: transparent !important;
+  font-weight: 600;
 }
 
+.btn {
+  width: 150px;
+  background-color: #5995fd;
+  border: none;
+  outline: none;
+  font-size: 14px !important;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  border-radius: 49px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-color: #4d84e2;
+  color: #fff;
+}
 /****** Font Utility Classes ******/
 .font-bold {
   margin: 0;
@@ -111,9 +132,7 @@ body {
   background-color: #5995fd;
   border: none;
   outline: none;
-  font-size: 14px;
-  padding-top: 15px;
-  padding-bottom: 20px;
+  font-size: 18px;
   height: 49px;
   border-radius: 49px;
   color: #fff;
@@ -125,5 +144,4 @@ body {
 
 .btn:hover {
   background-color: #4d84e2;
-  color: #fff;
 }
