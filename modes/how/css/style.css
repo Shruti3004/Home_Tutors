@@ -73,7 +73,7 @@
     font-size: 1.1rem;
   }
   
-  .input-field input {
+  .input-field select {
     background: none;
     outline: none;
     border: none;
@@ -83,7 +83,7 @@
     font-size: 1.1rem;
     color: #333;
   }
-  
+
   .input-field input::placeholder {
     color: #aaa;
     font-weight: 500;
@@ -128,4 +128,3 @@
     background-color: #4d84e2;
     color: #fff;
   }
-  
