@@ -189,6 +189,13 @@ form.sign-in-form {
 .btn:hover {
   background-color: #4d84e2;
 }
+
+.error{
+  margin: 10px 0;
+  font-weight: 600;
+  color: red;
+}
+
 .panels-container {
   position: absolute;
   height: 100%;
