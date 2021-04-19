@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Expense</title>
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/bd43ee06c8.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./expense.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-md-6 col-sm-12 col-12 center" style="height: 100vh">
+          <div class="card p-4 w-100">
+            <h2 class="title font-bold text-center mb-4">Expected Budget</h2>
+            <div class="input-field" style="width: 100%">
+                <i class="fas fa-wallet"></i>
+                <input type="text" placeholder="Budget" />
+                <div class="d-flex mt-3">
+                    <div class="form-check mr-3">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="">
+                            <p class="mt-1">per&nbsp;Hour</p>
+                        </label>
+                    </div>
+                    <div class="form-check mr-3">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="">
+                            <p class="mt-1">per&nbsp;Week</p>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="">
+                            <p class="mt-1">per&nbsp;Month</p>
+                        </label>
+                    </div>
+                </div>
+                <div class="d-flex mt-4">
+                    <div class="form-check mr-3 mt-2">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input mt-4" value="">
+                            <i class="fas fa-rupee-sign text-dark"> INR</i>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label mt-2">
+                            <input type="checkbox" class="form-check-input mt-4" value="">
+                            <i class="fas fa-dollar-sign text-dark"> USD</i>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <hr class="w-100 text-center bg-secondary">
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input mt-1" value="">
+                    <p class="mt-1">Quality over Budget</p>
+                </label>
+            </div>
+            <div class="text-center">
+              <a href="../how/how.html" class="btn font-bold">Next</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
