@@ -26,54 +26,24 @@
           <div class="card p-4 w-100">
             <h2 class="title font-bold text-center mb-4">Expected Budget</h2>
             <div class="input-field" style="width: 100%">
-                <i class="fas fa-wallet"></i>
-                <input type="text" placeholder="Budget" />
-                <div class="my-4" style="color: #222;">
-                    <div class="d-flex ml-5">
-                      <div class="form-check mr-3">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" value="">
-                            <p class="mt-1 font-regular">per&nbsp;Hour</p>
-                        </label>
-                      </div>
-                      <div class="form-check">
-                          <label class="form-check-label">
-                              <input type="checkbox" class="form-check-input" value="">
-                              <p class="mt-1">per&nbsp;Week</p>
-                          </label>
-                      </div>
-                    </div>
-                    <div class="form-check ml-5">
-                        <label class="form-check-label ml-5">
-                            <input type="checkbox" class="form-check-input" value="">
-                            <p class="mt-1">per&nbsp;Month</p>
-                        </label>
-                    </div>
-                </div>
-                <div class="d-flex mt-5">
-                    <div class="form-check mt-4">
-                        <label class="form-check-label mt-2">
-                            <input type="checkbox" class="form-check-input mt-4 font-regular" value="">
-                            <i class="fas fa-rupee-sign ml-4 mt-1"  style="color: #444;"> INR</i>
-                        </label>
-                    </div>
-                    <div class="form-check mt-3">
-                        <label class="form-check-label mt-3">
-                            <input type="checkbox" class="form-check-input mt-4 font-regular" value="">
-                            <i class="fas fa-dollar-sign ml-4 mt-1"  style="color: #444;"> USD</i>
-                        </label>
-                    </div>
-                </div>
+              <i class="fas fa-wallet"></i>
+              <select type="text" placeholder="Budget">
+                <option value="per Hour">Budget</option>
+                <option value="per Hour">per Hour</option>
+                <option value="per Week">per Week</option>
+                <option value="per Month">per Month</option>                    
+              </select>
             </div>
-            <hr class="w-100 text-center">
+            <hr class="w-100 text-center my-4">
             <div class="form-check">
                 <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input mt-1" value="">
-                    <p class="mt-1">Quality over Budget</p>
+                    <input type="checkbox" class="form-check-input" value="" style="margin-top: 10px;">
+                    <p class="mt-1 font-bold" style="font-size: 22px">Quality over Budget</p>
                 </label>
             </div>
-            <div class="text-center">
+            <div class="text-center mt-4">
               <a href="../how/how.html" class="btn font-bold">Next</a>
+              <a href="../how/how.html" class="btn font-bold">Skip</a>
             </div>
           </div>
         </div>
