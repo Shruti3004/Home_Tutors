@@ -131,9 +131,18 @@
     color: #fff;
   }
 
-  #subect{
-    height: 400px !important;
+  #subject{
+    height: 145px;
     overflow-y: scroll;
+  }
+
+  #grade{
+    height: 80px;
+    overflow-y: scroll;
+  }
+
+  #btns{
+    margin-top: -200px;
   }
 
   @media screen and (max-width: 442px){
