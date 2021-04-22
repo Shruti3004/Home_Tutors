@@ -141,9 +141,9 @@
     overflow-y: scroll;
   }
 
-  #btns{
+  /* #btns{
     margin-top: -200px;
-  }
+  } */
 
   @media screen and (max-width: 442px){
     body {
