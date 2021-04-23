@@ -132,14 +132,18 @@
   }
 
   #subject{
-    height: 145px;
+    height: 250px;
     overflow-y: scroll;
   }
 
-  #grade{
+  .font-24{
+    font-size: 24px;
+  }
+
+  /* #grade{
     height: 80px;
     overflow-y: scroll;
-  }
+  } */
 
   /* #btns{
     margin-top: -200px;
