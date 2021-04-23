@@ -140,6 +140,10 @@
     font-size: 24px;
   }
 
+  #exam{
+    height: 310px;
+    overflow-y: scroll;
+  }
   /* #grade{
     height: 80px;
     overflow-y: scroll;
