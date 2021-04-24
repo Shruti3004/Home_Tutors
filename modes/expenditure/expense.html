@@ -22,9 +22,20 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-lg-5 col-md-6 col-sm-12 col-12 center" style="height: 100vh">
-          <div class="card p-4 w-100">
+        <div
+          class="col-lg-6 col-md-6 col-sm-12 col-12 center"
+          style="height: 100vh"
+        >
+          <div class="card px-4 py-5 w-100">
             <h2 class="title font-bold text-center mb-4">Expected Budget</h2>
+            <div class="input-field" style="width: 100%">
+              <i class="fas fa-wallet"></i>
+              <select type="text" placeholder="Budget">
+                <option value="per Hour">Choose your currency</option>
+                <option value="per Hour">in rupees</option>
+                <option value="per Week">in USD</option>
+              </select>
+            </div>
             <div class="input-field w-100">
               <i class="fas fa-money-bill-alt ml-2"></i>
               <input class="ml-2" type="text" placeholder="Enter your budget" />
@@ -35,10 +46,11 @@
                 <option value="per Hour">Budget</option>
                 <option value="per Hour">per Hour</option>
                 <option value="per Week">per Week</option>
-                <option value="per Month">per Month</option>                    
+                <option value="per Month">per Month</option>
               </select>
             </div>
-            <hr class="w-100 text-center my-4">
+
+            <hr class="w-100 text-center my-4" />
             <!-- <div class="form-check">
                 <label class="form-check-label">
                     <input type="checkbox" class="form-check-input" value="" style="margin-top: 10px;">
