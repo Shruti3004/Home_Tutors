@@ -1,6 +1,7 @@
 var searchBoard = document.querySelector('#firstSearch');
 var searchLang = document.querySelector('#secondSearch');
 var list1 = document.querySelector('.first');
+// console.log(searchBoard,searchLang)
 var list2 = document.querySelector('.second');
 // console.log(list1.children.firstElementChild);
 searchBoard.addEventListener('keyup', Search1);

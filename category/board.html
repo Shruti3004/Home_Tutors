@@ -14,7 +14,8 @@
       src="https://kit.fontawesome.com/bd43ee06c8.js"
       crossorigin="anonymous"
     ></script>
-    <script src="./board.js"></script>
+    <!-- <script src="./board.js"></script> -->
+
     <!-- css -->
     <link rel="stylesheet" href="../css/category.css" />
   </head>
@@ -27,10 +28,10 @@
             <h2 class="title font-bold text-center mb-4">Choose your Board</h2>
             <div class="input-field w-100">
               <i class="fas fa-search ml-2"></i>
-              <input class="ml-2" type="text" placeholder="Search boards" />
+              <input class="ml-2" id="firstSearch" type="text" placeholder="Search boards" />
             </div>
 
-            <div class="mt-2 ml-4 font-24" id="subject">
+            <div class="mt-2 ml-4 font-24 first" id="subject">
               <div class="form-check ml-2">
                 <input
                   class="form-check-input mt-3"
@@ -113,10 +114,10 @@
             </h2>
             <div class="input-field w-100">
               <i class="fas fa-search ml-2"></i>
-              <input class="ml-2" type="text" placeholder="Search subjects" />
+              <input class="ml-2" id="secondSearch" type="text" placeholder="Search subjects" />
             </div>
 
-            <div class="mt-2 ml-4 font-24" id="subject">
+            <div class="mt-2 ml-4 font-24 second" id="subject">
               <div class="form-check ml-2">
                 <input
                   class="form-check-input mt-3"
@@ -442,4 +443,5 @@
       </div>
     </div>
   </body>
+  <script src="./board.js"></script>
 </html>
