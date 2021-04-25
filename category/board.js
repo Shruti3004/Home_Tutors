@@ -12,7 +12,7 @@ function Search1(){
     Array.from(list).forEach(listItem => {        
         var text = listItem.textContent;
         if (text.toLowerCase().indexOf(val) != -1) {          
-          listItem.style.display = "block";
+          listItem.parentElement.style.display = "block";
         } else {            
             listItem.parentElement.style.display = "none";
         }
@@ -26,7 +26,7 @@ function Search2(){
     Array.from(list).forEach(listItem => {
         var text = listItem.textContent;
         if(text.toLowerCase().indexOf(val) != -1){            
-            listItem.style.display = "block";
+            listItem.parentElement.style.display = "block";
         }
         else
             listItem.parentElement.style.display = "none";
