@@ -84,6 +84,14 @@
     font-size: 1.1rem;
     color: #333;
   }
+  .input-field textarea {
+    background: none;
+    outline: none;
+    border: none;
+    border-radius: 55px;
+    color: #333;
+    background-color: #f0f0f0;
+  }
 .form-check-label{
     color: #444;
 }
