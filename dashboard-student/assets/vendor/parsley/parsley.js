@@ -1046,15 +1046,22 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
       var _ui = {};
 
       // Give field its Parsley id in DOM
-      this.element.setAttribute(this.options.namespace + 'id', this.__id__);
+      this.element.setAttribute(this.options.namespace + "id", this.__id__);
 
-      /** Generate important UI elements and store them in this **/
+      /** Generate important Courses / Assg / Ques and store them in this **/
       // $errorClassHandler is the $element that woul have parsley-error and parsley-success classes
       _ui.$errorClassHandler = this._manageClassHandler();
 
       // $errorsWrapper is a div that would contain the various field errors, it will be appended into $errorsContainer
-      _ui.errorsWrapperId = 'parsley-id-' + (this.options.multiple ? 'multiple-' + this.options.multiple : this.__id__);
-      _ui.$errorsWrapper = $(this.options.errorsWrapper).attr('id', _ui.errorsWrapperId);
+      _ui.errorsWrapperId =
+        "parsley-id-" +
+        (this.options.multiple
+          ? "multiple-" + this.options.multiple
+          : this.__id__);
+      _ui.$errorsWrapper = $(this.options.errorsWrapper).attr(
+        "id",
+        _ui.errorsWrapperId
+      );
 
       // ValidationResult UI storage to detect what have changed bwt two validations, and update DOM accordingly
       _ui.lastValidationResult = [];
