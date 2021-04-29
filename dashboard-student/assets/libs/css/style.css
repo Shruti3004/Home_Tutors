@@ -1,160 +1,4 @@
 @charset "UTF-8";
-/**
- * Summary:
- *
- *  0. ELEMENT
- *      - 0.1. Body / Typography
- *      - 0.2. Type Elements
-        - 0.3. Header
-        - 0.4. Sidebar
-        - 0.5. Container
-        - 0.6. Pageheader
-        - 0.7. Footer
-
-   -------------------------
-
- *  1. Dashboard
-
- *      - 1.1. TYPE ELEMENT
- *      - 1.2. TYPE ELEMENT
-
-   --------------------------
-
-2. Courses / Assg / Ques
-
-    - 2.1.  Alerts
-    - 2.2.  Buttons
-    - 2.3.  Cards
-    - 2.4.  General
-    - 2.5.  Modals
-    - 2.6.  Notifications
-    - 2.7.  Icon
-    - 2.8.  Tabs
-    - 2.9.  Accordions
-    - 2.10. Typography
-    - 2.11. Listgroup
-    - 2.12. Multiselect
-    - 2.13. Badge
-    - 2.14. Pagination
-    - 2.15. Switch Toogle
-    - 2.16. Spinner
-
-
-    ----------------------------
-
-3. Charts
-
-    - 3.1.  Chartist js
-    - 3.2.  Sparklines
-    - 3.3.  Chart.js
-    - 3.4.  Morris.js
-    - 3.5.  C3 Charts.js
-
-     ----------------------------
-
-4. Forms
-
-    - 4.1.  Elements
-    - 4.2.  Validations
-    - 4.3.  Multiselect
-    - 4.4.  Wizard
-    - 4.5.  Input Mask
-    - 4.6.  Summar Note text editor
-    - 4.7.  Multi Upload
-
-
-     ----------------------------
-
-
-5. Tables
-
-    - 5.1.  General
-    - 5.2.  Data Tables
-    - 5.3.  Table Filters
-
-
-
-         ----------------------------
-
-
-6. Pages
-
-    - 6.1.   Blank Page
-    - 6.2.   Blank Page Header
-    - 6.3.   Login
-    - 6.4.   Sign up
-    - 6.5.   Forgot Password
-    - 6.6.   Profile
-    - 6.7.   Pricing
-    - 6.8.   Timline
-    - 6.9.   Calendar
-    - 6.10.  Metrics
-    - 6.11.  Media Object
-    - 6.12.  Shortable / Nestable
-    - 6.13.  404 Error
-
-
-
-
-
-
-         ----------------------------
-
-7. Email
-
-    - 7.1.  Inbox
-    - 7.2.  Email Detail
-    - 7.3.  Email Compose
-    - 7.4.  Message Chat
-
-       ----------------------------
-
-
-8. Layouts
-
-    - 8.1. Primary Header
-    - 8.2. Success Header
-    - 8.3. Warning Header
-    - 8.4. Danger Header
-    - 8.5. Search Input
-    - 8.6. Off Canvas Menu
-    - 8.7. Without Left Sidebar
-    - 8.8. Without Right Sidebar
-    - 8.9. Without Both Sidebars
-    - 8.10. Fixed Left Sidebar
-    - 8.11. Boxed Layout
-    - 8.12. Page Aside
-    - 8.13. Collapsible Sidebar
-    - 8.14. Sub Navigation
-
-
-
-       ----------------------------
-
-
-9. Maps
-
-    - 9.1.  Google Map
-    - 9.2.  Vector Map
-
-       ----------------------------
-
-
-10. Menu Level
-
-    - 10.1.  Level 1
-    - 10.2.  Level 2
-   */
-
-
-/* ==========================================================================
-   0. ELEMENT
-   ========================================================================== */
-
-
-/* 0.1. Body / Typography
-   ========================================================================== */
-
 body {
     font-family: 'Circular Std Book';
     font-style: normal;
@@ -226,12 +70,6 @@ a:hover {
     text-decoration: none;
 }
 
-ol,
-ul {}
-
-ol li,
-ul li {}
-
 .lead {
     font-size: 1.25rem;
     font-weight: 300;
@@ -283,10 +121,6 @@ input[type=file] {
     font-size: 15px;
 }
 
-input {}
-
-button {}
-
 button:focus {
     outline: 0;
 }
@@ -329,15 +163,6 @@ textarea::-webkit-input-placeholder {
 textarea:focus::-webkit-input-placeholder {
     color: #5969ff !important;
 }
-
-button.btn {}
-
-button.btn-default {}
-
-button.btn-primary {}
-
-address {}
-
 .form-group {
     margin-bottom: 12px;
 }
@@ -380,8 +205,6 @@ address {}
     color: #fff;
     background-color: #5969ff;
 }
-
-.custom-checkbox .custom-control-input:checked~.custom-control-label::after {}
 
 .custom-control-label::after {
     position: absolute;
@@ -1419,10 +1242,6 @@ Top Header
 
 /* ------  Connection --------  */
 
-.connection {}
-
-.connection-dropdown {}
-
 .connection-list {
     width: 300px;
     padding: 20px;
@@ -1458,15 +1277,11 @@ Top Header
 
 /* ----- User Nav Dropdown -----*/
 
-.nav-user {}
-
 .nav-user-dropdown {
     padding: 0px;
     min-width: 230px;
     margin: 0px;
 }
-
-.nav-user-name {}
 
 .nav-user-info {
     background-color: #5969ff;
@@ -1482,8 +1297,6 @@ Top Header
     top: 7px;
     left: 0px;
 }
-
-.nav-user-dropdown {}
 
 .nav-user-dropdown .dropdown-item {
     display: block;
@@ -1560,8 +1373,6 @@ Top Header
     position: relative;
     padding: 0px;
 }
-
-.navigation-horizontal .navbar-nav .nav-item {}
 
 .navigation-horizontal .navbar-nav .nav-link {
    font-size: 13px;
@@ -1687,8 +1498,6 @@ Left Navigation Sidebar
     padding: 14px;
 }
 
-.nav-left-sidebar .navbar-nav .nav-item {}
-
 .nav-left-sidebar .navbar-nav .nav-link {
     font-size: 14px;
     padding: 12px;
@@ -1772,8 +1581,6 @@ Leftsidebar - Primary
 .sidebar-primary.nav-left-sidebar .nav-link i {
     color: #8991d4;
 }
-
-.sidebar-primary.nav-left-sidebar .navbar-nav .nav-item {}
 
 .sidebar-primary.nav-left-sidebar .navbar-nav .nav-link {
     color: #8991d4;
@@ -1865,9 +1672,6 @@ Sidebar Page Navigations
     top: 5rem;
 }
 
-.sidebar-nav-fixed ul {}
-
-.sidebar-nav-fixed ul li {}
 
 .sidebar-nav-fixed ul li a {
     font-size: 14px;
@@ -1916,8 +1720,6 @@ Sidebar Page Navigations
     color: #5969ff;
     background: #efeff6;
 }
-
-.page-section {}
 
 .dropdown-item.active,
 .dropdown-item:active {
@@ -1998,13 +1800,6 @@ Pageheader
 .page-header {
     margin-bottom: 30px;
 }
-
-.page-breadcrumb {}
-
-.page-breadcrumb .breadcrumb {}
-
-.page-breadcrumb .breadcrumb-item {}
-
 .page-breadcrumb .breadcrumb-link {
     color: #a6a6b7;
 }
