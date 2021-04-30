@@ -5,7 +5,7 @@ body {
     font-weight: normal;
     font-size: 14px;
     color: #71748d;
-    background-color: #efeff6;
+    background-color: #e4e3e3;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -1572,6 +1572,7 @@ Leftsidebar - Primary
 
 .sidebar-primary {
     background-color: #414da7;
+    /* background-color: brown; */
 }
 
 .sidebar-primary .nav-divider {
@@ -1612,7 +1613,8 @@ Leftsidebar - dark
 ------------------------- */
 
 .sidebar-dark {
-    background-color: #0e0c28;
+    /* background-color: #0e0c28; */
+    background-color: #091244;
     -webkit-box-shadow: 0px 0px 28px 0px rgba(82, 63, 105, 0.13);
     box-shadow: 0px 0px 28px 0px rgba(82, 63, 105, 0.13);
     -webkit-transition: all 0.3s ease;
