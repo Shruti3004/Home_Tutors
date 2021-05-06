@@ -6,13 +6,22 @@ html{
     scroll-behavior: smooth;
 }
 :root{
-    --primary-color:linear-gradient(130deg, #ffa159 0, #ff39b4 51%, #ffa159 100%) ;
+    --primary-color:linear-gradient(-45deg, #2e6cd8 0%, #04befe 100%);
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+::-webkit-scrollbar{
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+  }
+  ::-webkit-scrollbar-thumb{
+    background: #2e6cd8;
+  }
 body{
     font-family: 'Poppins', sans-serif !important;
 }
@@ -21,11 +30,18 @@ body{
         width: 85%;
     }
 }
+.card{
+    border: none !important;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.15) !important;
+}
 li{
     list-style: none !important;
 }
 .padding-top-section{
     padding-top: 3em !important;
+}
+.text-blue{
+    color: #2e6cd8 !important;
 }
 .grey-colored-text-18{
     color: #82848a;
@@ -39,18 +55,21 @@ button{
     padding: 7px 35px !important;
 }
 .btn-initial-styling{
-    background-image:linear-gradient(130deg, #ffa159 0, #ff39b4 51%, #ffa159 100%) ;
+    background-image:linear-gradient(-45deg, #2e6cd8 0%, #04befe 100%);
 }
 .btn-outline-styling{
     display: inline-block;
-    border-image-source: linear-gradient(130deg, #ffa159 0, #ff39b4 51%, #ffa159 100%) !important;
+    border-image-source: linear-gradient(-45deg, #2e6cd8 0%, #04befe 100%)!important;
     border-image-slice: 10 !important;
     border-style: solid !important;
     border-image-width: 2px !important;
-    color: #ff39b4 !important;
+    color: #2e6cd8 !important;
+}
+.bg-blue{
+    background: #b8e6f5 !important;
 }
 .gradient-icons::before, .gradient-text{
-    background-image:linear-gradient(130deg, #ffa159 35%, #ff39b3 100%);   
+    background-image: linear-gradient(-45deg, #2e6cd8 0%, #04befe 100%);   
     background-clip: text !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
@@ -75,9 +94,7 @@ button{
     }
 }
 .icons-styling{
-    background-image:linear-gradient(130deg, #ffa159 35%, #ff39b3 100%);   
-    /* color: white;
-    border-radius: 50%; */
+    background-image:linear-gradient(-45deg, #b8e6f5 0%, #04befe 100%);      
     animation-name: animationicon;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -98,7 +115,7 @@ button{
 }
 /* ------------------------------------- Navbar ------------------------------------ */
 #header{
-    background-image: url('../images/bg-trans-2.png') ,linear-gradient(130deg, #ffa159 0, #ff39b4 51%, #ffa159 100%);
+    background-image: linear-gradient(-45deg, #2e6cd8 0%, #04befe 100%);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -111,13 +128,20 @@ a:hover{
     color: #232424 !important;
 }
 .nav-white{
-    background: white !important;
+    background: #b8e6f5 !important;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.15) !important;
 }
 .btn-hover-dark:hover{
     color: white !important;
 }
-
+.navbar-toggler {
+    padding: 0px !important;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: none !important;
+    /* border-radius: .25rem; */
+}
 /* ------------------------------------- Header ------------------------------------- */
 #header h1 {
     font-size: 3.5em;
@@ -175,14 +199,15 @@ a:hover{
 
 /* ------------------------------------- Feature ------------------------------------- */
 #feature{
-    background: url('../images/bg-memphis.png');
+    background-image:linear-gradient(-45deg, #2e6cd8 0%, #04befe 100%);
+    padding: 100px 0px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
 }
 .btn-background{
-    background-image:linear-gradient(130deg, #ffa159 20%, #ff39b4 51%);
+    background-image:linear-gradient(-45deg, #2e6cd8 0%, #04befe 100%);
     padding: 7px 40px !important;
 }
 button{
@@ -190,7 +215,7 @@ button{
 }
 button:hover, .card3:hover .btn{
     transition-timing-function: ease-in-out !important;
-    background-image:linear-gradient(130deg, #ff39b4 0, #ffa159 51%, #ff39b4 100%) !important; 
+    background-image:linear-gradient(-45deg, #2e6cd8 0%, #04befe 100%) !important; 
     color: white !important; 
     font-weight: bold !important;
 }
@@ -206,7 +231,7 @@ button:hover, .card3:hover .btn{
 
 /* ------------------------------------- Time ------------------------------------- */
 #time{
-    background-image:linear-gradient(130deg, #ffa159 0, #ff39b4 51%, #ffa159 100%);   
+    background-image:linear-gradient(-45deg, #2e6cd8 0%, #04befe 100%);   
     padding: 50px 0px;
 }
 
@@ -219,7 +244,7 @@ button:hover, .card3:hover .btn{
 
 /* ------------------------------------- Carousel ------------------------------------- */
 #carousel{
-    background-image:linear-gradient(130deg, #ffa159 0, #ff39b4 51%, #ffa159 100%);   
+    background-image:linear-gradient(-45deg, #2e6cd8 0%, #04befe 100%);   
     padding: 150px 0px;
 }
 
@@ -252,7 +277,7 @@ button:hover, .card3:hover .btn{
     background-color: purple !important;
 }
 .blog-carousel-background{
-    background: #e9e7e7;
+    background: #b8e6f5;
     border-radius: 100px 100px 0px 100px;
     padding: 30px 40px !important;
 }
@@ -266,7 +291,7 @@ button:hover, .card3:hover .btn{
 /* ------------------------------------- Parallax ------------------------------------- */
 #parallax{
     padding: 150px 0px;
-    background-image:url('../images/bg-parallax-4.png'), linear-gradient( 130deg, #ffa159 0, #ff39b4 51%, #ffa159 100%);
+    background-image:url('../images/bg-parallax-4.png'), linear-gradient(-45deg, #2e6cd8 0%, #04befe 100%);
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -284,8 +309,8 @@ button:hover, .card3:hover .btn{
 
 /* ------------------------------------- Faqs ------------------------------------- */
 #faqs{
-    padding: 50px 15em;
-    background: url('../images/bg-memphis.png');
+    padding: 100px 15em;
+    background-image:linear-gradient(-45deg, #2e6cd8 0%, #04befe 100%);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -299,8 +324,7 @@ button:hover, .card3:hover .btn{
 /* ------------------------------------- Footer ------------------------------------- */
 #footer{
     padding: 100px 0px 40px 0px;
-    background-image:linear-gradient(130deg, #ffa159 40%, #ff39b3 100%);   
-    /* background-image:linear-gradient(130deg, #ffa159 10%, #ff39b4 51%, #ffa159 100%);    */
+    background-image:linear-gradient(-45deg, #2e6cd8 0%, #04befe 100%);       
 }
 .subscribe-box{
     background: rgba(0,0,0,0.15);
