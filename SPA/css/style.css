@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+
+
+/* ------------------------------------- Utility Classes ------------------------------------- */
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --primary-color:linear-gradient(130deg, #ffa159 0, #ff39b4 51%, #ffa159 100%) ;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif !important;
+}
+@media only screen and (min-width: 993px){
+    .container {
+        width: 85%;
+    }
+}
+li{
+    list-style: none !important;
+}
+.padding-top-section{
+    padding-top: 3em !important;
+}
+.grey-colored-text-18{
+    color: #82848a;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+}
+.line-height-heading{
+    line-height: 1.3em !important;
+}
+button{
+    padding: 7px 35px !important;
+}
+.btn-initial-styling{
+    background-image:linear-gradient(130deg, #ffa159 0, #ff39b4 51%, #ffa159 100%) ;
+}
+.btn-outline-styling{
+    display: inline-block;
+    border-image-source: linear-gradient(130deg, #ffa159 0, #ff39b4 51%, #ffa159 100%) !important;
+    border-image-slice: 10 !important;
+    border-style: solid !important;
+    border-image-width: 2px !important;
+    color: #ff39b4 !important;
+}
+.gradient-icons::before, .gradient-text{
+    background-image:linear-gradient(130deg, #ffa159 35%, #ff39b3 100%);   
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+.element-to-hide{
+    visibility:hidden; 
+} 
+
+.fadeup {
+    animation: fadeinUp .6s ease-in-out;
+    animation-duration: .6s;
+    visibility: visible !important; 
+}
+@keyframes fadeinUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20%)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+.icons-styling{
+    background-image:linear-gradient(130deg, #ffa159 35%, #ff39b3 100%);   
+    /* color: white;
+    border-radius: 50%; */
+    animation-name: animationicon;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes animationicon {
+    0%, 100%{
+      border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;  }
+    25% {
+      border-radius: 58% 42% 75% 25%/76% 46% 54% 24%;
+    }
+    50% {
+      border-radius: 50% 50% 33% 67%/55% 27% 73% 45%;
+    }
+    75% {
+      border-radius: 33% 67% 58% 42%/63% 68% 32% 37%;
+    }
+}
+/* ------------------------------------- Navbar ------------------------------------ */
+#header{
+    background-image: url('../images/bg-trans-2.png') ,linear-gradient(130deg, #ffa159 0, #ff39b4 51%, #ffa159 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+}
+.nav-padding{
+    padding: 0px 20px;
+}
+a:hover{
+    color: #232424 !important;
+}
+.nav-white{
+    background: white !important;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.15) !important;
+}
+.btn-hover-dark:hover{
+    color: white !important;
+}
+
+/* ------------------------------------- Header ------------------------------------- */
+#header h1 {
+    font-size: 3.5em;
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+.margin-top-heading{
+    margin-top: 60px;
+}
+.header-paragraph-text{
+    margin-top: 40px;
+    font-size: 18px;
+    letter-spacing: 0.1px;
+    margin-bottom: 35px;
+}
+.header-image{
+    margin-top: 50px;
+}
+.repeat {
+    animation-name: animationheader;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes animationheader {
+    0%, 100% {
+        transform: translateY(-40px)
+    }
+
+    50% {
+        transform: translateY(-10px)
+    }
+
+}
+@media (max-width: 768px){
+    h1{
+        font-size: 35px;
+        letter-spacing: 0px;
+    }
+    .header-paragraph-text{
+        font-size: 15px;
+        letter-spacing: 0.1px;
+        margin-bottom: 35px;
+    }
+}
+
+
+/* ------------------------------------- Counter ------------------------------------- */
+.counter{
+    font-weight: 700;
+}
+
+
+
+/* ------------------------------------- Feature ------------------------------------- */
+#feature{
+    background: url('../images/bg-memphis.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.btn-background{
+    background-image:linear-gradient(130deg, #ffa159 20%, #ff39b4 51%);
+    padding: 7px 40px !important;
+}
+button{
+    transition: 0.4s!important;
+}
+button:hover, .card3:hover .btn{
+    transition-timing-function: ease-in-out !important;
+    background-image:linear-gradient(130deg, #ff39b4 0, #ffa159 51%, #ff39b4 100%) !important; 
+    color: white !important; 
+    font-weight: bold !important;
+}
+.card1{
+    transition: .4s ease;
+    margin-bottom: 30px;
+}
+.card1:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 0 20px rgba(34, 34, 34, 0.5);
+}
+
+
+/* ------------------------------------- Time ------------------------------------- */
+#time{
+    background-image:linear-gradient(130deg, #ffa159 0, #ff39b4 51%, #ffa159 100%);   
+    padding: 50px 0px;
+}
+
+
+/* ------------------------------------- Overview ------------------------------------- */
+#overview{
+    padding: 60px 0px;
+}
+
+
+/* ------------------------------------- Carousel ------------------------------------- */
+#carousel{
+    background-image:linear-gradient(130deg, #ffa159 0, #ff39b4 51%, #ffa159 100%);   
+    padding: 150px 0px;
+}
+
+
+
+/* ------------------------------------- Pricing ------------------------------------- */
+#pricing{
+    padding: 150px 0px;
+}
+
+
+/* ------------------------------------- Testimonial ------------------------------------- */
+#testimonial{
+    padding-bottom: 150px ;
+}
+.carousel-indicators li{
+    display: inline-block;
+    width: 10px !important;
+    height: 10px !important;
+    cursor: pointer;
+    margin: 10px;
+    text-indent: 0;
+    border-radius: 50%;
+    background-color: rgb(255, 168, 248) !important;
+}
+.carousel-indicators .active{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: purple !important;
+}
+.blog-carousel-background{
+    background: #e9e7e7;
+    border-radius: 100px 100px 0px 100px;
+    padding: 30px 40px !important;
+}
+.blog-image{
+    border-radius: 30px 30px 30px 0px;
+    height: 110px !important;
+}
+
+
+
+/* ------------------------------------- Parallax ------------------------------------- */
+#parallax{
+    padding: 150px 0px;
+    background-image:url('../images/bg-parallax-4.png'), linear-gradient( 130deg, #ffa159 0, #ff39b4 51%, #ffa159 100%);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: -1;
+}
+
+
+/* ------------------------------------- News ------------------------------------- */
+#news{
+    padding: 100px 0px;
+}
+.card3{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.15);
+}
+
+/* ------------------------------------- Faqs ------------------------------------- */
+#faqs{
+    padding: 50px 15em;
+    background: url('../images/bg-memphis.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* ------------------------------------- Contact ------------------------------------- */
+#contact{
+    padding: 100px 0px;
+}
+
+/* ------------------------------------- Footer ------------------------------------- */
+#footer{
+    padding: 100px 0px 40px 0px;
+    background-image:linear-gradient(130deg, #ffa159 40%, #ff39b3 100%);   
+    /* background-image:linear-gradient(130deg, #ffa159 10%, #ff39b4 51%, #ffa159 100%);    */
+}
+.subscribe-box{
+    background: rgba(0,0,0,0.15);
+    border-radius: 5px;
+}
+.subscribe-button{
+    background: #a75cf8 !important;
+}
+.copyright-text{
+    font-size: 14px;
+    letter-spacing: 0.6px !important;
+}
+
+
+
+@media(max-width: 768px){
+    .mobile-heading{
+        font-size: 40px !important;
+    }
+    #time{
+        padding: 10px 0px !important;
+    }
+    .margin-buttons{
+        margin-top: 15px !important;
+        /* margin: auto !important; */
+    }
+    #parallax{
+        padding: 100px 0px !important;
+    }
+    #faqs{
+        padding: 0px 0px 50px 0px!important;
+    }
+    .margin-top-mobile{
+        padding-top: 15px;
+    }
+    .hide{
+        display: none;
+    }
+    .one, .three{
+        height: 300px !important;
+        width: 103px;
+    }
+    .two{
+        height: 300px !important;
+    }
+}
