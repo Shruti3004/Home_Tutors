@@ -122,7 +122,8 @@
           <div class="row">
             <div class="col-lg-5 col-md-6 col-sm-12 col-12 margin-top-heading">
               <h1 class="text-white mt-4 pt-5 line-height-heading mobile-heading">We proudly teaching online courses with online experts</h1>
-              <p class="text-white header-paragraph-text mb-lg-5">Best teachers for your children, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, minima. showcase Follow other investors, discover companies to believe in.</p>              
+              <p class="text-white header-paragraph-text mb-lg-5">Best teachers for your children, Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <input class=" w-100" type="search" name="search" placeholder="Search" id="searchBar">
             </div>
             <div class="col-lg-7 col-md-6 col-sm-12 col-12 repeat header-image mt-5 pt-lg-5 pt-0">
               <img src="./images/home.svg" alt="" class="img-fluid mt-5">
@@ -187,24 +188,6 @@
         </div>
       </div>
 
-      <!------------------------------------- Search ------------------------------------->
-
-      <div id="search" class="padding-top-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-sm-12 col-12 my-5">
-              <h5 class="text-primary">START TO SUCCESS</h5>
-              <h1 class="mt-4 display-4">Access to <span class="text-danger">5500+</span> courses from <span class="text-danger">480+</span> Instructors & Institutions</h1>
-              <h5 class="mt-4 text-secondary">Take your learning organization to the next level</h5>
-              <input class="mt-4 w-100" type="search" name="search" placeholder="Search" id="searchBar">
-            </div>
-            <div class="col-md-6 col-sm-12 col-12 my-5">
-              <img src="#" alt="img" class="img-fluid">
-            </div>
-          </div>
-        </div>
-      </div>
-      
       <!------------------------------------- Feature ------------------------------------->
 
       <div id="feature" class="padding-top-section mt-5">
@@ -215,7 +198,7 @@
         <div class="container mb-lg-5 ">
           <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12 col-12 element-to-hide animation-test">
-              <div class="card card1 py-4 mt-3 h-100">
+              <div class="card card1 mt-3 h-100">
                 <div class="card-body">
                   <div class="d-flex justify-content-center">
                     <div class="p-4 icons-styling" >
@@ -228,7 +211,7 @@
               </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-12 element-to-hide animation-test">
-              <div class="card card1 py-4 mt-3 h-100">
+              <div class="card card1 mt-3 h-100">
                 <div class="card-body">
                   <div class="d-flex justify-content-center">
                     <div class="p-4 icons-styling" >
@@ -241,7 +224,7 @@
               </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-12 element-to-hide animation-test">
-              <div class="card card1 py-4 mt-3 h-100">
+              <div class="card card1 mt-3 h-100">
                 <div class="card-body">
                   <div class="d-flex justify-content-center">
                     <div class="p-4 icons-styling" >
@@ -747,16 +730,31 @@
       <!------------------------------------- Contact ------------------------------------->
 
       <div id="contact">
-        <div class="container">
-          <p class="font-weight-bold grey-colored-text-18 text-center">Contact with us</p>
+        <div class="container">          
           <h1 class="text-blue display-4 font-weight-bold line-height-heading text-center mobile-heading">Please contact us</h1>
           <div class="row mt-lg-5">
-            <div class="col-lg-5 col-md-5 col-sm-6 col-6 mt-lg-4">
-              <img src="./images/contact-us.svg" alt="" class="img-fluid">
+            <div class="col-lg-5 col-md-5 col-sm-12 col-12 mt-lg-4 d-flex justify-content-center">
+              <img src="./images/contact-us.svg" alt="" class="img-fluid w-100">
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-12 margin-buttons">
-              <div class="container bg-blue pb-5 pt-3">
+              <div class="container bg-blue pb-4 pt-3 px-3">
                 <h5 class="text-blue font-weight-bold">Request Contact</h5>
+                <div class="form-group mt-4">
+                  <select class="form-control">
+                    <option
+                    value="Country"
+                    selected
+                    disabled                      
+                  >
+                    Select Topic
+                  </option>
+                  <option value="Country">India</option>
+                  <option value="Country">India</option>
+                  <option value="Country">India</option>
+                  <option value="Country">India</option>
+                  <option value="Country">India</option>
+                  </select>                   
+                </div>
                 <form action="mailto:mail2shruti.ag@gmail.com" method="post" enctype="text/plain" class="was-validated">
                   <div class="form-group mt-4">
                     <input class="form-control" placeholder="Enter your name*" type="text" required>
@@ -764,13 +762,13 @@
                       Name is required
                     </div>
                   </div>
-                  <div class="form-group mt-4">
+                  <div class="form-group mt-3">
                     <input class="form-control" placeholder="Enter your email*" type="email" required>
                     <div class="invalid-feedback">
                       Valid Email is required
                     </div>
-                  </div>
-                  <div class="form-group mt-4">
+                  </div>                  
+                  <div class="form-group mt-3">
                     <textarea class="form-control" placeholder="Message*" required></textarea>
                     <div class="invalid-feedback">
                       Please leave us a message
