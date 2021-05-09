@@ -6,55 +6,32 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
     />
-    <meta
-      name="keywords"
-      content="Grow Learners"
-    />
-    <meta
-      name="description"
-      content="Grow Learners"
-    />
+    <meta name="keywords" content="Grow Learners" />
+    <meta name="description" content="Grow Learners" />
     <meta name="author" content="@growlearners" />
     <meta name="theme-color" content="#692DB7" />
 
     <meta itemprop="name" content="Grow Learners" />
-    <meta
-      itemprop="description"
-      content="Grow Learners"
-    />
-    <meta
-      itemprop="image"
-      content=""
-    />
+    <meta itemprop="description" content="Grow Learners" />
+    <meta itemprop="image" content="" />
 
     <meta name="twitter:card" content="Summary" />
     <meta name="twitter:site" content="@growlearners" />
     <meta name="twitter:title" content="Grow Learners" />
-    <meta
-      name="twitter:description"
-      content="Grow Learners"
-    />
+    <meta name="twitter:description" content="Grow Learners" />
     <meta name="twitter:creator" content="@growlearners" />
-    <meta
-      name="twitter:image:src"
-      content=""
-    />
+    <meta name="twitter:image:src" content="" />
 
     <meta property="og:title" content="Grow Learners" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://growlearners.com/" />
-    <meta
-      property="og:image"
-      content=""
-    />
-    <meta
-      property="og:description"
-      content="Grow Learners"
-    />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="Grow Learners" />
     <meta property="og:site_name" content="Grow Learners" />
 
+    
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="./css/form.css" />    
+    <link rel="stylesheet" href="./css/form.css" />
 
     <!-- Fontawesome -->
     <script
@@ -68,18 +45,22 @@
     <div class="container">
       <div class="forms-container">
         <div class="signin-signup">
-          <form action="#" class="sign-in-form">
+          <form action="./modes/what/what.html" class="sign-in-form">
             <h2 class="title font-bold">Sign in</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
+              <input type="text" placeholder="Username" required />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+              <input type="password" placeholder="Password" required />
             </div>
-            <div class="error font-regular">Enter valid username or password</div>
-            <input type="submit" value="Login" class="btn solid font-bold" />
+            <div class="error font-regular">
+              Enter valid username or password
+            </div>
+            <a href="./modes/what/what.html">
+              <button class="btn">Login</button>
+            </a>            
             <p class="social-text">Or Sign in with social platforms</p>
             <div class="social-media">
               <a href="#" class="social-icon">
@@ -96,7 +77,7 @@
               </a>
             </div>
           </form>
-          <form action="#" class="sign-up-form">            
+          <form action="#" class="sign-up-form">
             <h2 class="title font-bold">Sign up</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
@@ -115,24 +96,9 @@
               <input type="test" placeholder="Contact Number" />
             </div>
             <input type="submit" class="btn" value="Sign up" />
-            <div style="display: flex; margin-bottom: 20px;">
-              <button class="btn" style="margin-right: 15px;">Tutor</button>
+            <div style="display: flex; margin-bottom: 20px">
+              <button class="btn" style="margin-right: 15px">Tutor</button>
               <button class="btn">Student</button>
-            </div>
-            <p class="social-text">Or Sign up with social platforms</p>
-            <div class="social-media">
-              <a href="#" class="social-icon">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-google"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
             </div>
           </form>
         </div>

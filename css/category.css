@@ -14,6 +14,12 @@
     background-attachment: fixed;
   }
 
+  .form-check .form-check-input {
+    float: left;
+    margin-left: -1.1em;
+    margin-top: 14px !important;
+  }
+
   /****** Font Family ******/
   @font-face {
     font-family: Avenir-bold;
@@ -165,14 +171,11 @@
     margin-top: -200px;
   } */
 
-  @media screen and (max-width: 442px){
-    body {
-      /* background-image: url(../../../images/where.jpeg) !important;
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat; */
-      width: auto;
-      height: 100vh;
+  @media screen and (max-width: 768px){
+    body {         
+      background-image: linear-gradient(-45deg, #2e6cd8 0%, #04befe 100%) !important;
+    }
+    .wrapper{
       background-image: linear-gradient(-45deg, #2e6cd8 0%, #04befe 100%) !important;
     }
   }
