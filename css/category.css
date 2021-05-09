@@ -112,9 +112,9 @@
     font-size: 1.1rem;
     color: #333;
   }
-.form-check-label{
-    color: #444;
-}
+  .form-check-label{
+      color: #444;
+  }
   .input-field input::placeholder {
     color: #aaa;
     font-weight: 500;
@@ -173,14 +173,6 @@
     height: 310px;
     overflow-y: scroll;
   }
-  /* #grade{
-    height: 80px;
-    overflow-y: scroll;
-  } */
-
-  /* #btns{
-    margin-top: -200px;
-  } */
 
   @media screen and (max-width: 768px){
     body {         
