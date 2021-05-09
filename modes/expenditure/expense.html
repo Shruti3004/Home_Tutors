@@ -2,59 +2,56 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <title>Expense</title>
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What to Learn</title>
 
-  <!-- Fontawesome -->
-  <script src="https://kit.fontawesome.com/bd43ee06c8.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
-  <!-- css -->
-  <link rel="stylesheet" href="./expense.css" />
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/bd43ee06c8.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./expense.css">
 </head>
 
 <body>
-  <div class="wrapper">
-    <div class="container">
-      <form>
-        <div class="row">
-          <div class="col-lg-6 col-md-12 col-sm-12 col-12 center" style="height: 100vh">
-            <div class="card px-4 py-5 w-100">
-              <h2 class="title font-bold text-center mb-4">Expected Budget</h2>
-              <div class="input-field" style="width: 100%">
-                <i class="fas fa-wallet"></i>
-                <select required type="text" placeholder="Budget">
-                  <option value="per Hour" disabled selected>Choose your currency</option>
-                  <option value="per Hour">in rupees</option>
-                  <option value="per Week">in USD</option>
-                </select>
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12 center">
+                  <div class="card px-lg-4 px-3 py-5 w-100">
+                    <h2 class="title font-bold text-center mb-4">Expected Budget</h2>
+                    <div class="input-field" style="width: 100%">
+                      <i class="fas fa-wallet"></i>
+                      <select required type="text" placeholder="Budget">
+                        <option value="per Hour" disabled selected>Choose your currency</option>
+                        <option value="per Hour">in rupees</option>
+                        <option value="per Week">in USD</option>
+                      </select>
+                    </div>
+                    <div class="input-field w-100">
+                      <i class="fas fa-money-bill-alt ml-2"></i>
+                      <input required class="ml-2" type="text" placeholder="Enter your budget" />
+                    </div>
+                    <div class="input-field" style="width: 100%">
+                      <i class="fas fa-wallet"></i>
+                      <select required type="text" placeholder="Budget">
+                        <option value="Hour">Hour</option>
+                        <option value="Week">Week</option>
+                        <option value="Month">Month</option>
+                        <option value="Course">Course</option>
+                      </select>
+                    </div>                    
+                    <div class="text-center mt-4">
+                      <button type="submit" class="btn font-bold">Next</button>
+                      <a href="../../category/abroad.html" class="btn font-bold">Skip</a>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="input-field w-100">
-                <i class="fas fa-money-bill-alt ml-2"></i>
-                <input required class="ml-2" type="text" placeholder="Enter your budget" />
-              </div>
-              <div class="input-field" style="width: 100%">
-                <i class="fas fa-wallet"></i>
-                <select required type="text" placeholder="Budget">
-                  <option value="Hour">Hour</option>
-                  <option value="Week">Week</option>
-                  <option value="Month">Month</option>
-                  <option value="Course">Course</option>
-                </select>
-              </div>
-
-              <hr class="w-100 text-center my-4" />
-              <div class="text-center mt-4">
-                <button type="submit" class="btn font-bold">Next</button>
-                <a href="../../category/abroad.html" class="btn font-bold">Skip</a>
-              </div>
-            </div>
-          </div>
         </div>
-      </form>
     </div>
-  </div>
 
 </body>
 

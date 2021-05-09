@@ -45,6 +45,11 @@
   color: #444;
   margin-bottom: 10px;
 }
+@media(max-width: 576px){
+  .title{
+    font-size: 1.8rem;
+  }
+}
 .center {
   display: flex;
   justify-content: center;
