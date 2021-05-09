@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-body {
+.wrapper {
   font-family: Avenir-regular;
   background-image: url(./../../images/bg-what-right.png);
   background-position: center;
@@ -50,6 +50,7 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
 }
 .input-field {
   width: 100%;
@@ -146,14 +147,8 @@ body {
   background-color: #4d84e2;
 }
 
-@media screen and (max-width: 442px){
-  body {
-    /* background-image: url(./../../images/where.jpeg) !important; */
-    /* background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: auto;
-    height: 100vh; */
+@media screen and (max-width: 768px){
+  .wrapper {    
     background-image: linear-gradient(-45deg, #2e6cd8 0%, #04befe 100%);
   }
 }
