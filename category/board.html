@@ -1,448 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Board</title>
-    <!-- Bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    />
 
-    <!-- Fontawesome -->
-    <script
-      src="https://kit.fontawesome.com/bd43ee06c8.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- <script src="./board.js"></script> -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Board</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
 
-    <!-- css -->
-    <link rel="stylesheet" href="../css/category.css" />
-  </head>
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/bd43ee06c8.js" crossorigin="anonymous"></script>
+  <!-- <script src="./board.js"></script> -->
 
-  <body>
-    <div class="container center">
-      <div class="row my-5">
-        <div class="col-lg-6 col-md-12 col-sm-12 col-12 my-5">
-          <div class="card px-lg-4 px-2 py-5 w-100">
-            <h2 class="title font-bold text-center mb-4">Choose your Board</h2>
-            <div class="input-field w-100">
-              <i class="fas fa-search ml-2"></i>
-              <input class="ml-2" id="firstSearch" type="text" placeholder="Search boards" />
-            </div>
+  <!-- css -->
+  <link rel="stylesheet" href="../css/category.css" />
+</head>
 
-            <div class="mt-2 ml-4 font-24 first" id="subject">
-              <div class="form-check ml-2">
-                <input
-                  class="form-check-input mt-3"
-                  type="checkbox"
-                  value=""                  
-                />
-                <label
-                  class="form-check-label mt-1 font-weight-bold"                  
-                >
-                  CBSE
-                </label>
-              </div>
-              <div class="form-check ml-2">
-                <input
-                  class="form-check-input mt-3"
-                  type="checkbox"
-                  value=""                  
-                />
-                <label
-                  class="form-check-label mt-1 font-weight-bold"                  
-                >
-                  IB
-                </label>
-              </div>
-              <div class="form-check ml-2">
-                <input
-                  class="form-check-input mt-3"
-                  type="checkbox"
-                  value=""                  
-                />
-                <label
-                  class="form-check-label mt-1 font-weight-bold"                  
-                >
-                  ISC/ICSE
-                </label>
-              </div>
-              <div class="form-check ml-2">
-                <input
-                  class="form-check-input mt-3"
-                  type="checkbox"
-                  value=""                  
-                />
-                <label
-                  class="form-check-label mt-1 font-weight-bold"                  
-                >
-                  IGCSE
-                </label>
-              </div>
-              <div class="form-check ml-2">
-                <input
-                  class="form-check-input mt-3"
-                  type="checkbox"
-                  value=""                  
-                />
-                <label
-                  class="form-check-label mt-1 font-weight-bold"                  
-                >
-                  NOIS
-                </label>
-              </div>
-              <div class="form-check ml-2">
-                <input
-                  class="form-check-input mt-3"
-                  type="checkbox"
-                  value=""                  
-                />
-                <label
-                  class="form-check-label mt-1 font-weight-bold"                  
-                >
-                  State
-                </label>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-12 col-sm-12 col-12 my-5">
-          <div class="card p-5 w-100">
-            <h2 class="title font-bold text-center mb-4">
-              Choose your Subjects
-            </h2>
-            <div class="input-field w-100">
-              <i class="fas fa-search ml-2"></i>
-              <input class="ml-2" id="secondSearch" type="text" placeholder="Search subjects" />
-            </div>
-
-            <div class="mt-2 ml-4 font-24 second" id="subject">
-              <div class="form-check ml-2">
-                <input
-                  class="form-check-input mt-3"
-                  type="checkbox"
-                  value=""                  
-                />
-                <label
-                  class="form-check-label mt-1 font-weight-bold"                  
-                >
-                  Accounts
-                </label>
-              </div>
-              <div class="form-check ml-2">
-                <input
-                  class="form-check-input mt-3"
-                  type="checkbox"
-                  value=""                  
-                />
-                <label
-                  class="form-check-label mt-1 font-weight-bold"                  
-                >
-                  Bengali
-                </label>
-              </div>
-              <div class="form-check ml-2">
-                <input
-                  class="form-check-input mt-3"
-                  type="checkbox"
-                  value=""                  
-                />
-                <label
-                  class="form-check-label mt-1 font-weight-bold"                  
-                >
-                  Biology
-                </label>
-              </div>
-              <div class="form-check ml-2">
-                <input
-                  class="form-check-input mt-3"
-                  type="checkbox"
-                  value=""                  
-                />
-                <label
-                  class="form-check-label mt-1 font-weight-bold"                  
-                >
-                  Chemistry
-                </label>
-              </div>
-              <div class="form-check ml-2">
-                <input
-                  class="form-check-input mt-3"
-                  type="checkbox"
-                  value=""                  
-                />
-                <label
-                  class="form-check-label mt-1 font-weight-bold"                  
-                >
-                  Chinese
-                </label>
-              </div>
-              <div class="form-check ml-2">
-                <input
-                  class="form-check-input mt-3"
-                  type="checkbox"
-                  value=""                  
-                />
-                <label
-                  class="form-check-label mt-1 font-weight-bold"                  
-                >
-                  Commerce
-                </label>
-              </div>
-              <div class="form-check ml-2">
-                <input
-                  class="form-check-input mt-3"
-                  type="checkbox"
-                  value=""                  
-                />
-                <label
-                  class="form-check-label mt-1 font-weight-bold"                  
-                >
-                  Computer
-                </label>
-              </div>
-              <div class="form-check ml-2">
-                <input
-                  class="form-check-input mt-3"
-                  type="checkbox"
-                  value=""                  
-                />
-                <label
-                  class="form-check-label mt-1 font-weight-bold"                  
-                >
-                  Economics
-                </label>
-              </div>
-              <div class="form-check ml-2">
-                <input
-                  class="form-check-input mt-3"
-                  type="checkbox"
-                  value=""                  
-                />
-                <label
-                  class="form-check-label mt-1 font-weight-bold"                  
-                >
-                  Education
-                </label>
-              </div>
-              <div class="form-check ml-2">
-                <input
-                  class="form-check-input mt-3"
-                  type="checkbox"
-                  value=""                  
-                />
-                <label
-                  class="form-check-label mt-1 font-weight-bold"                  
-                >
-                  English
-                </label>
-              </div>
-              <div class="form-check ml-2">
-                <input
-                  class="form-check-input mt-3"
-                  type="checkbox"
-                  value=""                  
-                />
-                <label
-                  class="form-check-label mt-1 font-weight-bold"                  
-                >
-                  EVS
-                </label>
-              </div>
-              <div class="form-check ml-2">
-                <input
-                  class="form-check-input mt-3"
-                  type="checkbox"
-                  value=""                  
-                />
-                <label
-                  class="form-check-label mt-1 font-weight-bold"                  
-                >
-                  French
-                </label>
-              </div>
-              <div class="form-check ml-2">
-                <input
-                  class="form-check-input mt-3"
-                  type="checkbox"
-                  value=""                  
-                />
-                <label
-                  class="form-check-label mt-1 font-weight-bold"                  
-                >
-                  Geography
-                </label>
-              </div>
-              <div class="form-check ml-2">
-                <input
-                  class="form-check-input mt-3"
-                  type="checkbox"
-                  value=""                  
-                />
-                <label
-                  class="form-check-label mt-1 font-weight-bold"                  
-                >
-                  German
-                </label>
-              </div>
-              <div class="form-check ml-2">
-                <input
-                  class="form-check-input mt-3"
-                  type="checkbox"
-                  value=""                  
-                />
-                <label
-                  class="form-check-label mt-1 font-weight-bold"                  
-                >
-                  Hindi
-                </label>
-              </div>
-              <div class="form-check ml-2">
-                <input
-                  class="form-check-input mt-3"
-                  type="checkbox"
-                  value=""                  
-                />
-                <label
-                  class="form-check-label mt-1 font-weight-bold"                  
-                >
-                  History
-                </label>
-              </div>
-              <div class="form-check ml-2">
-                <input
-                  class="form-check-input mt-3"
-                  type="checkbox"
-                  value=""                  
-                />
-                <label
-                  class="form-check-label mt-1 font-weight-bold"                  
-                >
-                  Literature
-                </label>
-              </div>
-              <div class="form-check ml-2">
-                <input
-                  class="form-check-input mt-3"
-                  type="checkbox"
-                  value=""                  
-                />
-                <label
-                  class="form-check-label mt-1 font-weight-bold"                  
-                >
-                  Mathematics
-                </label>
-              </div>
-              <div class="form-check ml-2">
-                <input
-                  class="form-check-input mt-3"
-                  type="checkbox"
-                  value=""                  
-                />
-                <label
-                  class="form-check-label mt-1 font-weight-bold"                  
-                >
-                  Physical
-                </label>
-              </div>
-              <div class="form-check ml-2">
-                <input
-                  class="form-check-input mt-3"
-                  type="checkbox"
-                  value=""                  
-                />
-                <label
-                  class="form-check-label mt-1 font-weight-bold"                  
-                >
-                  Physics
-                </label>
-              </div>
-              <div class="form-check ml-2">
-                <input
-                  class="form-check-input mt-3"
-                  type="checkbox"
-                  value=""                  
-                />
-                <label
-                  class="form-check-label mt-1 font-weight-bold"                  
-                >
-                  Political
-                </label>
-              </div>
-              <div class="form-check ml-2">
-                <input
-                  class="form-check-input mt-3"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label
-                  class="form-check-label mt-1 font-weight-bold"                  
-                >
-                  Psychology
-                </label>
-              </div>
-              <div class="form-check ml-2">
-                <input
-                  class="form-check-input mt-3"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label
-                  class="form-check-label mt-1 font-weight-bold"                  
-                >
-                  Science
-                </label>
-              </div>
-              <div class="form-check ml-2">
-                <input
-                  class="form-check-input mt-3"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label
-                  class="form-check-label mt-1 font-weight-bold"                  
-                >
-                  Spanish
-                </label>
-              </div>
-              <div class="form-check ml-2">
-                <input
-                  class="form-check-input mt-3"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label
-                  class="form-check-label mt-1 font-weight-bold"                  
-                >
-                  Tibetian
-                </label>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+<body>
+  <div class="container center">
+    <div class="row my-5">
+      <div class="col-lg-6 col-md-12 col-sm-12 col-12 my-5">
+        <div class="card px-lg-4 px-2 py-5 w-100">
+          <h2 class="title font-bold text-center mb-4">Choose your Board</h2>
           <div class="input-field w-100">
             <i class="fas fa-search ml-2"></i>
-            <input
-              class="ml-2"
-              type="text"
-              placeholder="Enter your school name"
-            />
+            <input class="ml-2" id="firstSearch" type="text" placeholder="Search boards" />
           </div>
-          <div class="d-flex justify-content-center mt-4">
-            <div class="text-center">
-              <a href="./exams.html" class="btn font-bold">Next</a>
+
+          <div class="mt-2 ml-4 font-24 first" id="subject">
+            <div class="form-check ml-2">
+              <input class="form-check-input mt-3" type="checkbox" value="" />
+              <label class="form-check-label mt-1 font-weight-bold">
+                CBSE
+              </label>
+            </div>
+            <div class="form-check ml-2">
+              <input class="form-check-input mt-3" type="checkbox" value="" />
+              <label class="form-check-label mt-1 font-weight-bold">
+                IB
+              </label>
+            </div>
+            <div class="form-check ml-2">
+              <input class="form-check-input mt-3" type="checkbox" value="" />
+              <label class="form-check-label mt-1 font-weight-bold">
+                ISC/ICSE
+              </label>
+            </div>
+            <div class="form-check ml-2">
+              <input class="form-check-input mt-3" type="checkbox" value="" />
+              <label class="form-check-label mt-1 font-weight-bold">
+                IGCSE
+              </label>
+            </div>
+            <div class="form-check ml-2">
+              <input class="form-check-input mt-3" type="checkbox" value="" />
+              <label class="form-check-label mt-1 font-weight-bold">
+                NOIS
+              </label>
+            </div>
+            <div class="form-check ml-2">
+              <input class="form-check-input mt-3" type="checkbox" value="" />
+              <label class="form-check-label mt-1 font-weight-bold">
+                State
+              </label>
             </div>
           </div>
         </div>
       </div>
+      <div class="col-lg-6 col-md-12 col-sm-12 col-12 my-5">
+        <div class="card px-lg-4 px-2 py-5 w-100">
+          <h2 class="title font-bold text-center mb-4">
+            Choose your Subjects
+          </h2>
+          <div class="input-field w-100">
+            <i class="fas fa-search ml-2"></i>
+            <input class="ml-2" id="secondSearch" type="text" placeholder="Search subjects" />
+          </div>
+
+          <div class="mt-2 ml-4 font-24 second" id="subject">
+            <div class="form-check ml-2">
+              <input class="form-check-input mt-3" type="checkbox" value="" />
+              <label class="form-check-label mt-1 font-weight-bold">
+                Accounts
+              </label>
+            </div>
+            <div class="form-check ml-2">
+              <input class="form-check-input mt-3" type="checkbox" value="" />
+              <label class="form-check-label mt-1 font-weight-bold">
+                Bengali
+              </label>
+            </div>
+            <div class="form-check ml-2">
+              <input class="form-check-input mt-3" type="checkbox" value="" />
+              <label class="form-check-label mt-1 font-weight-bold">
+                Biology
+              </label>
+            </div>
+            <div class="form-check ml-2">
+              <input class="form-check-input mt-3" type="checkbox" value="" />
+              <label class="form-check-label mt-1 font-weight-bold">
+                Chemistry
+              </label>
+            </div>
+            <div class="form-check ml-2">
+              <input class="form-check-input mt-3" type="checkbox" value="" />
+              <label class="form-check-label mt-1 font-weight-bold">
+                Chinese
+              </label>
+            </div>
+            <div class="form-check ml-2">
+              <input class="form-check-input mt-3" type="checkbox" value="" />
+              <label class="form-check-label mt-1 font-weight-bold">
+                Commerce
+              </label>
+            </div>
+            <div class="form-check ml-2">
+              <input class="form-check-input mt-3" type="checkbox" value="" />
+              <label class="form-check-label mt-1 font-weight-bold">
+                Computer
+              </label>
+            </div>
+            <div class="form-check ml-2">
+              <input class="form-check-input mt-3" type="checkbox" value="" />
+              <label class="form-check-label mt-1 font-weight-bold">
+                Economics
+              </label>
+            </div>
+            <div class="form-check ml-2">
+              <input class="form-check-input mt-3" type="checkbox" value="" />
+              <label class="form-check-label mt-1 font-weight-bold">
+                Education
+              </label>
+            </div>
+            <div class="form-check ml-2">
+              <input class="form-check-input mt-3" type="checkbox" value="" />
+              <label class="form-check-label mt-1 font-weight-bold">
+                English
+              </label>
+            </div>
+            <div class="form-check ml-2">
+              <input class="form-check-input mt-3" type="checkbox" value="" />
+              <label class="form-check-label mt-1 font-weight-bold">
+                EVS
+              </label>
+            </div>
+            <div class="form-check ml-2">
+              <input class="form-check-input mt-3" type="checkbox" value="" />
+              <label class="form-check-label mt-1 font-weight-bold">
+                French
+              </label>
+            </div>
+            <div class="form-check ml-2">
+              <input class="form-check-input mt-3" type="checkbox" value="" />
+              <label class="form-check-label mt-1 font-weight-bold">
+                Geography
+              </label>
+            </div>
+            <div class="form-check ml-2">
+              <input class="form-check-input mt-3" type="checkbox" value="" />
+              <label class="form-check-label mt-1 font-weight-bold">
+                German
+              </label>
+            </div>
+            <div class="form-check ml-2">
+              <input class="form-check-input mt-3" type="checkbox" value="" />
+              <label class="form-check-label mt-1 font-weight-bold">
+                Hindi
+              </label>
+            </div>
+            <div class="form-check ml-2">
+              <input class="form-check-input mt-3" type="checkbox" value="" />
+              <label class="form-check-label mt-1 font-weight-bold">
+                History
+              </label>
+            </div>
+            <div class="form-check ml-2">
+              <input class="form-check-input mt-3" type="checkbox" value="" />
+              <label class="form-check-label mt-1 font-weight-bold">
+                Literature
+              </label>
+            </div>
+            <div class="form-check ml-2">
+              <input class="form-check-input mt-3" type="checkbox" value="" />
+              <label class="form-check-label mt-1 font-weight-bold">
+                Mathematics
+              </label>
+            </div>
+            <div class="form-check ml-2">
+              <input class="form-check-input mt-3" type="checkbox" value="" />
+              <label class="form-check-label mt-1 font-weight-bold">
+                Physical
+              </label>
+            </div>
+            <div class="form-check ml-2">
+              <input class="form-check-input mt-3" type="checkbox" value="" />
+              <label class="form-check-label mt-1 font-weight-bold">
+                Physics
+              </label>
+            </div>
+            <div class="form-check ml-2">
+              <input class="form-check-input mt-3" type="checkbox" value="" />
+              <label class="form-check-label mt-1 font-weight-bold">
+                Political
+              </label>
+            </div>
+            <div class="form-check ml-2">
+              <input class="form-check-input mt-3" type="checkbox" value="" id="flexCheckDefault" />
+              <label class="form-check-label mt-1 font-weight-bold">
+                Psychology
+              </label>
+            </div>
+            <div class="form-check ml-2">
+              <input class="form-check-input mt-3" type="checkbox" value="" id="flexCheckDefault" />
+              <label class="form-check-label mt-1 font-weight-bold">
+                Science
+              </label>
+            </div>
+            <div class="form-check ml-2">
+              <input class="form-check-input mt-3" type="checkbox" value="" id="flexCheckDefault" />
+              <label class="form-check-label mt-1 font-weight-bold">
+                Spanish
+              </label>
+            </div>
+            <div class="form-check ml-2">
+              <input class="form-check-input mt-3" type="checkbox" value="" id="flexCheckDefault" />
+              <label class="form-check-label mt-1 font-weight-bold">
+                Tibetian
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+        <form action="./exams.html">
+          <div class="input-field w-100">
+            <i class="fas fa-search ml-2"></i>
+            <input class="ml-2" type="text" placeholder="Enter your school name" required />
+          </div>
+          <div class="d-flex justify-content-center mt-4">
+            <div class="text-center">
+              <button class="btn font-bold">Next</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
     </div>
-  </body>
+  </div>
   <script src="../js/board.js"></script>
+</body>
+
 </html>
