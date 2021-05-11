@@ -391,3 +391,36 @@ button:hover, .card3:hover .btn{
         height: 300px !important;
     }
 }
+
+/* input css */
+.input-field {  
+    width: 100%;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    height: 55px;
+    border-radius: 55px;
+    display: grid;
+    /* grid-template-columns: 15% 85%; */
+    padding: 0 1.5rem;
+    position: relative;
+  }
+  
+  .input-field select, .input-field input {
+    background: none;
+    outline: none;
+    border: none;
+    border-radius: 55px;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+  }
+
+  .form-check-label{
+      color: #444;
+  }
+
+  .input-field input::placeholder {
+    color: #aaa;
+    font-weight: 500;
+  }
