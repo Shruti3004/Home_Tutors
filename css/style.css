@@ -141,6 +141,7 @@ a:hover{
     vertical-align: middle;
     content: "";
     background: transparent;
+    outline: none;
 }
 .navbar-toggler-icon:focus {    
     outline: none !important;
@@ -255,7 +256,7 @@ button{
 }
 button:hover, .card3:hover .btn{
     transition-timing-function: ease-in-out !important;
-    background-image:linear-gradient(-45deg, #2e6cd8 0%, #04befe 100%) !important; 
+    /* background-image:linear-gradient(-45deg, #2e6cd8 0%, #04befe 100%) !important;  */
     color: white !important; 
     font-weight: bold !important;
 }
@@ -264,7 +265,7 @@ button:hover, .card3:hover .btn{
     margin-bottom: 30px;
 }
 .card1:hover{
-    transform: translateY(-12px);
+    transform: translateY(-5px);
     box-shadow: 0 0 20px rgba(34, 34, 34, 0.5);
 }
 
@@ -389,6 +390,9 @@ button:hover, .card3:hover .btn{
     }
     .two{
         height: 300px !important;
+    }
+    .margin-top-heading{
+        margin-top: 0px;
     }
 }
 
