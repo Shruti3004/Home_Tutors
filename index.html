@@ -81,38 +81,73 @@
 
     <!------------------------------------- Navbar ------------------------------------->
 
-        <nav class="navbar navbar-expand-xl navbar-light fixed-top nav-white element-to-hide animation-test">
+        <nav class="navbar navbar-expand-xl navbar-light sticky-top nav-white">
           <div class="container-fluid p-2">
-            <a class="navbar-brand font-weight-bold" href="#">                
-                <h4 class="mt-3 font-weight-bold">Grow Learners</h4>
+            <a class="navbar-brand font-bold" href="#">                
+                <h4 class="mt-3 font-bold">Grow Learners</h4>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav ml-auto mt-3">                
-                <a class="nav-item nav-link font-weight-bold text-blue" href="./category/board.html">
-                  School Tuition&nbsp;&nbsp;
-                </a>
-                <a class="nav-item nav-link font-weight-bold text-blue" href="./category/board.html">
-                  College Tuition&nbsp;&nbsp;
-                </a>
-                <a class="nav-item nav-link font-weight-bold text-blue" href="./category/exams.html">
+              <div class="navbar-nav ml-auto mt-3">
+                <li class="nav-item nav-link font-bold text-blue dropdown" style="margin-top: -6px;">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    School Tuition
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item font-demi text-blue" href="#">Class 1</a>
+                    <a class="dropdown-item font-demi text-blue" href="#">Class 2</a>
+                    <a class="dropdown-item font-demi text-blue" href="#">Class 3</a>
+                    <a class="dropdown-item font-demi text-blue" href="#">Class 4</a>
+                    <a class="dropdown-item font-demi text-blue" href="#">Class 5</a>
+                    <a class="dropdown-item font-demi text-blue" href="#">Class 6</a>
+                    <a class="dropdown-item font-demi text-blue" href="#">Class 7</a>
+                    <a class="dropdown-item font-demi text-blue" href="#">Class 8</a>
+                    <a class="dropdown-item font-demi text-blue" href="#">Class 9</a>
+                    <a class="dropdown-item font-demi text-blue" href="#">Class 10</a>
+                    <a class="dropdown-item font-demi text-blue" href="#">Class 11</a>
+                    <a class="dropdown-item font-demi text-blue" href="#">Class 12</a>
+                  </div>
+                </li>
+                <li class="nav-item nav-link font-bold text-blue dropdown" style="margin-top: -6px;">
+                  <a class="nav-link dropdown-toggle" href="#" id="college-tuition" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    College Tuition
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="college-tuition">
+                    <a class="dropdown-item font-demi text-blue" href="#">Class 1</a>
+                    <a class="dropdown-item font-demi text-blue" href="#">Class 2</a>
+                    <a class="dropdown-item font-demi text-blue" href="#">Class 3</a>
+                    <a class="dropdown-item font-demi text-blue" href="#">Class 4</a>
+                    <a class="dropdown-item font-demi text-blue" href="#">Class 5</a>
+                    <a class="dropdown-item font-demi text-blue" href="#">Class 6</a>
+                    <a class="dropdown-item font-demi text-blue" href="#">Class 7</a>
+                    <a class="dropdown-item font-demi text-blue" href="#">Class 8</a>
+                    <a class="dropdown-item font-demi text-blue" href="#">Class 9</a>
+                    <a class="dropdown-item font-demi text-blue" href="#">Class 10</a>
+                    <a class="dropdown-item font-demi text-blue" href="#">Class 11</a>
+                    <a class="dropdown-item font-demi text-blue" href="#">Class 12</a>
+                  </div>
+                </li>
+                <a class="nav-item nav-link font-bold text-blue" href="./category/exams.html">
                   Exam Preparation&nbsp;&nbsp;
                 </a>
-                <a class="nav-item nav-link font-weight-bold text-blue" href="./category/abroad.html">
+                <a class="nav-item nav-link font-bold text-blue" href="./category/abroad.html">
                   Study Abroad&nbsp;&nbsp;
                 </a>
-                <a class="nav-item nav-link font-weight-bold text-blue" href="./category/language.html">
+                <a class="nav-item nav-link font-bold text-blue" href="./category/language.html">
                   Language Learning&nbsp;&nbsp;
                 </a>
-                <a class="nav-item nav-link font-weight-bold text-blue" href="./category/hobbies.html">
+                <a class="nav-item nav-link font-bold text-blue" href="./category/hobbies.html">
                   Hobbies&nbsp;&nbsp;
                 </a>
-                <a class="nav-item nav-link font-weight-bold text-blue" href="./category/It.html">
+                <a class="nav-item nav-link font-bold text-blue" href="./category/It.html">
                   IT Course&nbsp;&nbsp;
                 </a>
-                <a class="nav-item nav-link btn-initial-styling btn text-white font-weight-bold px-3" href="./form.html">
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="margin-top: -15px;">                  
+                </form>
+                <a class="nav-item btn-initial-styling btn text-white font-bold px-3 pb-0" href="./form.html">
                   Login
                 </a>                
               </div>
@@ -127,20 +162,17 @@
       <div id="header" class="padding-top-section">
         <div class="container">
           <div class="row">
-            <div class="col-lg-5 col-md-6 col-sm-12 col-12 margin-top-heading">
-              <h1 class="text-white mt-4 pt-5 line-height-heading mobile-heading">We proudly teaching online courses with online experts</h1>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 margin-top-heading">
+              <h1 class="text-white mt-4 pt-5 line-height-heading mobile-heading font-bold">We proudly teaching online courses with online experts</h1>
               <div class="mt-4 mb-3">
                 <input type="search" name="search" placeholder="Search" id="searchBar" class="w-100">
               </div>
-              <p class="text-white header-paragraph-text mb-lg-5">Best teachers for your children, Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p class="text-white header-paragraph-text mb-lg-5 font-demi">Best teachers for your children, Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
-            <div class="col-lg-7 col-md-6 col-sm-12 col-12 repeat header-image mt-5 pt-lg-5 pt-0">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 repeat header-image mt-5 pt-lg-5 pt-0">
               <img src="./images/home.svg" alt="" class="img-fluid mt-5">
             </div>
-          </div>
-          <!-- <div class="mt-4 mb-5">
-            <input class="w-75 mx-auto" type="search" name="search" placeholder="Search" id="searchBar">
-          </div> -->
+          </div>          
         </div>
         <img src="./images/img-wave-2.png" alt="" class="img-fluid">
       </div>
@@ -158,7 +190,7 @@
                 </div>
                 <div class="col-lg-7 col-sm-6 col-6 offset-1">
                   <h4 class="counter center-align mt-4">367</h4>
-                  <p class="center-align grey-colored-text-18">happy Users</p>
+                  <p class="center-align grey-colored-text-18 font-demi">happy Users</p>
                 </div>
               </div>
             </div>
@@ -169,7 +201,7 @@
                 </div>
                 <div class="col-lg-7 col-sm-6 col-6 offset-1">
                   <h4 class="counter center-align mt-4">736</h4>
-                  <p class="center-align grey-colored-text-18">Our Students</p>
+                  <p class="center-align grey-colored-text-18 font-demi">Our Students</p>
                 </div>
               </div>
             </div>
@@ -180,7 +212,7 @@
                 </div>
                 <div class="col-lg-7 col-sm-6 col-6 offset-1">
                   <h4 class="counter center-align mt-4">279</h4>
-                  <p class="center-align grey-colored-text-18">Total Branches</p>
+                  <p class="center-align grey-colored-text-18 font-demi">Total Branches</p>
                 </div>
               </div>
             </div>
@@ -191,7 +223,7 @@
                 </div>
                 <div class="col-lg-7 col-sm-6 col-6 offset-1">
                   <h4 class="counter center-align mt-4">189</h4>
-                  <p class="center-align grey-colored-text-18">Positive Reviews</p>
+                  <p class="center-align grey-colored-text-18 font-demi">Positive Reviews</p>
                 </div>
               </div>
             </div>
@@ -204,7 +236,7 @@
 
       <div id="categories" class="padding-top-section mt-5">
         <div class="container">          
-          <h1 class="text-center font-weight-bold mb-4 mobile-heading text-blue">Top Categories</h1>
+          <h1 class="text-center font-bold mb-4 mobile-heading text-blue">Top Categories</h1>
         </div>
         <div class="container mb-lg-5">
           <div class="row">
@@ -216,7 +248,7 @@
                       <i class="fas fa-2x text-white fa-globe"></i>
                     </div>
                   </div> 
-                  <h5 class="text-center font-weight-bold mt-3">Abroad</h5>
+                  <h5 class="text-center font-bold mt-3">Abroad</h5>
                 </div>
               </div>
             </div> 
@@ -228,7 +260,7 @@
                       <i class="fas fa-2x text-white fa-map"></i>
                     </div>
                   </div> 
-                  <h5 class="text-center font-weight-bold mt-3">Board</h5>
+                  <h5 class="text-center font-bold mt-3">Board</h5>
                 </div>
               </div>
             </div>
@@ -240,7 +272,7 @@
                       <i class="fas fa-2x text-white fa-book"></i>
                     </div>
                   </div> 
-                  <h5 class="text-center font-weight-bold mt-3">Exams</h5>
+                  <h5 class="text-center font-bold mt-3">Exams</h5>
                 </div>
               </div>
             </div>
@@ -252,7 +284,7 @@
                       <i class="fas fa-2x text-white fa-music"></i>
                     </div>
                   </div> 
-                  <h5 class="text-center font-weight-bold mt-3">Hobbies</h5>
+                  <h5 class="text-center font-bold mt-3">Hobbies</h5>
                 </div>
               </div>
             </div>                     
@@ -264,222 +296,222 @@
 
       <div id="feature" class="padding-top-section mt-5">
         <div class="container">
-          <p class="text-center font-weight-bold text-white">Top subjects</p>
-          <h1 class="text-center font-weight-bold mb-5 mobile-heading text-white">Explore our top Subjects</h1>
+          <p class="text-center font-bold text-white">Top subjects</p>
+          <h1 class="text-center font-bold mb-5 mobile-heading text-white">Explore our top Subjects</h1>
         </div>
         <div class="container mb-lg-5 ">          
           <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
-              <div class="card card1 mt-4 h-100">
+              <div class="card card1 mt-4 h-100 mb-2">
                 <div class="card-body pb-0">
                   <div class="d-flex justify-content-center">
                     <div class="p-4 icons-styling" >
                       <img src="./images/Maths.svg" alt="" class="img-fluid">
                     </div>
                   </div> 
-                  <h5 class="text-center font-weight-bold mt-3">Mathematics</h5>
-                  <p class="text-center grey-colored-text-18 mb-0">Exchange ideas within a transparent community of friends think.</p>
+                  <h5 class="text-center font-bold mt-3">Mathematics</h5>
+                  <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community of friends think.</p>
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
-              <div class="card card1 mt-4 h-100">
+              <div class="card card1 mt-4 h-100 mb-2">
                 <div class="card-body pb-0">
                   <div class="d-flex justify-content-center">
                     <div class="p-4 icons-styling" >
                       <img src="./images/Physics.svg" alt="" class="img-fluid">
                     </div>
                   </div> 
-                  <h5 class="text-center font-weight-bold mt-3">Physics</h5>
-                  <p class="text-center grey-colored-text-18 mb-0">Exchange ideas within a transparent community of friends think.</p>
+                  <h5 class="text-center font-bold mt-3">Physics</h5>
+                  <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community of friends think.</p>
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
-              <div class="card card1 mt-4 h-100">
+              <div class="card card1 mt-4 h-100 mb-2">
                 <div class="card-body pb-0">
                   <div class="d-flex justify-content-center">
                     <div class="p-4 icons-styling" >
                       <img src="./images/Chemistry.svg" alt="" class="img-fluid">
                     </div>
                   </div> 
-                  <h5 class="text-center font-weight-bold mt-3">Chemistry</h5>
-                  <p class="text-center grey-colored-text-18 mb-0 pb-0 mb-0">Exchange ideas within a transparent community of friends think.</p>
+                  <h5 class="text-center font-bold mt-3">Chemistry</h5>
+                  <p class="text-center grey-colored-text-18 mb-0 font-medium pb-0 mb-0">Exchange ideas within a transparent community of friends think.</p>
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
-              <div class="card card1 mt-4 h-100">
+              <div class="card card1 mt-4 h-100 mb-2">
                 <div class="card-body pb-0">
                   <div class="d-flex justify-content-center">
                     <div class="p-4 icons-styling" >
                       <img src="./images/Biology.svg" alt="" class="img-fluid">
                     </div>
                   </div> 
-                  <h5 class="text-center font-weight-bold mt-3">Biology</h5>
-                  <p class="text-center grey-colored-text-18 mb-0">Exchange ideas within a transparent community of friends think.</p>
+                  <h5 class="text-center font-bold mt-3">Biology</h5>
+                  <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community of friends think.</p>
                 </div>
               </div>
             </div>         
           </div>
           <div class="row">           
             <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
-              <div class="card card1 mt-4 h-100">
+              <div class="card card1 mt-4 h-100 mb-2">
                 <div class="card-body pb-0">
                   <div class="d-flex justify-content-center">
                     <div class="p-4 icons-styling" >
                       <img src="./images/Accounts.svg" alt="" class="img-fluid">
                     </div>
                   </div> 
-                  <h5 class="text-center font-weight-bold mt-3">Accounts</h5>
-                  <p class="text-center grey-colored-text-18 mb-0">Exchange ideas within a transparent community of friends think.</p>
+                  <h5 class="text-center font-bold mt-3">Accounts</h5>
+                  <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community of friends think.</p>
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
-              <div class="card card1 mt-4 h-100">
+              <div class="card card1 mt-4 h-100 mb-2">
                 <div class="card-body pb-0">
                   <div class="d-flex justify-content-center">
                     <div class="p-4 icons-styling" >
                       <img src="./images/economics.svg" alt="" class="img-fluid">
                     </div>
                   </div> 
-                  <h5 class="text-center font-weight-bold mt-3">Economics</h5>
-                  <p class="text-center grey-colored-text-18 mb-0 pb-0 mb-0">Exchange ideas within a transparent community of friends think.</p>
+                  <h5 class="text-center font-bold mt-3">Economics</h5>
+                  <p class="text-center grey-colored-text-18 mb-0 font-medium pb-0 mb-0">Exchange ideas within a transparent community of friends think.</p>
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
-              <div class="card card1 mt-4 h-100">
+              <div class="card card1 mt-4 h-100 mb-2">
                 <div class="card-body pb-0">
                   <div class="d-flex justify-content-center">
                     <div class="p-4 icons-styling" >
                       <img src="./images/business.svg" alt="" class="img-fluid">
                     </div>
                   </div> 
-                  <h5 class="text-center font-weight-bold mt-3">Business</h5>
-                  <p class="text-center grey-colored-text-18 mb-0">Exchange ideas within a transparent community of friends think.</p>
+                  <h5 class="text-center font-bold mt-3">Business</h5>
+                  <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community of friends think.</p>
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
-              <div class="card card1 mt-4 h-100">
+              <div class="card card1 mt-4 h-100 mb-2">
                 <div class="card-body pb-0">
                   <div class="d-flex justify-content-center">
                     <div class="p-4 icons-styling" >
                       <img src="./images/history.svg" alt="" class="img-fluid">
                     </div>
                   </div> 
-                  <h5 class="text-center font-weight-bold mt-3">History</h5>
-                  <p class="text-center grey-colored-text-18 mb-0">Exchange ideas within a transparent community of friends think.</p>
+                  <h5 class="text-center font-bold mt-3">History</h5>
+                  <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community of friends think.</p>
                 </div>
               </div>
             </div>       
           </div>
           <div class="row">           
             <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
-              <div class="card card1 mt-4 h-100">
+              <div class="card card1 mt-4 h-100 mb-2">
                 <div class="card-body pb-0">
                   <div class="d-flex justify-content-center">
                     <div class="p-4 icons-styling" >
-                      <img src="./images/english.svg" alt="" class="img-fluid">
+                      <img src="./images/english.svg" alt="" class="img-fluid" style="height: auto; width: 100%;">
                     </div>
                   </div> 
-                  <h5 class="text-center font-weight-bold mt-3">English</h5>
-                  <p class="text-center grey-colored-text-18 mb-0">Exchange ideas within a transparent community of friends think.</p>
+                  <h5 class="text-center font-bold mt-3">English</h5>
+                  <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community of friends think.</p>
                 </div>
               </div>
-            </div>
+            </div>            
             <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
-              <div class="card card1 mt-4 h-100">
-                <div class="card-body pb-0">
-                  <div class="d-flex justify-content-center">
-                    <div class="p-4 icons-styling" >
-                      <img src="./images/hindi.svg" alt="" class="img-fluid">
-                    </div>
-                  </div> 
-                  <h5 class="text-center font-weight-bold mt-3">Hindi</h5>
-                  <p class="text-center grey-colored-text-18 mb-0 pb-0 mb-0">Exchange ideas within a transparent community of friends think.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
-              <div class="card card1 mt-4 h-100">
+              <div class="card card1 mt-4 h-100 mb-2">
                 <div class="card-body pb-0">
                   <div class="d-flex justify-content-center">
                     <div class="p-4 icons-styling" >
                       <img src="./images/french.svg" alt="" class="img-fluid">
                     </div>
                   </div> 
-                  <h5 class="text-center font-weight-bold mt-3">French</h5>
-                  <p class="text-center grey-colored-text-18 mb-0">Exchange ideas within a transparent community of friends think.</p>
+                  <h5 class="text-center font-bold mt-3">French</h5>
+                  <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community of friends think.</p>
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
-              <div class="card card1 mt-4 h-100">
+              <div class="card card1 mt-4 h-100 mb-2">
                 <div class="card-body pb-0">
                   <div class="d-flex justify-content-center">
                     <div class="p-4 icons-styling" >
                       <img src="./images/ielts.svg" alt="" class="img-fluid">
                     </div>
                   </div> 
-                  <h5 class="text-center font-weight-bold mt-3">IELTS</h5>
-                  <p class="text-center grey-colored-text-18 mb-0">Exchange ideas within a transparent community of friends think.</p>
+                  <h5 class="text-center font-bold mt-3">IELTS</h5>
+                  <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community of friends think.</p>
                 </div>
               </div>
-            </div>       
-          </div>
-          <div class="row">
+            </div>
             <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
-              <div class="card card1 mt-4 h-100">
+              <div class="card card1 mt-4 h-100 mb-2">
                 <div class="card-body pb-0">
                   <div class="d-flex justify-content-center">
                     <div class="p-4 icons-styling" >
                       <img src="./images/python.svg" alt="" class="img-fluid">
                     </div>
                   </div> 
-                  <h5 class="text-center font-weight-bold mt-3">Python</h5>
-                  <p class="text-center grey-colored-text-18 mb-0">Exchange ideas within a transparent community of friends think.</p>
+                  <h5 class="text-center font-bold mt-3">Python</h5>
+                  <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community of friends think.</p>
+                </div>
+              </div>
+            </div>      
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
+              <div class="card card1 mt-4 h-100 mb-2">
+                <div class="card-body pb-0">
+                  <div class="d-flex justify-content-center">
+                    <div class="p-4 icons-styling" >
+                      <img src="./images/digital-marketing.svg" alt="" class="img-fluid">
+                    </div>
+                  </div> 
+                  <h5 class="text-center font-bold mt-3">Digital Marketing</h5>
+                  <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community of friends think.</p>
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
-              <div class="card card1 mt-4 h-100">
+              <div class="card card1 mt-4 h-100 mb-2">
                 <div class="card-body pb-0">
                   <div class="d-flex justify-content-center">
                     <div class="p-4 icons-styling" >
                       <img src="./images/web.svg" alt="" class="img-fluid">
                     </div>
                   </div> 
-                  <h5 class="text-center font-weight-bold mt-3">Web Development</h5>
-                  <p class="text-center grey-colored-text-18 mb-0">Exchange ideas within a transparent community of friends think.</p>
+                  <h5 class="text-center font-bold mt-3">Web Development</h5>
+                  <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community of friends think.</p>
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
-              <div class="card card1 mt-4 h-100">
+              <div class="card card1 mt-4 h-100 mb-2">
                 <div class="card-body pb-0">
                   <div class="d-flex justify-content-center">
                     <div class="p-4 icons-styling" >
                       <img src="./images/seo.svg" alt="" class="img-fluid">
                     </div>
                   </div> 
-                  <h5 class="text-center font-weight-bold mt-3">SEO Optimization</h5>
-                  <p class="text-center grey-colored-text-18 mb-0">Exchange ideas within a transparent community of friends think.</p>
+                  <h5 class="text-center font-bold mt-3">SEO Optimization</h5>
+                  <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community of friends think.</p>
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
-              <div class="card card1 mt-4 h-100">
+              <div class="card card1 mt-4 h-100 mb-2">
                 <div class="card-body pb-0">
                   <div class="d-flex justify-content-center">
                     <div class="p-4 icons-styling" >
                       <img src="./images/design.svg" alt="" class="img-fluid">
                     </div>
                   </div> 
-                  <h5 class="text-center font-weight-bold mt-3">Designing</h5>
-                  <p class="text-center grey-colored-text-18 mb-0 pb-0 mb-0">Exchange ideas within a transparent community of friends think.</p>
+                  <h5 class="text-center font-bold mt-3">Designing</h5>
+                  <p class="text-center grey-colored-text-18 mb-0 font-medium pb-0 mb-0">Exchange ideas within a transparent community of friends think.</p>
                 </div>
               </div>
             </div>          
@@ -493,10 +525,10 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-5 col-md-5 col-sm-12 col-12">
-              <h1 class="text-blue display-4 font-weight-bold line-height-heading mt-4 mobile-heading">Request Tutors</h1>
-              <p class="grey-colored-text-18 mt-4 pt-3">Post your learning requirement and let interested tutors contact you. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime repellendus est omnis reprehenderit, quae ad tenetur perferendis cumque tempore minima sequi illum nam itaque facilis cupiditate explicabo accusantium repellat adipisci rerum. Exercitationem, nemo non! Voluptatem, adipisci? Amet ipsa consequuntur, magni nemo praesentium sit temporibus molestiae, distinctio modi possimus impedit sed dolorem.
+              <h1 class="text-blue display-4 font-bold line-height-heading mt-4 mobile-heading">Request Tutors</h1>
+              <p class="grey-colored-text-18 mt-4 pt-3 font-medium">Post your learning requirement and let interested tutors contact you. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime repellendus est omnis reprehenderit, quae ad tenetur perferendis cumque tempore minima sequi illum nam itaque facilis cupiditate explicabo accusantium repellat adipisci rerum. Exercitationem, nemo non! Voluptatem, adipisci? Amet ipsa consequuntur, magni nemo praesentium sit temporibus molestiae, distinctio modi possimus impedit sed dolorem.
               </p>
-              <button class="btn-initial-styling btn text-white font-weight-bold mt-lg-4">Request a Tutor</button>              
+              <button class="btn-initial-styling btn text-white font-bold mt-lg-4">Request a Tutor</button>              
             </div>
             <div class="col-lg-7 col-md-7 col-sm-12 col-12 element-to-hide animation-test">
               <img src="./images/HireTutor.svg" alt="" class="img-fluid">
@@ -509,9 +541,9 @@
               <img src="./images/become-tutor.svg" alt="" class="img-fluid element-to-hide animation-test">
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-12 offset-lg-1">
-              <h1 class="text-blue display-4 font-weight-bold line-height-heading mt-3 mobile-heading">Teach what you love</h1>
-              <p class="grey-colored-text-18 mt-4 pt-3">Post your learning requirement and let interested tutors contact you. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime repellendus est omnis reprehenderit, quae ad tenetur perferendis cumque tempore minima sequi illum nam itaque facilis cupiditate explicabo accusantium repellat adipisci rerum. Exercitationem, nemo non! Voluptatem, adipisci? Amet ipsa consequuntur, magni nemo praesentium sit temporibus molestiae, distinctio modi possimus impedit sed dolorem.</p>
-              <button class="btn-initial-styling btn text-white font-weight-bold mt-lg-4">Become a Tutor</button>              
+              <h1 class="text-blue display-4 font-bold line-height-heading mt-3 mobile-heading">Teach what you love</h1>
+              <p class="grey-colored-text-18 mt-4 pt-3 font-medium">Post your learning requirement and let interested tutors contact you. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime repellendus est omnis reprehenderit, quae ad tenetur perferendis cumque tempore minima sequi illum nam itaque facilis cupiditate explicabo accusantium repellat adipisci rerum. Exercitationem, nemo non! Voluptatem, adipisci? Amet ipsa consequuntur, magni nemo praesentium sit temporibus molestiae, distinctio modi possimus impedit sed dolorem.</p>
+              <button class="btn-initial-styling btn text-white font-bold mt-lg-4">Become a Tutor</button>              
             </div>
           </div>
         </div>
@@ -523,9 +555,11 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-5 col-md-5 col-sm-12 col-12">
-              <h1 class="text-blue display-4 font-weight-bold line-height-heading mt-4 mobile-heading">How it Works</h1>
-              <p class="grey-colored-text-18 mt-4 pt-3">Post your learning requirement and let interested tutors contact you. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime repellendus est omnis reprehenderit, quae ad tenetur perferendis cumque tempore minima sequi illum nam itaque facilis cupiditate explicabo accusantium repellat adipisci rerum. Exercitationem, nemo non! Voluptatem, adipisci? Amet ipsa consequuntur, magni nemo praesentium sit temporibus molestiae, distinctio modi possimus impedit sed dolorem.
-              </p>              
+              <h1 class="text-blue display-4 font-bold line-height-heading mt-4 mobile-heading">How it Works</h1>
+              <p class="grey-colored-text-18 mt-4 pt-3 font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas optio nisi magni ratione doloribus qui in veniam molestiae repudiandae libero.</p>
+              <p class="grey-colored-text-18 mt-4 pt-3 font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas optio nisi magni ratione doloribus qui in veniam molestiae repudiandae libero.</p>
+              <p class="grey-colored-text-18 mt-4 pt-3 font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas optio nisi magni ratione doloribus qui in veniam molestiae repudiandae libero.</p>
+              <p class="grey-colored-text-18 mt-4 pt-3 font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas optio nisi magni ratione doloribus qui in veniam molestiae repudiandae libero.</p>
             </div>
             <div class="col-lg-7 col-md-7 col-sm-12 col-12 element-to-hide animation-test">
               <img src="./images/how-works.svg" alt="" class="img-fluid">
@@ -538,8 +572,8 @@
               <img src="./images/what-offer.svg" alt="" class="img-fluid element-to-hide animation-test">
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-12 offset-lg-1">
-              <h1 class="text-blue display-4 font-weight-bold line-height-heading mt-3 mobile-heading">What we offer</h1>
-              <p class="grey-colored-text-18 mt-4 pt-3">Post your learning requirement and let interested tutors contact you. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime repellendus est omnis reprehenderit, quae ad tenetur perferendis cumque tempore minima sequi illum nam itaque facilis cupiditate explicabo accusantium repellat adipisci rerum. Exercitationem, nemo non! Voluptatem, adipisci? Amet ipsa consequuntur, magni nemo praesentium sit temporibus molestiae, distinctio modi possimus impedit sed dolorem.</p>              
+              <h1 class="text-blue display-4 font-bold line-height-heading mt-3 mobile-heading">What we offer</h1>
+              <p class="grey-colored-text-18 mt-4 pt-3 font-medium">Post your learning requirement and let interested tutors contact you. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime repellendus est omnis reprehenderit, quae ad tenetur perferendis cumque tempore minima sequi illum nam itaque facilis cupiditate explicabo accusantium repellat adipisci rerum. Exercitationem, nemo non! Voluptatem, adipisci? Amet ipsa consequuntur, magni nemo praesentium sit temporibus molestiae, distinctio modi possimus impedit sed dolorem.</p>              
             </div>
           </div>
         </div>
@@ -551,7 +585,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-5 col-md-5 col-sm-12 col-12">              
-              <h2 class="display-4 text-blue font-weight-bold line-height-heading mobile-heading">What our users say about us</h2>
+              <h2 class="display-4 text-blue font-bold line-height-heading mobile-heading">What our users say about us</h2>
             </div>
             <div class="col-lg-7 col-md-7 col-sm-12 col-12">
               <div id="demo1" class="carousel slide" data-ride="carousel"> 
@@ -569,9 +603,9 @@
                         <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;
                         <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;
                         <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;&nbsp;(5)<br>
-                        <p class="text-blue pt-4">"Very versatile. Seems like you can build most of the stuff out of the box.Very thoughtful. Great value for money"</p>
-                        <h5 class="font-weight-bold text-blue pt-4">Roger Bentham</h5>
-                        <p>Manager</p>
+                        <p class="text-blue pt-4 font-demi">"Very versatile. Seems like you can build most of the stuff out of the box.Very thoughtful. Great value for money"</p>
+                        <h5 class="font-bold text-blue pt-4 font-demi">Roger Bentham</h5>
+                        <p class="font-medium">Manager</p>
                       </div>
                       <div class="col-lg-2 col-sm-3 col-3 d-flex align-items-end">
                         <img src="./images/profile-img.jpg" alt="" class="img-fluid blog-image">
@@ -586,9 +620,9 @@
                         <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;
                         <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;
                         <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;&nbsp;(5)<br>
-                        <p class="text-blue pt-4">"It's the best theme I've ever purchased.Excellent and easy code. Great value for flexibility,good, money”</p>
-                        <h5 class="font-weight-bold text-blue pt-4">Roger Bentham</h5>
-                        <p>Manager</p>
+                        <p class="text-blue pt-4 font-demi">"It's the best theme I've ever purchased.Excellent and easy code. Great value for flexibility,good, money”</p>
+                        <h5 class="font-bold text-blue pt-4 font-demi">Roger Bentham</h5>
+                        <p class="font-medium">Manager</p>
                       </div>
                       <div class="col-lg-2 col-sm-3 col-3 d-flex align-items-end">
                         <img src="./images/profile-img-2.jpg" alt="" class="img-fluid blog-image">
@@ -603,9 +637,9 @@
                         <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;
                         <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;
                         <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;&nbsp;(5)<br>
-                        <p class="text-blue pt-4">“It’s well designed, easy to use and very flexible without being bloated. Great value for flexibility,good, money ”</p>
-                        <h5 class="font-weight-bold text-blue pt-4">Roger Bentham</h5>
-                        <p>Manager</p>
+                        <p class="text-blue pt-4 font-demi">“It’s well designed, easy to use and very flexible without being bloated. Great value for flexibility,good, money ”</p>
+                        <h5 class="font-bold text-blue pt-4 font-demi">Roger Bentham</h5>
+                        <p class="font-medium">Manager</p>
                       </div>
                       <div class="col-lg-2 col-sm-3 col-3 d-flex align-items-end">
                         <img src="./images/profile-img-3.jpg" alt="" class="img-fluid blog-image">
@@ -625,38 +659,38 @@
         <div class="container">
           <div class="card">
             <div class="card-body">
-              <h1 class="text-blue font-weight-bold text-center mobile-heading ">
+              <h1 class="text-blue font-bold text-center mobile-heading ">
                 Frequently asked questions
               </h1>
               <div class="row mt-5">
                 <div class="col-lg-8 col-md-7 col-sm-12 col-12">
                   <a href="#que1" data-toggle="collapse">
-                    <div class="card card-footer text-blue font-weight-bold bg-blue">
+                    <div class="card card-footer text-blue font-bold bg-blue">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, placeat?
                     </div>
                   </a>
                   <div class="collapse show" id="que1">
-                    <div class="card card-body pb-0">
+                    <div class="card card-body pb-3 font-medium">
                       Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
                     </div>
                   </div> 
                   <a href="#que2" data-toggle="collapse">
-                    <div class="card card-footer text-blue font-weight-bold bg-blue">
+                    <div class="card card-footer text-blue font-bold bg-blue">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, placeat?
                     </div>
                   </a>
                   <div class="collapse" id="que2">
-                    <div class="card card-body pb-0">
+                    <div class="card card-body pb-3 font-medium">
                       Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
                     </div>
                   </div> 
                   <a href="#que3" data-toggle="collapse">
-                    <div class="card card-footer text-blue font-weight-bold bg-blue">
+                    <div class="card card-footer text-blue font-bold bg-blue">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, placeat?
                     </div>
                   </a>
                   <div class="collapse" id="que3">
-                    <div class="card card-body pb-0">
+                    <div class="card card-body pb-3 font-medium">
                       Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
                     </div>
                   </div> 
@@ -674,8 +708,8 @@
 
       <div id="overview">
         <div class="container">
-          <h1 class="text-blue display-4 font-weight-bold line-height-heading mt-4 mobile-heading text-center">Book your free Demo session now</h1>
-          <p class="grey-colored-text-18 text-center">Tell us your requirements .. and check our services</p>  
+          <h1 class="text-blue display-4 font-bold line-height-heading mt-4 mobile-heading text-center">Book your free Demo session now</h1>
+          <p class="grey-colored-text-18 text-center font-medium">Tell us your requirements .. and check our services</p>  
           <div class="row">
             <div class="col-lg-5 col-md-5 col-sm-12 col-12">
               <div class="px-lg-4 px-2 py-4 w-100">
@@ -699,13 +733,13 @@
                       <input required type="text" placeholder="Subjects you need coaching for" />
                     </div>
                     <div class="text-center my-4">
-                      <a href="../dashboard-student/index.html" class="btn-initial-styling btn text-white font-weight-bold mt-lg-4">Get Demo</a>
+                      <a href="../dashboard-student/index.html" class="btn-initial-styling btn text-white font-bold mt-lg-4 px-5">Get Demo</a>
                     </div>
                 </form>
               </div>
             </div>
             <div class="col-lg-7 col-md-7 col-sm-12 col-12 element-to-hide animation-test">
-              <img src="./images/bookLover.svg" alt="" class="img-fluid">
+              <img src="./images/bookLover.svg" alt="" class="img-fluid p-lg-5">
             </div>
           </div>
         </div>
@@ -715,16 +749,16 @@
 
       <div id="contact">
         <div class="container">          
-          <h1 class="text-blue display-4 font-weight-bold line-height-heading text-center mobile-heading">Please contact us</h1>
+          <h1 class="text-blue display-4 font-bold line-height-heading text-center mobile-heading">Please contact us</h1>
           <div class="row mt-lg-5">
             <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-lg-4 d-flex justify-content-center">
               <img src="./images/contact-us.svg" alt="" class="img-fluid w-100 pr-lg-4">
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-12 margin-buttons">
               <div class="container bg-blue pb-4 pt-3 px-3">
-                <h5 class="text-blue font-weight-bold">Request Contact</h5>
+                <h5 class="text-blue font-bold">Request Contact</h5>
                 <div class="form-group mt-4">
-                  <select class="form-control">
+                  <select class="form-control font-medium">
                     <option
                     value="Country"
                     selected
@@ -758,7 +792,7 @@
                       Please leave us a message
                     </div>
                   </div>
-                  <button class="btn text-white mt-4 font-weight-bold btn-initial-styling" type="submit">Send Message</button>
+                  <button class="btn text-white mt-4 font-bold btn-initial-styling" type="submit">Send Message</button>
 
                 </form>
               </div>
@@ -773,14 +807,14 @@
         <div class="container">
           <!-- <div class="row subscribe-box py-5">
             <div class="col-lg-4 col-md-4 col-sm-12 col-12 offset-lg-1">
-              <h2 class="text-white font-weight-bold py-2">Subscribe Newsletter</h2>
+              <h2 class="text-white font-bold py-2">Subscribe Newsletter</h2>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-12">
               <form action="">
                 <div class="input-group">
                   <input type="text" class="form-control py-4" placeholder="Enter your Email">
                   <div class="input-group-append">
-                    <div class="input-group-text subscribe-button text-white px-3 font-weight-bold">
+                    <div class="input-group-text subscribe-button text-white px-3 font-bold">
                       Subscribe
                     </div>
                   </div>
@@ -792,11 +826,11 @@
         <div class="container pt-lg-5">
           <div class="row">
             <div class="col-md-3 col-sm-6 col-lg-3 col-6">
-              <h4 class="text-white font-weight-bold">GROW LEARNERS</h4>
+              <h4 class="text-white font-bold">GROW LEARNERS</h4>
               <p class="text-white">Best coaching centre for your children, Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, tempora?.</p>
             </div>
             <div class="col-lg-2 col-md-2 col-sm-6 col-6 offset-lg-1">
-              <h5 class="font-weight-bold text-white mb-lg-4 pb-2 margin-top-mobile">Useful Links</h5>
+              <h5 class="font-bold text-white mb-lg-4 pb-2 margin-top-mobile">Useful Links</h5>
               <ul>
                 <li class="text-white mb-lg-3">About</li>
                 <li class="text-white mb-lg-3">Our Team</li>
@@ -804,7 +838,7 @@
               </ul>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6 col-6">
-              <h5 class="font-weight-bold text-white mb-lg-4 pb-2">Support</h5>
+              <h5 class="font-bold text-white mb-lg-4 pb-2">Support</h5>
               <ul class="list-group">
                 <li class="text-white mb-lg-3">Features</li>
                 <li class="text-white mb-lg-3">API</li>
@@ -812,7 +846,7 @@
               </ul>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6 col-6">
-              <h5 class="font-weight-bold text-white mb-lg-4 pb-2">Follow Us</h5>
+              <h5 class="font-bold text-white mb-lg-4 pb-2">Follow Us</h5>
                 <i class="fa fa-facebook p-2 text-white" aria-hidden="true" style="background: rgba(0, 0, 0, 0.15); border-radius: 50%;"></i>&nbsp;&nbsp;
                 <i class="fa fa-twitter p-2 text-white" aria-hidden="true" style="background: rgba(0, 0, 0, 0.15); border-radius: 50%;"></i>&nbsp;&nbsp;
                 <i class="fa fa-linkedin p-2 text-white" aria-hidden="true" style="background: rgba(0, 0, 0, 0.15); border-radius: 50%;"></i>&nbsp;&nbsp;
@@ -821,7 +855,7 @@
           </div>
           <hr style="background: white;" class="mt-5">
           <div class="text-center text-white mt-lg-4 pt-lg-2 copyright-text">
-            2021 Copyright&copy; <span class="font-weight-bold">GROWLEARNERS</span> . ALL RIGHTS RESERVED
+            2021 Copyright&copy; <span class="font-bold">GROWLEARNERS</span> . ALL RIGHTS RESERVED
           </div>
         </div>
       </footer>
