@@ -50,6 +50,7 @@ li{
 }
 .line-height-heading{
     line-height: 1.3em !important;
+    font-size: 3em;
 }
 button{
     padding: 7px 35px !important;
@@ -77,7 +78,9 @@ button{
 .element-to-hide{
     visibility:hidden; 
 } 
-
+.display-4{
+    font-size: 3em !important;
+}
 .fadeup {
     animation: fadeinUp .6s ease-in-out;
     animation-duration: .6s;
@@ -156,10 +159,13 @@ a:hover{
 }
 /* ------------------------------------- Header ------------------------------------- */
 #header h1 {
-    font-size: 3.5em;
+    font-size: 3em;
     line-height: 1.1;
     font-weight: 700;
     letter-spacing: 0.3px;
+}
+h1{
+    font-size: 3em;
 }
 .margin-top-heading{
     margin-top: 60px;
