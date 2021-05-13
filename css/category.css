@@ -85,7 +85,7 @@
     width: 100%;
     background-color: #f0f0f0;
     margin: 10px 0;
-    height: 55px;
+    height: 50px;
     border-radius: 55px;
     display: grid;
     grid-template-columns: 15% 85%;
@@ -118,9 +118,10 @@
     border-radius: 55px;
     color: #333;
     background-color: #f0f0f0;
-    padding: 15px 0px;    
+    padding: 10px 0px;    
     font-size: 1.1rem;
     color: #333;
+    height: 50px !important;
   }
   .form-check-label{
       color: #444;
@@ -171,7 +172,7 @@
   }
 
   #subject{
-    height: 250px;
+    height: 240px;
     overflow-y: scroll;
   }
 
@@ -180,7 +181,7 @@
   }
 
   #exam{
-    height: 250px;
+    height: 240px;
     overflow-y: scroll;
   }
 
