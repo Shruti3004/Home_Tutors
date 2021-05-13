@@ -170,9 +170,6 @@ button {
 .nav-padding {
   padding: 0px 20px;
 }
-a:hover {
-  color: #232424 !important;
-}
 .nav-white {
   background: #07114d !important;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15) !important;
@@ -198,6 +195,9 @@ a:hover {
   line-height: 1;
   background-color: transparent;
   border: none !important;
+}
+.navbar-toggler:focus, .navbar-toggler:active {
+  outline: none !important;
 }
 .navbar-dark .navbar-nav .nav-link {
     color: #fff !important;

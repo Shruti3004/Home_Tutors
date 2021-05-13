@@ -57,18 +57,17 @@
   align-items: center;
   min-height: 100vh;
 }
-.input-field {
+.input-field {  
   width: 100%;
   background-color: #f0f0f0;
   margin: 10px 0;
-  height: 55px;
+  height: 50px;
   border-radius: 55px;
   display: grid;
   grid-template-columns: 15% 85%;
   padding: 0 0.4rem;
   position: relative;
 }
-
 .input-field i {
   text-align: center;
   line-height: 55px;
