@@ -179,7 +179,7 @@ button {
   width: 100%;
 }
 .nav-padding {
-  padding: 0px 20px;
+  padding: 0px;
 }
 .nav-white {
   background: #07114d !important;
@@ -219,7 +219,11 @@ button {
 .active{
   border-bottom:2px solid #fff !important;
 }
-
+@media(max-width: 1300px){
+  .nav-link{
+    font-size: 14px;
+  }
+}
 
 
 /* ------------------------------------- Header ------------------------------------- */
