@@ -159,6 +159,17 @@ button {
     border-radius: 33% 67% 58% 42%/63% 68% 32% 37%;
   }
 }
+
+
+/* ------------------------------------- Modal ------------------------------------ */
+.close{
+  font-size: 2rem !important;
+  margin-top: -11px !important;
+}
+.close:focus{
+  outline: none;
+}
+
 /* ------------------------------------- Navbar ------------------------------------ */
 #header {
   background-image: linear-gradient(-45deg, #b3cfff 0%, #04befe 100%);
