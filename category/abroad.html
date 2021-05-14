@@ -21,7 +21,7 @@
     <meta name="twitter:image:src" content="" />
 
     <meta property="og:title" content="" />
-    <meta property="og:type" content="Travel & Tourism" />
+    <meta property="og:type" content="Education" />
     <meta property="og:url" content="" />
     <meta property="og:image" content="" />
     <meta property="og:description" content="Grow Learners" />
@@ -40,7 +40,10 @@
 
     <!-- css -->
     <link rel="stylesheet" href="../css/category.css" />
-    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <style>
         .form-check .form-check-input {
             float: left;
@@ -55,83 +58,84 @@
 
     <nav class="navbar navbar-expand-xl navbar-dark sticky-top nav-white">
         <div class="container-fluid p-2">
-          <a class="navbar-brand" href="#">
-            <h4 class="text-white font-bold ">Grow Learners</h4>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ml-auto mt-2">
-              <li class="nav-item font-medium text-white dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  School Tuition
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item font-demi text-blue" href="#">Class 1</a>
-                  <a class="dropdown-item font-demi text-blue" href="#">Class 2</a>
-                  <a class="dropdown-item font-demi text-blue" href="#">Class 3</a>
-                  <a class="dropdown-item font-demi text-blue" href="#">Class 4</a>
-                  <a class="dropdown-item font-demi text-blue" href="#">Class 5</a>
-                  <a class="dropdown-item font-demi text-blue" href="#">Class 6</a>
-                  <a class="dropdown-item font-demi text-blue" href="#">Class 7</a>
-                  <a class="dropdown-item font-demi text-blue" href="#">Class 8</a>
-                  <a class="dropdown-item font-demi text-blue" href="#">Class 9</a>
-                  <a class="dropdown-item font-demi text-blue" href="#">Class 10</a>
-                  <a class="dropdown-item font-demi text-blue" href="#">Class 11</a>
-                  <a class="dropdown-item font-demi text-blue" href="#">Class 12</a>
-                </div>
-              </li>
-              <li class="nav-item font-medium text-blue dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="college-tuition" role="button" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  College Tuition
-                </a>
-                <div class="dropdown-menu" aria-labelledby="college-tuition">
-                  <a class="dropdown-item font-demi text-blue" href="#">Class 1</a>
-                  <a class="dropdown-item font-demi text-blue" href="#">Class 2</a>
-                  <a class="dropdown-item font-demi text-blue" href="#">Class 3</a>
-                  <a class="dropdown-item font-demi text-blue" href="#">Class 4</a>
-                  <a class="dropdown-item font-demi text-blue" href="#">Class 5</a>
-                  <a class="dropdown-item font-demi text-blue" href="#">Class 6</a>
-                  <a class="dropdown-item font-demi text-blue" href="#">Class 7</a>
-                  <a class="dropdown-item font-demi text-blue" href="#">Class 8</a>
-                  <a class="dropdown-item font-demi text-blue" href="#">Class 9</a>
-                  <a class="dropdown-item font-demi text-blue" href="#">Class 10</a>
-                  <a class="dropdown-item font-demi text-blue" href="#">Class 11</a>
-                  <a class="dropdown-item font-demi text-blue" href="#">Class 12</a>
-                </div>
-              </li>
-              <a class="nav-item nav-link font-medium text-white" href="./category/exams.html">
-                Exam Coaching&nbsp;&nbsp;
-              </a>
-              <a class="nav-item nav-link font-medium text-white" href="./category/hobbies.html">
-                Hobbies&nbsp;&nbsp;
-              </a>
-              <a class="nav-item nav-link font-medium text-white" href="./category/abroad.html">
-                Study Abroad&nbsp;&nbsp;
-              </a>
-              <a class="nav-item nav-link font-medium text-white" href="./category/language.html">
-                Language&nbsp;&nbsp;
-              </a>
-              <a class="nav-item nav-link font-medium text-white" href="./category/It.html">
-                IT Course&nbsp;&nbsp;
-              </a>
-              <a class="nav-item nav-link font-medium text-white" href="./contact.html">
-                More&nbsp;&nbsp;
-              </a>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control w-100 mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              </form>
-              <!-- <a class="nav-item btn-initial-styling btn text-white font-bold px-3 pb-0" href="./form.html">
+            <a class="navbar-brand" href="#">
+                <h4 class="text-white font-bold ">Grow Learners</h4>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto mt-2">
+                    <li class="nav-item font-medium text-white dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            School Tuition
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item font-demi text-blue" href="#">Class 1</a>
+                            <a class="dropdown-item font-demi text-blue" href="#">Class 2</a>
+                            <a class="dropdown-item font-demi text-blue" href="#">Class 3</a>
+                            <a class="dropdown-item font-demi text-blue" href="#">Class 4</a>
+                            <a class="dropdown-item font-demi text-blue" href="#">Class 5</a>
+                            <a class="dropdown-item font-demi text-blue" href="#">Class 6</a>
+                            <a class="dropdown-item font-demi text-blue" href="#">Class 7</a>
+                            <a class="dropdown-item font-demi text-blue" href="#">Class 8</a>
+                            <a class="dropdown-item font-demi text-blue" href="#">Class 9</a>
+                            <a class="dropdown-item font-demi text-blue" href="#">Class 10</a>
+                            <a class="dropdown-item font-demi text-blue" href="#">Class 11</a>
+                            <a class="dropdown-item font-demi text-blue" href="#">Class 12</a>
+                        </div>
+                    </li>
+                    <li class="nav-item font-medium text-blue dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="college-tuition" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            College Tuition
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="college-tuition">
+                            <a class="dropdown-item font-demi text-blue" href="#">Class 1</a>
+                            <a class="dropdown-item font-demi text-blue" href="#">Class 2</a>
+                            <a class="dropdown-item font-demi text-blue" href="#">Class 3</a>
+                            <a class="dropdown-item font-demi text-blue" href="#">Class 4</a>
+                            <a class="dropdown-item font-demi text-blue" href="#">Class 5</a>
+                            <a class="dropdown-item font-demi text-blue" href="#">Class 6</a>
+                            <a class="dropdown-item font-demi text-blue" href="#">Class 7</a>
+                            <a class="dropdown-item font-demi text-blue" href="#">Class 8</a>
+                            <a class="dropdown-item font-demi text-blue" href="#">Class 9</a>
+                            <a class="dropdown-item font-demi text-blue" href="#">Class 10</a>
+                            <a class="dropdown-item font-demi text-blue" href="#">Class 11</a>
+                            <a class="dropdown-item font-demi text-blue" href="#">Class 12</a>
+                        </div>
+                    </li>
+                    <a class="nav-item nav-link font-medium text-white" href="./category/exams.html">
+                        Exam Coaching&nbsp;&nbsp;
+                    </a>
+                    <a class="nav-item nav-link font-medium text-white" href="./category/hobbies.html">
+                        Hobbies&nbsp;&nbsp;
+                    </a>
+                    <a class="nav-item nav-link font-medium text-white" href="./category/abroad.html">
+                        Study Abroad&nbsp;&nbsp;
+                    </a>
+                    <a class="nav-item nav-link font-medium text-white" href="./category/language.html">
+                        Language&nbsp;&nbsp;
+                    </a>
+                    <a class="nav-item nav-link font-medium text-white" href="./category/It.html">
+                        IT Course&nbsp;&nbsp;
+                    </a>
+                    <a class="nav-item nav-link font-medium text-white" href="./contact.html">
+                        More&nbsp;&nbsp;
+                    </a>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control w-100 mr-sm-2" type="search" placeholder="Search"
+                            aria-label="Search">
+                    </form>
+                    <a class="nav-item btn-initial-styling btn-background text-white font-bold px-3 my-2 my-xl-0" href="./form.html">
                       Login
-                    </a>-->
+                    </a>
+                </div>
             </div>
-          </div>
         </div>
-      </nav>    
+    </nav>
 
     <!------------------------------------- Main ------------------------------------->
 
@@ -475,7 +479,7 @@
             </div>
         </div>
         <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-            <div class="d-flex justify-content-center mt-3">
+            <div class="d-flex justify-content-center">
                 <div class="text-center">
                     <a href="./board.html" class="btn font-bold">Next</a>
                 </div>
@@ -530,6 +534,12 @@
             </div>
         </div>
     </footer>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
 </body>
 
 </html>

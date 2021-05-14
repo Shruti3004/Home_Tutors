@@ -73,7 +73,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
+    min-height: 90vh;
   }
 
   @media(max-width: 576px){
@@ -172,7 +172,7 @@
   }
 
   #subject{
-    height: 240px;
+    height: 200px;
     overflow-y: scroll;
   }
 
@@ -181,7 +181,7 @@
   }
 
   #exam{
-    height: 240px;
+    height: 200px;
     overflow-y: scroll;
   }
 
@@ -221,10 +221,16 @@ li{
 
 
 
-/* Navbar */
-
+/* ------------------------------------- Navbar ------------------------------------ */
+#header {
+  background-image: linear-gradient(-45deg, #b3cfff 0%, #04befe 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+}
 .nav-padding {
-  padding: 0px 20px;
+  padding: 0px;
 }
 .nav-white {
   background: #07114d !important;
@@ -264,4 +270,14 @@ li{
 .active{
   border-bottom:2px solid #fff !important;
 }
+@media(max-width: 1300px){
+  .nav-link{
+    font-size: 14px;
+  }
+}
 
+.btn-background {
+  background-image: linear-gradient(-45deg, #2e6cd8 0%, #04befe 100%);
+  padding: 7px 0px;
+  border-radius: 5px;
+}
