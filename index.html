@@ -56,15 +56,16 @@
   <!-- Title -->
   <title>Grow Learners</title>
   <script>
-    $(document).ready(function(){
-        $("#exampleModal").modal('show');
+    $(document).ready(function () {
+      $("#exampleModal").modal('show');
     });
-</script>
+  </script>
 </head>
 <div>
 
-<!------------------------------------- MOdal ------------------------------------->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!------------------------------------- MOdal ------------------------------------->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header" style="background: #07114d;">
@@ -86,11 +87,11 @@
             </div>
             <div class="input-field">
               <input required class="ml-2" type="text" placeholder="City" />
-            </div>                              
+            </div>
           </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-danger font-demi" data-dismiss="modal">Close</button>          
+          <button type="button" class="btn btn-danger font-demi" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
@@ -134,11 +135,11 @@
               aria-haspopup="true" aria-expanded="false">
               College Tuition
             </a>
-            <div aria-labelledby="college-tuition" class="dropdown-menu multi-level" role="menu">              
+            <div aria-labelledby="college-tuition" class="dropdown-menu multi-level" role="menu">
               <div class="dropdown-submenu">
-                <a  class="dropdown-item font-demi text-blue" tabindex="-1" href="#">Engineering</a>
+                <a class="dropdown-item font-demi text-blue" tabindex="-1" href="#">Engineering</a>
                 <ul class="dropdown-menu">
-                  <li class="dropdown-item"><a href="#">B.Tech Tuition</a></li>                  
+                  <li class="dropdown-item"><a href="#">B.Tech Tuition</a></li>
                   <li class="dropdown-item"><a href="#">BE Tuition</a></li>
                   <li class="dropdown-item"><a href="#">M.Tech Tuition</a></li>
                   <li class="dropdown-item"><a href="#">B.Sc. Tuition</a></li>
@@ -146,9 +147,9 @@
                 </ul>
               </div>
               <div class="dropdown-submenu">
-                <a  class="dropdown-item font-demi text-blue" tabindex="-1" href="#">Medical</a>
+                <a class="dropdown-item font-demi text-blue" tabindex="-1" href="#">Medical</a>
                 <ul class="dropdown-menu">
-                  <li class="dropdown-item"><a href="#">MBBS Tuition</a></li>                  
+                  <li class="dropdown-item"><a href="#">MBBS Tuition</a></li>
                   <li class="dropdown-item"><a href="#">BAMS Tuition</a></li>
                   <li class="dropdown-item"><a href="#">MD Tuition</a></li>
                   <li class="dropdown-item"><a href="#">BDS Tuition</a></li>
@@ -156,9 +157,9 @@
                 </ul>
               </div>
               <div class="dropdown-submenu">
-                <a  class="dropdown-item font-demi text-blue" tabindex="-1" href="#">Commerce</a>
+                <a class="dropdown-item font-demi text-blue" tabindex="-1" href="#">Commerce</a>
                 <ul class="dropdown-menu">
-                  <li class="dropdown-item"><a href="#">B Com Tuition</a></li>                  
+                  <li class="dropdown-item"><a href="#">B Com Tuition</a></li>
                   <li class="dropdown-item"><a href="#">M Com Tuition</a></li>
                   <li class="dropdown-item"><a href="#">BBA Tuition</a></li>
                   <li class="dropdown-item"><a href="#">MBA Tuition</a></li>
@@ -166,9 +167,9 @@
                 </ul>
               </div>
               <div class="dropdown-submenu">
-                <a  class="dropdown-item font-demi text-blue" tabindex="-1" href="#">Others</a>
+                <a class="dropdown-item font-demi text-blue" tabindex="-1" href="#">Others</a>
                 <ul class="dropdown-menu">
-                  <li class="dropdown-item"><a href="#">LLB Tuition</a></li>                  
+                  <li class="dropdown-item"><a href="#">LLB Tuition</a></li>
                   <li class="dropdown-item"><a href="#">BCA Tuition</a></li>
                   <li class="dropdown-item"><a href="#">MCA Tuition</a></li>
                   <li class="dropdown-item"><a href="#">BHM Tuition</a></li>
@@ -180,766 +181,876 @@
                   <li class="dropdown-item"><a href="#">BA Tuition</a></li>
                   <li class="dropdown-item"><a href="#">More</a></li>
                 </ul>
-              </div>                    
+              </div>
             </div>
           </li>
-          <a class="nav-item nav-link font-medium text-white" href="./category/exams.html">
-            Exam Coaching
-          </a>
-          <a class="nav-item nav-link font-medium text-white" href="./category/hobbies.html">
-            Hobbies
-          </a>          
-          <a class="nav-item nav-link font-medium text-white" href="./category/language.html">
-            Languages
-          </a>
-          <a class="nav-item nav-link font-medium text-white" href="./category/It.html">
-            IT Courses
-          </a>
-          <a class="nav-item nav-link font-medium text-white" href="./contact.html">
-            More
-          </a>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control w-100 mx-xl-2 ml-0" maxlength="40" type="search" placeholder="Search" aria-label="Search">
+          <li class="nav-item font-medium text-blue dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="college-tuition" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Exam Coaching
+            </a>
+            <div aria-labelledby="college-tuition" class="dropdown-menu multi-level" role="menu">
+              <div class="dropdown-submenu">
+                <a class="dropdown-item font-demi text-blue" tabindex="-1" href="#">Entrance Exams</a>
+                <ul class="dropdown-menu">                  
+                  <li class="dropdown-item"><a href="#">NEET Exam Coaching</a></li>
+                  <li class="dropdown-item"><a href="#">JEE Exam Coaching</a></li>
+                  <li class="dropdown-item"><a href="#">GATE Exam Coaching</a></li>
+                  <li class="dropdown-item"><a href="#">CLAT Exam Coaching</a></li>
+                  <li class="dropdown-item"><a href="#">CAT Exam Coaching</a></li>
+                  <li class="dropdown-item"><a href="#">XAT Exam Coaching</a></li>
+                  <li class="dropdown-item"><a href="#">SAT Exam Coaching</a></li>
+                  <li class="dropdown-item"><a href="#">LSAT Exam Coaching</a></li>
+                  <li class="dropdown-item"><a href="#">BITSAT Exam Coaching</a></li>
+                  <li class="dropdown-item"><a href="#">AICEE Exam Coaching</a></li>
+                </ul>
+              </div>
+              <div class="dropdown-submenu">
+                <a class="dropdown-item font-demi text-blue" tabindex="-1" href="#">Study Abroad</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item"><a href="#">IELTS Exam Coaching</a></li>
+                  <li class="dropdown-item"><a href="#">GRE Exam Coaching</a></li>
+                  <li class="dropdown-item"><a href="#">GMAT Exam Coaching</a></li>
+                  <li class="dropdown-item"><a href="#">TOEFL Exam Coaching</a></li>
+                  <li class="dropdown-item"><a href="#">PTE Exam Coaching</a></li>
+                </ul>
+              </div>
+              <div class="dropdown-submenu">
+                <a class="dropdown-item font-demi text-blue" tabindex="-1" href="#">Competitive Exams</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item"><a href="#">UPSC Exam Coaching</a></li>
+                  <li class="dropdown-item"><a href="#">MPPSC Exam Coaching</a></li>
+                  <li class="dropdown-item"><a href="#">AFCAT Exam Coaching</a></li>
+                  <li class="dropdown-item"><a href="#">IAS Exam Preparation</a></li>
+                  <li class="dropdown-item"><a href="#">EPFO Exam Coaching</a></li>
+                  <li class="dropdown-item"><a href="#">CET Exam Coaching</a></li>
+                  <li class="dropdown-item"><a href="#">IBPS Exam Coaching</a></li>
+                  <li class="dropdown-item"><a href="#">CDS Exam Coaching</a></li>
+                  <li class="dropdown-item"><a href="#">UGC NET Exam Coaching</a></li>
+                  <li class="dropdown-item"><a href="#">More</a></li>
+                </ul>
+              </div>             
+            </div>
+          </li>      
+          <li class="nav-item font-medium text-blue dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="college-tuition" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              IT Courses
+            </a>
+            <div aria-labelledby="college-tuition" class="dropdown-menu multi-level" role="menu">
+              <div class="dropdown-submenu">
+                <a class="dropdown-item font-demi text-blue" tabindex="-1" href="#">Programming Languages</a>
+                <ul class="dropdown-menu">                  
+                  <li class="dropdown-item"><a href="#">C Language</a></li>
+                  <li class="dropdown-item"><a href="#">C++ Language</a></li>
+                  <li class="dropdown-item"><a href="#">Python</a></li>
+                  <li class="dropdown-item"><a href="#">Java</a></li>
+                  <li class="dropdown-item"><a href="#">PHP</a></li>
+                </ul>
+              </div>
+              <div class="dropdown-submenu">
+                <a class="dropdown-item font-demi text-blue" tabindex="-1" href="#">Technology</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item"><a href="#">Data Science</a></li>
+                  <li class="dropdown-item"><a href="#">Amazon Web Services</a></li>
+                  <li class="dropdown-item"><a href="#">Angular JS</a></li>
+                  <li class="dropdown-item"><a href="#">Android</a></li>
+                  <li class="dropdown-item"><a href="#">HACCP</a></li>
+                </ul>
+              </div>
+              <div class="dropdown-submenu">
+                <a class="dropdown-item font-demi text-blue" tabindex="-1" href="#">Web Technologies</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item"><a href="#">React Js</a></li>
+                  <li class="dropdown-item"><a href="#">Node Js</a></li>
+                  <li class="dropdown-item"><a href="#">Java Script</a></li>
+                  <li class="dropdown-item"><a href="#">J Query</a></li>
+                  <li class="dropdown-item"><a href="#">Bootstrap</a></li>
+                </ul>
+              </div> 
+              <div class="dropdown-submenu">
+                <a class="dropdown-item font-demi text-blue" tabindex="-1" href="#">Designing</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item"><a href="#">Web Designing</a></li>
+                  <li class="dropdown-item"><a href="#">Corel Draw</a></li>
+                  <li class="dropdown-item"><a href="#">Adobe Photoshop</a></li>
+                  <li class="dropdown-item"><a href="#">AutoCAD</a></li>
+                  <li class="dropdown-item"><a href="#">2D & 3D Animation</a></li>
+                </ul>
+              </div>  
+              <div class="dropdown-submenu">
+                <a class="dropdown-item font-demi text-blue" tabindex="-1" href="#">Other IT Courses</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item"><a href="#">Microsoft Excel</a></li>
+                  <li class="dropdown-item"><a href="#">Digital Marketing</a></li>
+                  <li class="dropdown-item"><a href="#">DevOps Training</a></li>
+                  <li class="dropdown-item"><a href="#">Big Data & Hadoop</a></li>
+                  <li class="dropdown-item"><a href="#">More</a></li>
+                </ul>
+              </div>             
+            </div>
+          </li>      
+      <a class="nav-item nav-link font-medium text-white" href="./category/hobbies.html">
+        Hobbies
+      </a>
+      <a class="nav-item nav-link font-medium text-white" href="./category/language.html">
+        Languages
+      </a>     
+      <a class="nav-item nav-link font-medium text-white" href="./contact.html">
+        More
+      </a>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control w-100 mx-xl-2 ml-0" maxlength="40" type="search" placeholder="Search"
+          aria-label="Search">
+      </form>
+      <a class="nav-item btn-initial-styling btn text-white font-bold px-3 pb-0" href="./form.html">
+        Login
+      </a>
+    </div>
+</div>
+</div>
+</nav>
+
+
+<!------------------------------------- Header ------------------------------------->
+
+
+<div id="header" class="padding-top-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12 margin-top-heading">
+        <h1 class="text-white mt-4 pt-5 line-height-heading mobile-heading font-bold">We proudly teaching online
+          courses with online experts</h1>
+        <div class="mt-4 mb-3">
+          <input type="search" name="search" maxlength="40" placeholder="Search" id="searchBar" class="w-100">
+        </div>
+        <p class="text-white header-paragraph-text mb-lg-5 font-demi">Best teachers for your children, Lorem, ipsum
+          dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12 repeat header-image mt-5 pt-lg-5 pt-0">
+        <img src="./images/home-3.svg" alt="" class="img-fluid mt-5">
+      </div>
+    </div>
+  </div>
+  <img src="./images/img-wave-2.png" alt="" class="img-fluid">
+</div>
+
+
+<!------------------------------------- Count ------------------------------------->
+
+<div id="count" class="padding-top-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+        <div class="row">
+          <div class="col-lg-3 col-sm-4 col-4">
+            <i class="far fa-3x fa-smile-beam p-4 gradient-icons"></i>
+          </div>
+          <div class="col-lg-7 col-sm-6 col-6 offset-1">
+            <h4 class="counter center-align mt-4">367</h4>
+            <p class="center-align grey-colored-text-18 font-demi">happy Users</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+        <div class="row">
+          <div class="col-lg-3 col-sm-4 col-4">
+            <i class="fas fa-3x fa-download p-4 gradient-icons"></i>
+          </div>
+          <div class="col-lg-7 col-sm-6 col-6 offset-1">
+            <h4 class="counter center-align mt-4">736</h4>
+            <p class="center-align grey-colored-text-18 font-demi">Our Students</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+        <div class="row">
+          <div class="col-lg-3 col-sm-4 col-4">
+            <i class="far fa-3x fa-clock p-4 gradient-icons"></i>
+          </div>
+          <div class="col-lg-7 col-sm-6 col-6 offset-1">
+            <h4 class="counter center-align mt-4">279</h4>
+            <p class="center-align grey-colored-text-18 font-demi">Total Branches</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+        <div class="row">
+          <div class="col-lg-3 col-sm-4 col-4">
+            <i class="far fa-3x fa-comments p-4 gradient-icons"></i>
+          </div>
+          <div class="col-lg-7 col-sm-6 col-6 offset-1">
+            <h4 class="counter center-align mt-4">189</h4>
+            <p class="center-align grey-colored-text-18 font-demi">Positive Reviews</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+</div>
+
+<!-- Categories -->
+
+<div id="categories" class="padding-top-section mt-5">
+  <div class="container">
+    <h1 class="text-center font-bold mb-4 mobile-heading text-blue">Top Categories</h1>
+  </div>
+  <div class="container mb-lg-5">
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-3 col-md-3 col-sm-12 col-12 my-4">
+        <div class="card mt-3 h-100">
+          <div class="card-body pb-0">
+            <div class="d-flex justify-content-center">
+              <div class="p-4 icons-styling">
+                <i class="fas fa-2x text-white fa-award"></i>
+              </div>
+            </div>
+            <h5 class="text-center font-bold mt-3 text-blue">Academics</h5>
+            <p class="font-regular mt-2 text-center">There are courses to improve qualification skills as well as
+              academic performance which we are providing so that learners success has no limits.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-12 my-4">
+        <div class="card mt-3 h-100">
+          <div class="card-body pb-0">
+            <div class="d-flex justify-content-center">
+              <div class="p-4 icons-styling">
+                <i class="fas fa-2x text-white fa-map"></i>
+              </div>
+            </div>
+            <h5 class="text-center font-bold mt-3 text-blue">Languages</h5>
+            <p class="font-regular mt-2 text-center">Grow Learners is there providing tutors who can teach you new
+              languages so that learners know how to communicate and expand their personal map of the world.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-12 my-4">
+        <div class="card mt-3 h-100">
+          <div class="card-body pb-0">
+            <div class="d-flex justify-content-center">
+              <div class="p-4 icons-styling">
+                <i class="fas fa-2x text-white fa-book"></i>
+              </div>
+            </div>
+            <h5 class="text-center font-bold mt-3 text-blue">Exam Preparation</h5>
+            <p class="font-regular mt-2 text-center">Grow Learner not only provides teaching but makes a student ready
+              for examination and our trainers will help the Learners have confidence and take up exams.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-12 my-4">
+        <div class="card mt-3 h-100">
+          <div class="card-body pb-0">
+            <div class="d-flex justify-content-center">
+              <div class="p-4 icons-styling">
+                <i class="fas fa-2x text-white fa-book-reader"></i>
+              </div>
+            </div>
+            <h5 class="text-center font-bold mt-3 text-blue">Entrance Exams</h5>
+            <p class="font-regular mt-2 text-center">Explore popular courses in all streams by taking a look at the
+              popular Entrance Exams in which the tutors of Grow Learners will help you get through it.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-3 col-md-3 col-sm-12 col-12 my-4">
+        <div class="card mt-3 h-100">
+          <div class="card-body pb-0">
+            <div class="d-flex justify-content-center">
+              <div class="p-4 icons-styling">
+                <i class="fas fa-2x text-white fa-tv"></i>
+              </div>
+            </div>
+            <h5 class="text-center font-bold mt-3 text-blue">Information Technology</h5>
+            <p class="font-regular mt-2 text-center">Learn to analyze the difficulties of managing the imminent threat
+              of IT security or explore the tools of IT by gaining knowledge from the expertise of Grow Learners.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-12 my-4">
+        <div class="card mt-3 h-100">
+          <div class="card-body pb-0">
+            <div class="d-flex justify-content-center">
+              <div class="p-4 icons-styling">
+                <i class="fas fa-2x text-white fa-globe"></i>
+              </div>
+            </div>
+            <h5 class="text-center font-bold mt-3 text-blue">Study Abroad</h5>
+            <p class="font-regular mt-2 text-center">Looking for study abroad courses? Grow Learners is ready to offer
+              you the best trainers with best teaching faculties so that the learners can have a brilliant career
+              outside the country.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-12 my-4">
+        <div class="card mt-3 h-100">
+          <div class="card-body pb-0">
+            <div class="d-flex justify-content-center">
+              <div class="p-4 icons-styling">
+                <i class="fas fa-2x text-white fa-pen-nib"></i>
+              </div>
+            </div>
+            <h5 class="text-center font-bold mt-3 text-blue">Designing</h5>
+            <p class="font-regular mt-2 text-center">
+              To pursue anything in designing remember Grow Learners is there to help you achieve it. All category
+              designing courses is available with good trainers.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-12 my-4">
+        <div class="card mt-3 h-100">
+          <div class="card-body pb-0">
+            <div class="d-flex justify-content-center">
+              <div class="p-4 icons-styling">
+                <i class="fas fa-2x text-white fa-music"></i>
+              </div>
+            </div>
+            <h5 class="text-center font-bold mt-3 text-blue">Hobbies</h5>
+            <p class="font-regular mt-2 text-center">Explore Yourself with Hobbies. Select your favorite hobby and you
+              never know it can turn to your passion and to fulfill such a wish list Grow Learners is here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!------------------------------------- Feature ------------------------------------->
+
+<div id="feature" class="padding-top-section mt-5">
+  <div class="container">
+    <p class="text-center font-bold text-white">Top subjects</p>
+    <h1 class="text-center font-bold mb-5 mobile-heading text-white">Explore our top Subjects</h1>
+  </div>
+  <div class="container mb-lg-5 ">
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
+        <div class="card card1 mt-4 h-100 mb-2">
+          <div class="card-body pb-0">
+            <div class="d-flex justify-content-center">
+              <div class="p-4 icons-styling">
+                <img src="./images/Maths.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+            <h5 class="text-center font-bold mt-3 text-blue">Mathematics</h5>
+            <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community
+              of friends think.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
+        <div class="card card1 mt-4 h-100 mb-2">
+          <div class="card-body pb-0">
+            <div class="d-flex justify-content-center">
+              <div class="p-4 icons-styling">
+                <img src="./images/Physics.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+            <h5 class="text-center font-bold mt-3 text-blue">Physics</h5>
+            <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community
+              of friends think.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
+        <div class="card card1 mt-4 h-100 mb-2">
+          <div class="card-body pb-0">
+            <div class="d-flex justify-content-center">
+              <div class="p-4 icons-styling">
+                <img src="./images/Chemistry.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+            <h5 class="text-center font-bold mt-3 text-blue">Chemistry</h5>
+            <p class="text-center grey-colored-text-18 mb-0 font-medium pb-0 mb-0">Exchange ideas within a transparent
+              community of friends think.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
+        <div class="card card1 mt-4 h-100 mb-2">
+          <div class="card-body pb-0">
+            <div class="d-flex justify-content-center">
+              <div class="p-4 icons-styling">
+                <img src="./images/Biology.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+            <h5 class="text-center font-bold mt-3 text-blue">Biology</h5>
+            <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community
+              of friends think.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
+        <div class="card card1 mt-4 h-100 mb-2">
+          <div class="card-body pb-0">
+            <div class="d-flex justify-content-center">
+              <div class="p-4 icons-styling">
+                <img src="./images/Accounts.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+            <h5 class="text-center font-bold mt-3 text-blue">Accounts</h5>
+            <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community
+              of friends think.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
+        <div class="card card1 mt-4 h-100 mb-2">
+          <div class="card-body pb-0">
+            <div class="d-flex justify-content-center">
+              <div class="p-4 icons-styling">
+                <img src="./images/economics.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+            <h5 class="text-center font-bold mt-3 text-blue">Economics</h5>
+            <p class="text-center grey-colored-text-18 mb-0 font-medium pb-0 mb-0">Exchange ideas within a transparent
+              community of friends think.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
+        <div class="card card1 mt-4 h-100 mb-2">
+          <div class="card-body pb-0">
+            <div class="d-flex justify-content-center">
+              <div class="p-4 icons-styling">
+                <img src="./images/business.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+            <h5 class="text-center font-bold mt-3 text-blue">Business</h5>
+            <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community
+              of friends think.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
+        <div class="card card1 mt-4 h-100 mb-2">
+          <div class="card-body pb-0">
+            <div class="d-flex justify-content-center">
+              <div class="p-4 icons-styling">
+                <img src="./images/history.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+            <h5 class="text-center font-bold mt-3 text-blue">History</h5>
+            <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community
+              of friends think.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
+        <div class="card card1 mt-4 h-100 mb-2">
+          <div class="card-body pb-0">
+            <div class="d-flex justify-content-center">
+              <div class="p-4 icons-styling">
+                <img src="./images/english.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+            <h5 class="text-center font-bold mt-3 text-blue">English</h5>
+            <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community
+              of friends think.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
+        <div class="card card1 mt-4 h-100 mb-2">
+          <div class="card-body pb-0">
+            <div class="d-flex justify-content-center">
+              <div class="p-4 icons-styling">
+                <img src="./images/french.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+            <h5 class="text-center font-bold mt-3 text-blue">French</h5>
+            <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community
+              of friends think.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
+        <div class="card card1 mt-4 h-100 mb-2">
+          <div class="card-body pb-0">
+            <div class="d-flex justify-content-center">
+              <div class="p-4 icons-styling">
+                <img src="./images/ielts.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+            <h5 class="text-center font-bold mt-3 text-blue">IELTS</h5>
+            <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community
+              of friends think.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
+        <div class="card card1 mt-4 h-100 mb-2">
+          <div class="card-body pb-0">
+            <div class="d-flex justify-content-center">
+              <div class="p-4 icons-styling">
+                <img src="./images/python.svg" alt="" class="img-fluid" style="min-width: 200px;">
+              </div>
+            </div>
+            <h5 class="text-center font-bold mt-3 text-blue">Python</h5>
+            <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community
+              of friends think.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
+        <div class="card card1 mt-4 h-100 mb-2">
+          <div class="card-body pb-0">
+            <div class="d-flex justify-content-center">
+              <div class="p-4 icons-styling">
+                <img src="./images/digital-marketing.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+            <h5 class="text-center font-bold mt-3 text-blue">Digital Marketing</h5>
+            <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community
+              of friends think.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
+        <div class="card card1 mt-4 h-100 mb-2">
+          <div class="card-body pb-0">
+            <div class="d-flex justify-content-center">
+              <div class="p-4 icons-styling">
+                <img src="./images/web.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+            <h5 class="text-center font-bold mt-3 text-blue">Web Development</h5>
+            <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community
+              of friends think.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
+        <div class="card card1 mt-4 h-100 mb-2">
+          <div class="card-body pb-0">
+            <div class="d-flex justify-content-center">
+              <div class="p-4 icons-styling">
+                <img src="./images/seo.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+            <h5 class="text-center font-bold mt-3 text-blue">SEO Optimization</h5>
+            <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community
+              of friends think.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
+        <div class="card card1 mt-4 h-100 mb-2">
+          <div class="card-body pb-0">
+            <div class="d-flex justify-content-center">
+              <div class="p-4 icons-styling">
+                <img src="./images/design.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+            <h5 class="text-center font-bold mt-3 text-blue">Designing</h5>
+            <p class="text-center grey-colored-text-18 mb-0 font-medium pb-0 mb-0">Exchange ideas within a transparent
+              community of friends think.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!------------------------------------- Overview ------------------------------------->
+<div id="overview">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-md-5 col-sm-12 col-12">
+        <h1 class="text-blue display-4 font-bold line-height-heading mt-4 mobile-heading">Request Tutors</h1>
+        <p class="grey-colored-text-18 mt-4 pt-3 font-medium">Post your learning requirement and let interested tutors
+          contact you. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime repellendus est omnis
+          reprehenderit, quae ad tenetur perferendis cumque tempore minima sequi illum nam itaque facilis cupiditate
+          explicabo accusantium repellat adipisci rerum. Exercitationem, nemo non! Voluptatem, adipisci? Amet ipsa
+          consequuntur, magni nemo praesentium sit temporibus molestiae, distinctio modi possimus impedit sed dolorem.
+        </p>
+        <button class="btn-initial-styling btn text-white font-bold mt-lg-4 mt-3">Request a Tutor</button>
+      </div>
+      <div class="col-lg-7 col-md-7 col-sm-12 col-12 element-to-hide animation-test">
+        <img src="./images/HireTutor.svg" alt="" class="img-fluid">
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5 pt-5">
+    <div class="row">
+      <div class="col-lg-5 col-md-5 col-sm-12 col-12">
+        <img src="./images/become-tutor.svg" alt="" class="img-fluid element-to-hide animation-test">
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12 offset-lg-1">
+        <h1 class="text-blue display-4 font-bold line-height-heading mt-3 mobile-heading">Teach what you love</h1>
+        <p class="grey-colored-text-18 mt-4 pt-3 font-medium">Post your learning requirement and let interested tutors
+          contact you. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime repellendus est omnis
+          reprehenderit, quae ad tenetur perferendis cumque tempore minima sequi illum nam itaque facilis cupiditate
+          explicabo accusantium repellat adipisci rerum. Exercitationem, nemo non! Voluptatem, adipisci? Amet ipsa
+          consequuntur, magni nemo praesentium sit temporibus molestiae, distinctio modi possimus impedit sed dolorem.
+        </p>
+        <button class="btn-initial-styling btn text-white font-bold mt-lg-4 mt-3">Become a Tutor</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!------------------------------------- Overview ------------------------------------->
+<div id="overview">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-md-5 col-sm-12 col-12">
+        <h1 class="text-blue display-4 font-bold line-height-heading mt-4 mobile-heading">How it Works</h1>
+        <p class="grey-colored-text-18 mt-4 pt-3 font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Quas optio nisi magni ratione doloribus qui in veniam molestiae repudiandae libero.</p>
+        <p class="grey-colored-text-18 mt-lg-4 mt-3 font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Quas optio nisi magni ratione doloribus qui in veniam molestiae repudiandae libero.</p>
+        <p class="grey-colored-text-18 mt-lg-4 mt-3 font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Quas optio nisi magni ratione doloribus qui in veniam molestiae repudiandae libero.</p>
+        <p class="grey-colored-text-18 mt-lg-4 mt-3 font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Quas optio nisi magni ratione doloribus qui in veniam molestiae repudiandae libero.</p>
+      </div>
+      <div class="col-lg-7 col-md-7 col-sm-12 col-12 element-to-hide animation-test">
+        <img src="./images/how-works.svg" alt="" class="img-fluid">
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5 pt-5">
+    <div class="row">
+      <div class="col-lg-5 col-md-5 col-sm-12 col-12">
+        <img src="./images/what-offer.svg" alt="" class="img-fluid element-to-hide animation-test">
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12 offset-lg-1">
+        <h1 class="text-blue display-4 font-bold line-height-heading mt-3 mobile-heading">What we offer</h1>
+        <p class="grey-colored-text-18 mt-4 pt-3 font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Quas optio nisi magni ratione doloribus qui in veniam molestiae repudiandae libero.</p>
+        <p class="grey-colored-text-18 mt-lg-4 mt-3 font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Quas optio nisi magni ratione doloribus qui in veniam molestiae repudiandae libero.</p>
+        <p class="grey-colored-text-18 mt-lg-4 mt-3 font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Quas optio nisi magni ratione doloribus qui in veniam molestiae repudiandae libero.</p>
+        <p class="grey-colored-text-18 mt-lg-4 mt-3 font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Quas optio nisi magni ratione doloribus qui in veniam molestiae repudiandae libero.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!------------------------------------- Testimonial ------------------------------------->
+
+<div id="testimonial">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-md-5 col-sm-12 col-12">
+        <h2 class="display-4 text-blue font-bold line-height-heading mobile-heading">What our users say about us</h2>
+      </div>
+      <div class="col-lg-7 col-md-7 col-sm-12 col-12">
+        <div id="demo1" class="carousel slide" data-ride="carousel">
+          <ul class="carousel-indicators">
+            <li data-target="#demo1" data-slide-to="0" class="active"></li>
+            <li data-target="#demo1" data-slide-to="1"></li>
+            <li data-target="#demo1" data-slide-to="2"></li>
+          </ul>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-lg-9 col-sm-7 col-7 blog-carousel-background py-5 px-4 mx-4">
+                  <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;
+                  <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;
+                  <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;
+                  <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;
+                  <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;&nbsp;(5)<br>
+                  <p class="text-blue pt-4 font-demi">"Very versatile. Seems like you can build most of the stuff out
+                    of the box.Very thoughtful. Great value for money"</p>
+                  <h5 class="font-bold text-blue pt-4 font-demi">Roger Bentham</h5>
+                  <p class="font-medium">Manager</p>
+                </div>
+                <div class="col-lg-2 col-sm-3 col-3 d-flex align-items-end">
+                  <img src="./images/profile-img.jpg" alt="" class="img-fluid blog-image">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-lg-9 col-sm-7 col-7 blog-carousel-background py-5 px-4 mx-4">
+                  <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;
+                  <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;
+                  <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;
+                  <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;
+                  <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;&nbsp;(5)<br>
+                  <p class="text-blue pt-4 font-demi">"It's the best theme I've ever purchased.Excellent and easy
+                    code. Great value for flexibility,good, money”</p>
+                  <h5 class="font-bold text-blue pt-4 font-demi">Roger Bentham</h5>
+                  <p class="font-medium">Manager</p>
+                </div>
+                <div class="col-lg-2 col-sm-3 col-3 d-flex align-items-end">
+                  <img src="./images/profile-img-2.jpg" alt="" class="img-fluid blog-image">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-lg-9 col-sm-7 col-7 blog-carousel-background py-5 px-4 mx-4">
+                  <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;
+                  <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;
+                  <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;
+                  <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;
+                  <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;&nbsp;(5)<br>
+                  <p class="text-blue pt-4 font-demi">“It’s well designed, easy to use and very flexible without being
+                    bloated. Great value for flexibility,good, money ”</p>
+                  <h5 class="font-bold text-blue pt-4 font-demi">Roger Bentham</h5>
+                  <p class="font-medium">Manager</p>
+                </div>
+                <div class="col-lg-2 col-sm-3 col-3 d-flex align-items-end">
+                  <img src="./images/profile-img-3.jpg" alt="" class="img-fluid blog-image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!------------------------------------- Demo ------------------------------------->
+
+<div id="overview">
+  <div class="container">
+    <h1 class="text-blue display-4 font-bold line-height-heading mt-4 mobile-heading text-center">Book your free Demo
+      session now</h1>
+    <p class="grey-colored-text-18 text-center font-medium">Tell us your requirements .. and check our services</p>
+    <div class="row">
+      <div class="col-lg-5 col-md-5 col-sm-12 col-12">
+        <div class="px-lg-4 px-2 py-4 w-100">
+          <form>
+            <div class="input-field">
+              <input required type="text" placeholder="Full Name" />
+            </div>
+            <div class="input-field">
+              <input required type="text" placeholder="Email" />
+            </div>
+            <div class="input-field">
+              <input required type="text" placeholder="Contact Number" />
+            </div>
+            <div class="input-field">
+              <input required type="text" placeholder="City" />
+            </div>
+            <div class="input-field">
+              <input required type="text" placeholder="Area" />
+            </div>
+            <div class="input-field">
+              <input required type="text" placeholder="Subject you want to study" />
+            </div>
+            <div class="text-center my-4">
+              <a href="../dashboard-student/index.html"
+                class="btn-initial-styling btn text-white font-bold mt-lg-4 px-5">Get Demo</a>
+            </div>
           </form>
-          <a class="nav-item btn-initial-styling btn text-white font-bold px-3 pb-0" href="./form.html">
-                  Login
-                </a>
         </div>
       </div>
-    </div>
-  </nav>
-
-
-  <!------------------------------------- Header ------------------------------------->
-
-
-  <div id="header" class="padding-top-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12 margin-top-heading">
-          <h1 class="text-white mt-4 pt-5 line-height-heading mobile-heading font-bold">We proudly teaching online
-            courses with online experts</h1>
-          <div class="mt-4 mb-3">
-            <input type="search" name="search" maxlength="40" placeholder="Search" id="searchBar" class="w-100">
-          </div>
-          <p class="text-white header-paragraph-text mb-lg-5 font-demi">Best teachers for your children, Lorem, ipsum
-            dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12 repeat header-image mt-5 pt-lg-5 pt-0">
-          <img src="./images/home-3.svg" alt="" class="img-fluid mt-5">
-        </div>
-      </div>
-    </div>
-    <img src="./images/img-wave-2.png" alt="" class="img-fluid">
-  </div>
-
-
-  <!------------------------------------- Count ------------------------------------->
-
-  <div id="count" class="padding-top-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-12 col-12">
-          <div class="row">
-            <div class="col-lg-3 col-sm-4 col-4">
-              <i class="far fa-3x fa-smile-beam p-4 gradient-icons"></i>
-            </div>
-            <div class="col-lg-7 col-sm-6 col-6 offset-1">
-              <h4 class="counter center-align mt-4">367</h4>
-              <p class="center-align grey-colored-text-18 font-demi">happy Users</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12 col-12">
-          <div class="row">
-            <div class="col-lg-3 col-sm-4 col-4">
-              <i class="fas fa-3x fa-download p-4 gradient-icons"></i>
-            </div>
-            <div class="col-lg-7 col-sm-6 col-6 offset-1">
-              <h4 class="counter center-align mt-4">736</h4>
-              <p class="center-align grey-colored-text-18 font-demi">Our Students</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12 col-12">
-          <div class="row">
-            <div class="col-lg-3 col-sm-4 col-4">
-              <i class="far fa-3x fa-clock p-4 gradient-icons"></i>
-            </div>
-            <div class="col-lg-7 col-sm-6 col-6 offset-1">
-              <h4 class="counter center-align mt-4">279</h4>
-              <p class="center-align grey-colored-text-18 font-demi">Total Branches</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12 col-12">
-          <div class="row">
-            <div class="col-lg-3 col-sm-4 col-4">
-              <i class="far fa-3x fa-comments p-4 gradient-icons"></i>
-            </div>
-            <div class="col-lg-7 col-sm-6 col-6 offset-1">
-              <h4 class="counter center-align mt-4">189</h4>
-              <p class="center-align grey-colored-text-18 font-demi">Positive Reviews</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr>
-    </div>
-  </div>
-
-  <!-- Categories -->
-
-  <div id="categories" class="padding-top-section mt-5">
-    <div class="container">
-      <h1 class="text-center font-bold mb-4 mobile-heading text-blue">Top Categories</h1>
-    </div>
-    <div class="container mb-lg-5">
-      <div class="row d-flex justify-content-center">
-        <div class="col-lg-3 col-md-3 col-sm-12 col-12 my-4">
-          <div class="card mt-3 h-100">
-            <div class="card-body pb-0">
-              <div class="d-flex justify-content-center">
-                <div class="p-4 icons-styling">
-                  <i class="fas fa-2x text-white fa-award"></i>
-                </div>
-              </div>
-              <h5 class="text-center font-bold mt-3 text-blue">Academics</h5>
-              <p class="font-regular mt-2 text-center">There are courses to improve qualification skills as well as academic performance which we are providing so that learners success has no limits.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12 col-12 my-4">
-          <div class="card mt-3 h-100">
-            <div class="card-body pb-0">
-              <div class="d-flex justify-content-center">
-                <div class="p-4 icons-styling">
-                  <i class="fas fa-2x text-white fa-map"></i>
-                </div>
-              </div>
-              <h5 class="text-center font-bold mt-3 text-blue">Languages</h5>
-              <p class="font-regular mt-2 text-center">Grow Learners is there providing tutors who can teach you new languages so that learners know how to communicate and expand their personal map of the world.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12 col-12 my-4">
-          <div class="card mt-3 h-100">
-            <div class="card-body pb-0">
-              <div class="d-flex justify-content-center">
-                <div class="p-4 icons-styling">
-                  <i class="fas fa-2x text-white fa-book"></i>
-                </div>
-              </div>
-              <h5 class="text-center font-bold mt-3 text-blue">Exam Preparation</h5>
-              <p class="font-regular mt-2 text-center">Grow Learner not only provides teaching but makes a student ready for examination and our trainers will help the Learners have confidence and take up exams.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12 col-12 my-4">
-          <div class="card mt-3 h-100">
-            <div class="card-body pb-0">
-              <div class="d-flex justify-content-center">
-                <div class="p-4 icons-styling">
-                  <i class="fas fa-2x text-white fa-book-reader"></i>
-                </div>
-              </div>
-              <h5 class="text-center font-bold mt-3 text-blue">Entrance Exams</h5>
-              <p class="font-regular mt-2 text-center">Explore popular courses in all streams by taking a look at the popular Entrance Exams in which the tutors of  Grow Learners will help you get through it.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row d-flex justify-content-center">
-        <div class="col-lg-3 col-md-3 col-sm-12 col-12 my-4">
-          <div class="card mt-3 h-100">
-            <div class="card-body pb-0">
-              <div class="d-flex justify-content-center">
-                <div class="p-4 icons-styling">
-                  <i class="fas fa-2x text-white fa-tv"></i>
-                </div>
-              </div>
-              <h5 class="text-center font-bold mt-3 text-blue">Information Technology</h5>
-              <p class="font-regular mt-2 text-center">Learn to analyze the difficulties of managing the imminent threat of IT security or explore the tools of IT  by gaining knowledge from the expertise of Grow Learners.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12 col-12 my-4">
-          <div class="card mt-3 h-100">
-            <div class="card-body pb-0">
-              <div class="d-flex justify-content-center">
-                <div class="p-4 icons-styling">
-                  <i class="fas fa-2x text-white fa-globe"></i>
-                </div>
-              </div>
-              <h5 class="text-center font-bold mt-3 text-blue">Study Abroad</h5>
-              <p class="font-regular mt-2 text-center">Looking for study abroad courses? Grow Learners is ready to offer you the best trainers with best teaching faculties so that the learners can have a brilliant career outside the country.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12 col-12 my-4">
-          <div class="card mt-3 h-100">
-            <div class="card-body pb-0">
-              <div class="d-flex justify-content-center">
-                <div class="p-4 icons-styling">
-                  <i class="fas fa-2x text-white fa-pen-nib"></i>
-                </div>
-              </div>
-              <h5 class="text-center font-bold mt-3 text-blue">Designing</h5>
-              <p class="font-regular mt-2 text-center">
-                To pursue anything in designing  remember Grow Learners is there to help you achieve it. All category designing courses is available with good trainers.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12 col-12 my-4">
-          <div class="card mt-3 h-100">
-            <div class="card-body pb-0">
-              <div class="d-flex justify-content-center">
-                <div class="p-4 icons-styling">
-                  <i class="fas fa-2x text-white fa-music"></i>
-                </div>
-              </div>
-              <h5 class="text-center font-bold mt-3 text-blue">Hobbies</h5>
-              <p class="font-regular mt-2 text-center">Explore Yourself with Hobbies. Select your favorite hobby and you never know it can turn to your passion and to fulfill such a wish list Grow Learners is here.</p>
-            </div>
-          </div>
-        </div>
+      <div class="col-lg-7 col-md-7 col-sm-12 col-12 element-to-hide animation-test">
+        <img src="./images/bookLover.svg" alt="" class="img-fluid p-lg-5">
       </div>
     </div>
   </div>
+</div>
 
-  <!------------------------------------- Feature ------------------------------------->
-
-  <div id="feature" class="padding-top-section mt-5">
-    <div class="container">
-      <p class="text-center font-bold text-white">Top subjects</p>
-      <h1 class="text-center font-bold mb-5 mobile-heading text-white">Explore our top Subjects</h1>
+<!------------------------------------- Footer ------------------------------------->
+<footer id="footer">
+  <div class="container pt-lg-4">
+    <div class="row">
+      <div class="col-md-3 col-sm-6 col-lg-3 col-6 mt-3">
+        <h4 class="text-white font-bold">GROW LEARNERS</h4>
+        <p class="text-white font-demi mt-2">Best coaching centre for your children, Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Perferendis, tempora?.</p>
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-6 col-6 offset-lg-1 mt-3">
+        <h5 class="font-bold text-white mb-lg-4 pb-2 margin-top-mobile">Useful Links</h5>
+        <ul>
+          <li class="text-white mb-lg-3 font-demi">About</li>
+          <li class="text-white mb-lg-3 font-demi">Our Team</li>
+          <li class="text-white mb-lg-3 font-demi">Company</li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-6 mt-3">
+        <h5 class="font-bold text-white mb-lg-4 pb-2">Support</h5>
+        <ul class="list-group">
+          <li class="text-white mb-lg-3 font-demi">Features</li>
+          <li class="text-white mb-lg-3 font-demi">API</li>
+          <li class="text-white mb-lg-3 font-demi">Customers</li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-6 mt-3">
+        <h5 class="font-bold text-white mb-lg-4 pb-2">Follow Us</h5>
+        <i class="fa fa-facebook p-2 text-white" aria-hidden="true"
+          style="background: rgba(0, 0, 0, 0.15); border-radius: 50%;"></i>&nbsp;&nbsp;
+        <i class="fa fa-twitter p-2 text-white" aria-hidden="true"
+          style="background: rgba(0, 0, 0, 0.15); border-radius: 50%;"></i>&nbsp;&nbsp;
+        <i class="fa fa-linkedin p-2 text-white" aria-hidden="true"
+          style="background: rgba(0, 0, 0, 0.15); border-radius: 50%;"></i>&nbsp;&nbsp;
+        <i class="fa fa-google p-2 text-white" aria-hidden="true"
+          style="background: rgba(0, 0, 0, 0.15); border-radius: 50%;"></i>&nbsp;&nbsp;
+      </div>
     </div>
-    <div class="container mb-lg-5 ">
-      <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
-          <div class="card card1 mt-4 h-100 mb-2">
-            <div class="card-body pb-0">
-              <div class="d-flex justify-content-center">
-                <div class="p-4 icons-styling">
-                  <img src="./images/Maths.svg" alt="" class="img-fluid">
-                </div>
-              </div>
-              <h5 class="text-center font-bold mt-3 text-blue">Mathematics</h5>
-              <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community
-                of friends think.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
-          <div class="card card1 mt-4 h-100 mb-2">
-            <div class="card-body pb-0">
-              <div class="d-flex justify-content-center">
-                <div class="p-4 icons-styling">
-                  <img src="./images/Physics.svg" alt="" class="img-fluid">
-                </div>
-              </div>
-              <h5 class="text-center font-bold mt-3 text-blue">Physics</h5>
-              <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community
-                of friends think.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
-          <div class="card card1 mt-4 h-100 mb-2">
-            <div class="card-body pb-0">
-              <div class="d-flex justify-content-center">
-                <div class="p-4 icons-styling">
-                  <img src="./images/Chemistry.svg" alt="" class="img-fluid">
-                </div>
-              </div>
-              <h5 class="text-center font-bold mt-3 text-blue">Chemistry</h5>
-              <p class="text-center grey-colored-text-18 mb-0 font-medium pb-0 mb-0">Exchange ideas within a transparent
-                community of friends think.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
-          <div class="card card1 mt-4 h-100 mb-2">
-            <div class="card-body pb-0">
-              <div class="d-flex justify-content-center">
-                <div class="p-4 icons-styling">
-                  <img src="./images/Biology.svg" alt="" class="img-fluid">
-                </div>
-              </div>
-              <h5 class="text-center font-bold mt-3 text-blue">Biology</h5>
-              <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community
-                of friends think.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
-          <div class="card card1 mt-4 h-100 mb-2">
-            <div class="card-body pb-0">
-              <div class="d-flex justify-content-center">
-                <div class="p-4 icons-styling">
-                  <img src="./images/Accounts.svg" alt="" class="img-fluid">
-                </div>
-              </div>
-              <h5 class="text-center font-bold mt-3 text-blue">Accounts</h5>
-              <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community
-                of friends think.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
-          <div class="card card1 mt-4 h-100 mb-2">
-            <div class="card-body pb-0">
-              <div class="d-flex justify-content-center">
-                <div class="p-4 icons-styling">
-                  <img src="./images/economics.svg" alt="" class="img-fluid">
-                </div>
-              </div>
-              <h5 class="text-center font-bold mt-3 text-blue">Economics</h5>
-              <p class="text-center grey-colored-text-18 mb-0 font-medium pb-0 mb-0">Exchange ideas within a transparent
-                community of friends think.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
-          <div class="card card1 mt-4 h-100 mb-2">
-            <div class="card-body pb-0">
-              <div class="d-flex justify-content-center">
-                <div class="p-4 icons-styling">
-                  <img src="./images/business.svg" alt="" class="img-fluid">
-                </div>
-              </div>
-              <h5 class="text-center font-bold mt-3 text-blue">Business</h5>
-              <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community
-                of friends think.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
-          <div class="card card1 mt-4 h-100 mb-2">
-            <div class="card-body pb-0">
-              <div class="d-flex justify-content-center">
-                <div class="p-4 icons-styling">
-                  <img src="./images/history.svg" alt="" class="img-fluid">
-                </div>
-              </div>
-              <h5 class="text-center font-bold mt-3 text-blue">History</h5>
-              <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community
-                of friends think.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
-          <div class="card card1 mt-4 h-100 mb-2">
-            <div class="card-body pb-0">
-              <div class="d-flex justify-content-center">
-                <div class="p-4 icons-styling">
-                  <img src="./images/english.svg" alt="" class="img-fluid">
-                </div>
-              </div>
-              <h5 class="text-center font-bold mt-3 text-blue">English</h5>
-              <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community
-                of friends think.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
-          <div class="card card1 mt-4 h-100 mb-2">
-            <div class="card-body pb-0">
-              <div class="d-flex justify-content-center">
-                <div class="p-4 icons-styling">
-                  <img src="./images/french.svg" alt="" class="img-fluid">
-                </div>
-              </div>
-              <h5 class="text-center font-bold mt-3 text-blue">French</h5>
-              <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community
-                of friends think.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
-          <div class="card card1 mt-4 h-100 mb-2">
-            <div class="card-body pb-0">
-              <div class="d-flex justify-content-center">
-                <div class="p-4 icons-styling">
-                  <img src="./images/ielts.svg" alt="" class="img-fluid">
-                </div>
-              </div>
-              <h5 class="text-center font-bold mt-3 text-blue">IELTS</h5>
-              <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community
-                of friends think.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
-          <div class="card card1 mt-4 h-100 mb-2">
-            <div class="card-body pb-0">
-              <div class="d-flex justify-content-center">
-                <div class="p-4 icons-styling">
-                  <img src="./images/python.svg" alt="" class="img-fluid">
-                </div>
-              </div>
-              <h5 class="text-center font-bold mt-3 text-blue">Python</h5>
-              <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community
-                of friends think.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
-          <div class="card card1 mt-4 h-100 mb-2">
-            <div class="card-body pb-0">
-              <div class="d-flex justify-content-center">
-                <div class="p-4 icons-styling">
-                  <img src="./images/digital-marketing.svg" alt="" class="img-fluid">
-                </div>
-              </div>
-              <h5 class="text-center font-bold mt-3 text-blue">Digital Marketing</h5>
-              <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community
-                of friends think.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
-          <div class="card card1 mt-4 h-100 mb-2">
-            <div class="card-body pb-0">
-              <div class="d-flex justify-content-center">
-                <div class="p-4 icons-styling">
-                  <img src="./images/web.svg" alt="" class="img-fluid">
-                </div>
-              </div>
-              <h5 class="text-center font-bold mt-3 text-blue">Web Development</h5>
-              <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community
-                of friends think.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
-          <div class="card card1 mt-4 h-100 mb-2">
-            <div class="card-body pb-0">
-              <div class="d-flex justify-content-center">
-                <div class="p-4 icons-styling">
-                  <img src="./images/seo.svg" alt="" class="img-fluid">
-                </div>
-              </div>
-              <h5 class="text-center font-bold mt-3 text-blue">SEO Optimization</h5>
-              <p class="text-center grey-colored-text-18 mb-0 font-medium">Exchange ideas within a transparent community
-                of friends think.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-3">
-          <div class="card card1 mt-4 h-100 mb-2">
-            <div class="card-body pb-0">
-              <div class="d-flex justify-content-center">
-                <div class="p-4 icons-styling">
-                  <img src="./images/design.svg" alt="" class="img-fluid">
-                </div>
-              </div>
-              <h5 class="text-center font-bold mt-3 text-blue">Designing</h5>
-              <p class="text-center grey-colored-text-18 mb-0 font-medium pb-0 mb-0">Exchange ideas within a transparent
-                community of friends think.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <hr style="background: white;" class="mt-5">
+    <div class="text-center text-white mt-lg-4 pt-lg-2 copyright-text font-medium">
+      2021 Copyright&copy; <span class="font-bold">GROWLEARNERS</span> . ALL RIGHTS RESERVED
     </div>
   </div>
+</footer>
 
+<script>
 
-  <!------------------------------------- Overview ------------------------------------->
-  <div id="overview">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5 col-md-5 col-sm-12 col-12">
-          <h1 class="text-blue display-4 font-bold line-height-heading mt-4 mobile-heading">Request Tutors</h1>
-          <p class="grey-colored-text-18 mt-4 pt-3 font-medium">Post your learning requirement and let interested tutors
-            contact you. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime repellendus est omnis
-            reprehenderit, quae ad tenetur perferendis cumque tempore minima sequi illum nam itaque facilis cupiditate
-            explicabo accusantium repellat adipisci rerum. Exercitationem, nemo non! Voluptatem, adipisci? Amet ipsa
-            consequuntur, magni nemo praesentium sit temporibus molestiae, distinctio modi possimus impedit sed dolorem.
-          </p>
-          <button class="btn-initial-styling btn text-white font-bold mt-lg-4 mt-3">Request a Tutor</button>
-        </div>
-        <div class="col-lg-7 col-md-7 col-sm-12 col-12 element-to-hide animation-test">
-          <img src="./images/HireTutor.svg" alt="" class="img-fluid">
-        </div>
-      </div>
-    </div>
-    <div class="container mt-5 pt-5">
-      <div class="row">
-        <div class="col-lg-5 col-md-5 col-sm-12 col-12">
-          <img src="./images/become-tutor.svg" alt="" class="img-fluid element-to-hide animation-test">
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12 offset-lg-1">
-          <h1 class="text-blue display-4 font-bold line-height-heading mt-3 mobile-heading">Teach what you love</h1>
-          <p class="grey-colored-text-18 mt-4 pt-3 font-medium">Post your learning requirement and let interested tutors
-            contact you. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime repellendus est omnis
-            reprehenderit, quae ad tenetur perferendis cumque tempore minima sequi illum nam itaque facilis cupiditate
-            explicabo accusantium repellat adipisci rerum. Exercitationem, nemo non! Voluptatem, adipisci? Amet ipsa
-            consequuntur, magni nemo praesentium sit temporibus molestiae, distinctio modi possimus impedit sed dolorem.
-          </p>
-          <button class="btn-initial-styling btn text-white font-bold mt-lg-4 mt-3">Become a Tutor</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!------------------------------------- Overview ------------------------------------->
-  <div id="overview">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5 col-md-5 col-sm-12 col-12">
-          <h1 class="text-blue display-4 font-bold line-height-heading mt-4 mobile-heading">How it Works</h1>
-          <p class="grey-colored-text-18 mt-4 pt-3 font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing
-            elit. Quas optio nisi magni ratione doloribus qui in veniam molestiae repudiandae libero.</p>
-          <p class="grey-colored-text-18 mt-lg-4 mt-3 font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing
-            elit. Quas optio nisi magni ratione doloribus qui in veniam molestiae repudiandae libero.</p>
-          <p class="grey-colored-text-18 mt-lg-4 mt-3 font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing
-            elit. Quas optio nisi magni ratione doloribus qui in veniam molestiae repudiandae libero.</p>
-          <p class="grey-colored-text-18 mt-lg-4 mt-3 font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing
-            elit. Quas optio nisi magni ratione doloribus qui in veniam molestiae repudiandae libero.</p>
-        </div>
-        <div class="col-lg-7 col-md-7 col-sm-12 col-12 element-to-hide animation-test">
-          <img src="./images/how-works.svg" alt="" class="img-fluid">
-        </div>
-      </div>
-    </div>
-    <div class="container mt-5 pt-5">
-      <div class="row">
-        <div class="col-lg-5 col-md-5 col-sm-12 col-12">
-          <img src="./images/what-offer.svg" alt="" class="img-fluid element-to-hide animation-test">
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12 offset-lg-1">
-          <h1 class="text-blue display-4 font-bold line-height-heading mt-3 mobile-heading">What we offer</h1>
-          <p class="grey-colored-text-18 mt-4 pt-3 font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing
-            elit. Quas optio nisi magni ratione doloribus qui in veniam molestiae repudiandae libero.</p>
-          <p class="grey-colored-text-18 mt-lg-4 mt-3 font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing
-            elit. Quas optio nisi magni ratione doloribus qui in veniam molestiae repudiandae libero.</p>
-          <p class="grey-colored-text-18 mt-lg-4 mt-3 font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing
-            elit. Quas optio nisi magni ratione doloribus qui in veniam molestiae repudiandae libero.</p>
-          <p class="grey-colored-text-18 mt-lg-4 mt-3 font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing
-            elit. Quas optio nisi magni ratione doloribus qui in veniam molestiae repudiandae libero.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!------------------------------------- Testimonial ------------------------------------->
-
-  <div id="testimonial">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5 col-md-5 col-sm-12 col-12">
-          <h2 class="display-4 text-blue font-bold line-height-heading mobile-heading">What our users say about us</h2>
-        </div>
-        <div class="col-lg-7 col-md-7 col-sm-12 col-12">
-          <div id="demo1" class="carousel slide" data-ride="carousel">
-            <ul class="carousel-indicators">
-              <li data-target="#demo1" data-slide-to="0" class="active"></li>
-              <li data-target="#demo1" data-slide-to="1"></li>
-              <li data-target="#demo1" data-slide-to="2"></li>
-            </ul>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="row">
-                  <div class="col-lg-9 col-sm-7 col-7 blog-carousel-background py-5 px-4 mx-4">
-                    <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;
-                    <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;
-                    <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;
-                    <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;
-                    <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;&nbsp;(5)<br>
-                    <p class="text-blue pt-4 font-demi">"Very versatile. Seems like you can build most of the stuff out
-                      of the box.Very thoughtful. Great value for money"</p>
-                    <h5 class="font-bold text-blue pt-4 font-demi">Roger Bentham</h5>
-                    <p class="font-medium">Manager</p>
-                  </div>
-                  <div class="col-lg-2 col-sm-3 col-3 d-flex align-items-end">
-                    <img src="./images/profile-img.jpg" alt="" class="img-fluid blog-image">
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row">
-                  <div class="col-lg-9 col-sm-7 col-7 blog-carousel-background py-5 px-4 mx-4">
-                    <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;
-                    <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;
-                    <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;
-                    <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;
-                    <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;&nbsp;(5)<br>
-                    <p class="text-blue pt-4 font-demi">"It's the best theme I've ever purchased.Excellent and easy
-                      code. Great value for flexibility,good, money”</p>
-                    <h5 class="font-bold text-blue pt-4 font-demi">Roger Bentham</h5>
-                    <p class="font-medium">Manager</p>
-                  </div>
-                  <div class="col-lg-2 col-sm-3 col-3 d-flex align-items-end">
-                    <img src="./images/profile-img-2.jpg" alt="" class="img-fluid blog-image">
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row">
-                  <div class="col-lg-9 col-sm-7 col-7 blog-carousel-background py-5 px-4 mx-4">
-                    <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;
-                    <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;
-                    <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;
-                    <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;
-                    <i class="fa fa-star" style="color: rgb(255, 213, 106);"></i>&nbsp;&nbsp;(5)<br>
-                    <p class="text-blue pt-4 font-demi">“It’s well designed, easy to use and very flexible without being
-                      bloated. Great value for flexibility,good, money ”</p>
-                    <h5 class="font-bold text-blue pt-4 font-demi">Roger Bentham</h5>
-                    <p class="font-medium">Manager</p>
-                  </div>
-                  <div class="col-lg-2 col-sm-3 col-3 d-flex align-items-end">
-                    <img src="./images/profile-img-3.jpg" alt="" class="img-fluid blog-image">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!------------------------------------- Demo ------------------------------------->
-
-  <div id="overview">
-    <div class="container">
-      <h1 class="text-blue display-4 font-bold line-height-heading mt-4 mobile-heading text-center">Book your free Demo
-        session now</h1>
-      <p class="grey-colored-text-18 text-center font-medium">Tell us your requirements .. and check our services</p>
-      <div class="row">
-        <div class="col-lg-5 col-md-5 col-sm-12 col-12">
-          <div class="px-lg-4 px-2 py-4 w-100">
-            <form>
-              <div class="input-field">
-                <input required type="text" placeholder="Full Name" />
-              </div>
-              <div class="input-field">
-                <input required type="text" placeholder="Email" />
-              </div>
-              <div class="input-field">
-                <input required type="text" placeholder="Contact Number" />
-              </div>
-              <div class="input-field">
-                <input required type="text" placeholder="City" />
-              </div>
-              <div class="input-field">
-                <input required type="text" placeholder="Area" />
-              </div>
-              <div class="input-field">
-                <input required type="text" placeholder="Subject you want to study" />
-              </div>
-              <div class="text-center my-4">
-                <a href="../dashboard-student/index.html"
-                  class="btn-initial-styling btn text-white font-bold mt-lg-4 px-5">Get Demo</a>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="col-lg-7 col-md-7 col-sm-12 col-12 element-to-hide animation-test">
-          <img src="./images/bookLover.svg" alt="" class="img-fluid p-lg-5">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!------------------------------------- Footer ------------------------------------->
-  <footer id="footer">
-    <div class="container pt-lg-4">
-      <div class="row">
-        <div class="col-md-3 col-sm-6 col-lg-3 col-6 mt-3">
-          <h4 class="text-white font-bold">GROW LEARNERS</h4>
-          <p class="text-white font-demi mt-2">Best coaching centre for your children, Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Perferendis, tempora?.</p>
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-6 col-6 offset-lg-1 mt-3">
-          <h5 class="font-bold text-white mb-lg-4 pb-2 margin-top-mobile">Useful Links</h5>
-          <ul>
-            <li class="text-white mb-lg-3 font-demi">About</li>
-            <li class="text-white mb-lg-3 font-demi">Our Team</li>
-            <li class="text-white mb-lg-3 font-demi">Company</li>
-          </ul>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-6 mt-3">
-          <h5 class="font-bold text-white mb-lg-4 pb-2">Support</h5>
-          <ul class="list-group">
-            <li class="text-white mb-lg-3 font-demi">Features</li>
-            <li class="text-white mb-lg-3 font-demi">API</li>
-            <li class="text-white mb-lg-3 font-demi">Customers</li>
-          </ul>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-6 mt-3">
-          <h5 class="font-bold text-white mb-lg-4 pb-2">Follow Us</h5>
-          <i class="fa fa-facebook p-2 text-white" aria-hidden="true"
-            style="background: rgba(0, 0, 0, 0.15); border-radius: 50%;"></i>&nbsp;&nbsp;
-          <i class="fa fa-twitter p-2 text-white" aria-hidden="true"
-            style="background: rgba(0, 0, 0, 0.15); border-radius: 50%;"></i>&nbsp;&nbsp;
-          <i class="fa fa-linkedin p-2 text-white" aria-hidden="true"
-            style="background: rgba(0, 0, 0, 0.15); border-radius: 50%;"></i>&nbsp;&nbsp;
-          <i class="fa fa-google p-2 text-white" aria-hidden="true"
-            style="background: rgba(0, 0, 0, 0.15); border-radius: 50%;"></i>&nbsp;&nbsp;
-        </div>
-      </div>
-      <hr style="background: white;" class="mt-5">
-      <div class="text-center text-white mt-lg-4 pt-lg-2 copyright-text font-medium">
-        2021 Copyright&copy; <span class="font-bold">GROWLEARNERS</span> . ALL RIGHTS RESERVED
-      </div>
-    </div>
-  </footer>
-
-  <script>
-
-    // Jquery counterUp plugin
-    $(document).ready(function ($) {
-      $('.counter').counterUp({
-        delay: 10,
-        time: 3000
-      });
+  // Jquery counterUp plugin
+  $(document).ready(function ($) {
+    $('.counter').counterUp({
+      delay: 10,
+      time: 3000
     });
+  });
 
-    $(window).scroll(function () {
-      $('.animation-test').each(function () {
-        var imagePos = $(this).offset().top;
-        var imageHeight = $(this).height();
-        var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
-          $(this).addClass("fadeup");
-        } else {
-          $(this).removeClass("fadeup");
-        }
-      });
-    });
-
-    var plan1 = document.querySelector('.yearly-plan1');
-    var plan2 = document.querySelector('.yearly-plan2');
-    var plan3 = document.querySelector('.yearly-plan3');
-    document.addEventListener('click', e => {
-      if ((e.target.classList.contains('toggle-on')) || (e.target.classList.contains('toggle-handle'))) {
-        plan1.innerText = '$100';
-        plan2.innerText = '$200';
-        plan3.innerText = '$300';
-      } else if ((e.target.classList.contains('toggle-off')) || (e.target.classList.contains('toggle-handle'))) {
-        plan1.innerText = '$0';
-        plan2.innerText = '$40';
-        plan3.innerText = '$60';
+  $(window).scroll(function () {
+    $('.animation-test').each(function () {
+      var imagePos = $(this).offset().top;
+      var imageHeight = $(this).height();
+      var topOfWindow = $(window).scrollTop();
+      if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
+        $(this).addClass("fadeup");
+      } else {
+        $(this).removeClass("fadeup");
       }
-    })
-  </script>
+    });
+  });
+
+  var plan1 = document.querySelector('.yearly-plan1');
+  var plan2 = document.querySelector('.yearly-plan2');
+  var plan3 = document.querySelector('.yearly-plan3');
+  document.addEventListener('click', e => {
+    if ((e.target.classList.contains('toggle-on')) || (e.target.classList.contains('toggle-handle'))) {
+      plan1.innerText = '$100';
+      plan2.innerText = '$200';
+      plan3.innerText = '$300';
+    } else if ((e.target.classList.contains('toggle-off')) || (e.target.classList.contains('toggle-handle'))) {
+      plan1.innerText = '$0';
+      plan2.innerText = '$40';
+      plan3.innerText = '$60';
+    }
+  })
+</script>
 
 
-  <!-- Popper JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
-  </body>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+</body>
 
 </html>
