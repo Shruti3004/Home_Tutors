@@ -71,7 +71,7 @@ body {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15) !important;
 }
 li {
-  list-style: none !important;
+  list-style: none;
 }
 .padding-top-section {
   padding-top: 3em !important;
