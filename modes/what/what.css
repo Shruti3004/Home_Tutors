@@ -12,6 +12,16 @@
   height: 100vh;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb {
+  background: #2e6cd8;
+}
+
 /****** Font Family ******/
 @font-face {
   font-family: Avenir-bold;
@@ -55,7 +65,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 .input-field {  
   width: 100%;
@@ -153,7 +163,7 @@
 
 @media screen and (max-width: 768px){
   body {    
-    background-image: linear-gradient(-45deg, #2e6cd8 0%, #04befe 100%);
+    background: #f1f6f8 !important;
   }
 }
 
@@ -175,4 +185,65 @@
 }
 li{
   list-style: none;
+}
+
+/* ------------------------------------- Navbar ------------------------------------ */
+#header {
+  background-image: linear-gradient(-45deg, #b3cfff 0%, #04befe 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+}
+.nav-padding {
+  padding: 0px;
+}
+.nav-white {
+  background: #07114d !important;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15) !important;
+}
+.btn-hover-dark:hover {
+  color: white !important;
+}
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: transparent;
+  outline: none;
+}
+.navbar-toggler-icon:focus {
+  outline: none !important;
+}
+.navbar-toggler {
+  padding: 0px !important;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: none !important;
+}
+.navbar-toggler:focus, .navbar-toggler:active {
+  outline: none !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff !important;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  border-bottom:2px solid #fff !important;
+}
+.active{
+  border-bottom:2px solid #fff !important;
+}
+@media(max-width: 1300px){
+  .nav-link{
+    font-size: 14px;
+  }
+}
+
+.btn-background {
+  background-image: linear-gradient(-45deg, #2e6cd8 0%, #04befe 100%);
+  padding: 7px 0px;
+  border-radius: 5px;
 }
