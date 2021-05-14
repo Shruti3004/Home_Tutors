@@ -162,7 +162,7 @@
 }
 
 @media screen and (max-width: 768px){
-  body {    
+  .wrapper {    
     background: #f1f6f8 !important;
   }
 }
