@@ -1,224 +1,221 @@
-
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: Avenir-regular;
-    background-image: url(../images/common-background.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    background-attachment: fixed;
-  }
+  margin: 0;
+  padding: 0;
+}
 
-  ::-webkit-scrollbar {
-    width: 5px;
-  }
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #2e6cd8;
-  }
+body {
+  font-family: Avenir-regular;
+  background-image: url(../images/common-background.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
 
-  .form-check .form-check-input {
-    float: left;
-    margin-left: -1.1em;
-    margin-top: 14px !important;
-  }
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb {
+  background: #2e6cd8;
+}
 
-  /****** Font Family ******/
-  @font-face {
-    font-family: Avenir-bold;
-    src: url(../../../fonts/AvenirNextLTPro-Bold.otf);
-    font-display: swap;
-  }
-  @font-face {
-    font-family: Avenir-demi;
-    src: url(../../../fonts/AvenirNextLTPro-Demi.otf);
-    font-display: swap;
-  }
-  @font-face {
-    font-family: Avenir-medium;
-    src: url(../../../fonts/AvenirNextLTPro-Medium.otf);
-    font-display: swap;
-  }
-  @font-face {
-    font-family: Avenir-regular;
-    src: url(../../../fonts/AvenirNextLTPro-Regular.otf);
-    font-display: swap;
-  }
-  
-  /****** Utility Classes ******/
-  .card {
-    border: none !important;
-    border-radius: 3px !important;
-    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
-  }
+.form-check .form-check-input {
+  float: left;
+  margin-left: -1.1em;
+  margin-top: 14px !important;
+}
+
+/****** Font Family ******/
+@font-face {
+  font-family: Avenir-bold;
+  src: url(../../../fonts/AvenirNextLTPro-Bold.otf);
+  font-display: swap;
+}
+@font-face {
+  font-family: Avenir-demi;
+  src: url(../../../fonts/AvenirNextLTPro-Demi.otf);
+  font-display: swap;
+}
+@font-face {
+  font-family: Avenir-medium;
+  src: url(../../../fonts/AvenirNextLTPro-Medium.otf);
+  font-display: swap;
+}
+@font-face {
+  font-family: Avenir-regular;
+  src: url(../../../fonts/AvenirNextLTPro-Regular.otf);
+  font-display: swap;
+}
+
+/****** Utility Classes ******/
+.card {
+  border: none !important;
+  border-radius: 3px !important;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.title {
+  font-size: 2.2rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+@media (max-width: 576px) {
   .title {
-    font-size: 2.2rem;
-    color: #444;
-    margin-bottom: 10px;
+    font-size: 1.8rem;
   }
-  @media(max-width:576px){
-    .title{
-      font-size: 1.8rem;
-    }
-  }
+}
+.center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 80vh;
+}
+
+@media (max-width: 576px) {
   .center {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    min-height: 80vh;
+    display: block;
   }
+}
+.input-field {
+  width: 100%;
+  background-color: #f0f0f0;
+  margin: 10px 0;
+  height: 55px;
+  border-radius: 55px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 0 0.4rem;
+  position: relative;
+}
 
-  @media(max-width: 576px){
-    .center{
-      display: block;
-    }
-  }
-  .input-field {  
-    width: 100%;
-    background-color: #f0f0f0;
-    margin: 10px 0;
-    height: 55px;
-    border-radius: 55px;
-    display: grid;
-    grid-template-columns: 15% 85%;
-    padding: 0 0.4rem;
-    position: relative;
-  }
-  
-  .input-field i {
-    text-align: center;
-    line-height: 55px;
-    color: #acacac;
-    transition: 0.5s;
-    font-size: 1.1rem;
-  }
-  
-  .input-field select, .input-field input {
-    background: none;
-    outline: none;
-    border: none;
-    border-radius: 55px;
-    line-height: 1;    
-    font-size: 1.1rem;
-    color: #333;
-  }
-  .input-field textarea {
-    background: none;
-    outline: none;
-    border: none;
-    border-radius: 55px;
-    color: #333;
-    background-color: #f0f0f0;
-    padding: 10px 0px;    
-    font-size: 1.1rem;
-    color: #333;
-    height: 50px !important;
-  }
-  .form-check-label{
-      color: #444;
-  }
-  .input-field input::placeholder {
-    color: #aaa;
-    font-weight: 500;
-  }
-  
-  /****** Font Utility Classes ******/
-  .font-bold {
-    margin: 0;
-    font-family: Avenir-bold !important;
-  }
-  .font-demi {
-    margin: 0;
-    font-family: Avenir-demi;
-  }
-  .font-medium {
-    margin: 0;
-    font-family: Avenir-medium;
-  }
-  .font-regular {
-    margin: 0;
-    font-family: Avenir-regular;
-  }
-  
-  .btn {
-    width: 150px;
-    background-color: #5995fd;
-    border: none;
-    outline: none;
-    font-size: 14px;
-    padding-top: 15px;
-    padding-bottom: 20px;
-    height: 49px;
-    border-radius: 49px;
-    color: #fff;
-    text-transform: uppercase;
-    margin: 10px 20px;
-    cursor: pointer;
-    transition: 0.5s;
-  }
-  
-  .btn:hover {
-    background-color: #4d84e2;
-    color: #fff;
-  }
+.input-field i {
+  text-align: center;
+  line-height: 55px;
+  color: #acacac;
+  transition: 0.5s;
+  font-size: 1.1rem;
+}
 
-  #subject{
-    height: 200px;
-    overflow-y: scroll;
-  }
+.input-field select,
+.input-field input {
+  background: none;
+  outline: none;
+  border: none;
+  border-radius: 55px;
+  line-height: 1;
+  font-size: 1.1rem;
+  color: #333;
+}
+.input-field textarea {
+  background: none;
+  outline: none;
+  border: none;
+  border-radius: 55px;
+  color: #333;
+  background-color: #f0f0f0;
+  padding: 10px 0px;
+  font-size: 1.1rem;
+  color: #333;
+  height: 50px !important;
+}
+.form-check-label {
+  color: #444;
+}
+.input-field input::placeholder {
+  color: #aaa;
+  font-weight: 500;
+}
 
-  .font-24{
-    font-size: 20px;
-  }
+/****** Font Utility Classes ******/
+.font-bold {
+  margin: 0;
+  font-family: Avenir-bold !important;
+}
+.font-demi {
+  margin: 0;
+  font-family: Avenir-demi;
+}
+.font-medium {
+  margin: 0;
+  font-family: Avenir-medium;
+}
+.font-regular {
+  margin: 0;
+  font-family: Avenir-regular;
+}
 
-  #exam{
-    height: 200px;
-    overflow-y: scroll;
-  }
+.btn {
+  width: 150px;
+  background-color: #5995fd;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  height: 49px;
+  border-radius: 49px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 10px 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
 
-  @media screen and (max-width: 768px){
-    body {         
-      background: #f1f6f8 !important;
-    }
-    /* .wrapper{
+.btn:hover {
+  background-color: #4d84e2;
+  color: #fff;
+}
+
+#subject {
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.font-24 {
+  font-size: 20px;
+}
+
+#exam {
+  height: 200px;
+  overflow-y: scroll;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background: #f1f6f8 !important;
+  }
+  /* .wrapper{
       background-image: linear-gradient(-45deg, #2e6cd8 0%, #04befe 100%) !important;
     } */
-  }
+}
 
-  #footer{
-    background-image: linear-gradient(-45deg, #2e6cd8 0%, #04befe 100%);       
-  }
+#footer {
+  background-image: linear-gradient(-45deg, #2e6cd8 0%, #04befe 100%);
+}
 
-
-  /* ------------------------------------- Footer ------------------------------------- */
-#footer{
+/* ------------------------------------- Footer ------------------------------------- */
+#footer {
   padding: 100px 0px 40px 0px;
   background: #07114d;
 }
-.subscribe-box{
-  background: rgba(0,0,0,0.15);
+.subscribe-box {
+  background: rgba(0, 0, 0, 0.15);
   border-radius: 5px;
 }
-.subscribe-button{
+.subscribe-button {
   background: #a75cf8 !important;
 }
-.copyright-text{
+.copyright-text {
   font-size: 14px;
   letter-spacing: 0.6px !important;
 }
-li{
+li {
   list-style: none;
 }
-
-
 
 /* ------------------------------------- Navbar ------------------------------------ */
 #header {
@@ -228,8 +225,8 @@ li{
   background-size: contain;
   width: 100%;
 }
-.nav-padding {
-  padding: 0px;
+.navbar {
+  padding: 1.5rem 0.5rem !important;
 }
 .nav-white {
   background: #07114d !important;
@@ -257,76 +254,45 @@ li{
   background-color: transparent;
   border: none !important;
 }
-.navbar-toggler:focus, .navbar-toggler:active {
+.navbar-toggler:focus,
+.navbar-toggler:active {
   outline: none !important;
 }
 .navbar-dark .navbar-nav .nav-link {
-    color: #fff !important;
+  color: #fff !important;
 }
 .navbar-dark .navbar-nav .nav-link:hover {
-  border-bottom:2px solid #fff !important;
+  border-bottom: 2px solid #fff !important;
 }
-.active{
-  border-bottom:2px solid #fff !important;
+.active {
+  border-bottom: 2px solid #fff !important;
 }
-@media(max-width: 1300px){
-  .nav-link{
-    font-size: 14px;
+@media (max-width: 1300px) {
+  .nav-link {
+    font-size: 13px;
   }
 }
 
-.btn-background {
-  background-image: linear-gradient(-45deg, #2e6cd8 0%, #04befe 100%);
-  padding: 7px 0px;
-  border-radius: 5px;
+.dropdown-menu {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  margin-top: 0px !important;
+  width: 100% !important;
 }
-
-
-/* ------------------------------------- Dropdown ------------------------------------- */
-.dropdown-submenu {
-  position: relative;
-}
-
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  -webkit-border-radius: 0 6px 6px 6px;
-  -moz-border-radius: 0 6px 6px;
-  border-radius: 0 6px 6px 6px;
-}
-
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #ccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-
-.dropdown-submenu:hover>a:after {
-  border-left-color: #fff;
-}
-
-.dropdown-submenu.pull-left {
-  float: none;
-}
-
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  -webkit-border-radius: 6px 0 6px 6px;
-  -moz-border-radius: 6px 0 6px 6px;
-  border-radius: 6px 0 6px 6px;
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
 }
