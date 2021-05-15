@@ -178,8 +178,8 @@ button {
   background-size: contain;
   width: 100%;
 }
-.nav-padding {
-  padding: 0px;
+.navbar {
+  padding: 1.5rem .5rem !important;
 }
 .nav-white {
   background: #07114d !important;
