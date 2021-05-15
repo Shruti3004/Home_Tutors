@@ -380,15 +380,19 @@
     <div class="container center my-lg-0 my-5">
         <div class="card px-lg-4 px-2 py-3 w-100">
             <h2 class="title font-bold text-center">Choose your Exam</h2>
-            <div class="row my-4">
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12 my-4">
+            <div class="input-field mt-4 w-100">
+              <i class="fas fa-search ml-2"></i>
+              <input class="ml-2" id="firstSearch" type="text" placeholder="Search exam" />
+            </div>
+            <div class="row mt-4 mb-5 first">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12 my-lg-0 mt-4">
                     <div class="mt-2 ml-4 font-24 font-demi" id="exam">
                         <div class="accordion mr-2" id="accordionFlushExampleOne">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingOne">
-                                    <button class="accordion-button collapsed font-24 font-demi" type="button"
+                                    <button class="accordion-button collapsed show font-24 font-demi" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
-                                        aria-expanded="false" aria-controls="flush-collapseOne">
+                                        aria-expanded="true" aria-controls="flush-collapseOne">
                                         ACT
                                     </button>
                                 </h2>
@@ -398,8 +402,7 @@
                                         <div class="my-2">
                                             <div class="form-check ml-2">
                                                 <input class="form-check-input mt-3" type="checkbox" value="" />
-                                                <label
-                                                    class="form-check-label mt-1 font-weight-bold">Mathematics</label>
+                                                <label class="form-check-label mt-1 font-weight-bold">Mathematics</label>
                                             </div>
                                             <div class="form-check ml-2">
                                                 <input class="form-check-input mt-3" type="checkbox" value="" />
@@ -557,7 +560,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12 my-4">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12  my-lg-0 mt-4">
                     <div class="mt-2 ml-4 font-24 font-demi" id="exam">
                         <div class="accordion mr-2" id="accordionFlushExampleTwo">
                             <div class="accordion-item">
@@ -774,6 +777,9 @@
     </footer>
     <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- search js -->
+    <script src="../js/new.js"></script>
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
