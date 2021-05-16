@@ -240,7 +240,7 @@ button {
 }
 .dropdown-item{
   font-size: 15px !important;
-  text-align: center;
+  text-align: left;
 }
 
 .dropdown-menu-search {
