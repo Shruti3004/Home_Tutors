@@ -239,6 +239,13 @@ button {
   color: white !important;
 }
 
+.dropdown-menu-search {
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important;
+  background-color: #07114d !important;;
+  margin-top: 0px !important;
+  color: white !important;
+}
+
 .dropdown-item:hover{      
   color: #07114d  !important;
 }
