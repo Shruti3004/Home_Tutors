@@ -247,7 +247,8 @@ button {
 }
 
 .dropdown-item:hover{      
-  color: #07114d  !important;
+  color: white  !important;
+  background: transparent !important;
 }
 
 /* ------------------------------------- Header ------------------------------------- */
