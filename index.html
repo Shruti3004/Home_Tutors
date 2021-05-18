@@ -106,7 +106,7 @@
 
   <div class="fluid-container">
     <center>
-      <nav class="navbar navbar-expand-xl navbar-dark sticky-top nav-white">
+      <nav class="navbar navbar-expand-xl navbar-dark nav-white">
         <a class="navbar-brand" href="#">
           <h4 class="text-white font-bold ">Grow Learners</h4>
         </a>
@@ -525,17 +525,19 @@
           </a>
 
           <li class="nav-item font-medium text-white dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-search fa-2x text-white text-center"></i>
+            </a> -->
+
+            <a class="nav-item nav-link font-medium text-white" id="side-emerge" name="close">
               <i class="fa fa-search fa-2x text-white text-center"></i>
             </a>
 
             <!--dropdown sub items of menu-->
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <div class="row m-1" style="height: 90vh;">
-                <div class="col-8" >                  
-                </div>
-                <div class="col-4">
+            <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown"> -->
+              <div class="search-overlay">
+                <div class="search-content">
                   <input class="form-control ml-0" maxlength="40" type="search" placeholder="Search"
                     aria-label="Search">
                     <h3 class="mb-4 mt-3 font-20 font-bold">Recommendations</h3>
@@ -556,7 +558,6 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dolorum ab voluptates illo repellat, doloribus unde itaque, exercitationem, eveniet officia quasi. Illum consectetur laboriosam cum numquam aperiam optio fugiat ex vero, sint quaerat soluta quisquam dolore molestiae delectus blanditiis doloremque explicabo distinctio incidunt possimus ut voluptatibus ipsam veritatis qui. Quibusdam!
                   </p>
                 </div>
-              </div>
             </div>
           </li>
 
@@ -1340,6 +1341,24 @@
         plan1.innerText = '$0';
         plan2.innerText = '$40';
         plan3.innerText = '$60';
+      }
+    })
+
+
+    // search-emerge
+    var btn = document.querySelector('#side-emerge');
+    var searchOverlay = document.querySelector('.search-overlay')
+    var searchContent = document.querySelector('.search-content')
+    console.log(btn.name)
+    btn.addEventListener('click', () => {
+      if(btn.name === 'close'){
+        searchContent.classList.add('content-slide-in');
+        searchOverlay.classList.add('search-visible');
+        btn.name = 'open';
+      }else{
+        searchContent.classList.remove('content-slide-in');
+        searchOverlay.classList.remove('search-visible');
+        btn.name = 'close';
       }
     })
   </script>
