@@ -304,6 +304,19 @@ button {
   visibility: visible;
 }
 
+@media screen and (max-width: 1200px) {
+  .search-content{
+      width: 95vw;
+      right: 0px;
+      margin-top: 10px;
+  }
+  .search-overlay{
+      width: 100vw;
+      z-index: 5;
+      right: 0px;
+  }
+}
+
 /* ------------------------------------- Header ------------------------------------- */
 
 #header h1 {

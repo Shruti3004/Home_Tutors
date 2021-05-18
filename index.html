@@ -530,7 +530,7 @@
               <i class="fa fa-search fa-2x text-white text-center"></i>
             </a> -->
 
-            <a class="nav-item nav-link font-medium text-white" id="side-emerge" name="close">
+            <a class="nav-item nav-link font-medium text-white mr-2" id="side-emerge">
               <i class="fa fa-search fa-2x text-white text-center"></i>
             </a>
 
@@ -538,6 +538,9 @@
             <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown"> -->
               <div class="search-overlay">
                 <div class="search-content">
+                  <div class="clearfix closeBtn">
+                    <i class="fas fa-times-circle fa-2x text-white float-right mb-4"></i>
+                  </div>
                   <input class="form-control ml-0" maxlength="40" type="search" placeholder="Search"
                     aria-label="Search">
                     <h3 class="mb-4 mt-3 font-20 font-bold">Recommendations</h3>
@@ -1347,19 +1350,24 @@
 
     // search-emerge
     var btn = document.querySelector('#side-emerge');
+    var closeBtn = document.querySelector('.closeBtn');
     var searchOverlay = document.querySelector('.search-overlay')
     var searchContent = document.querySelector('.search-content')
-    console.log(btn.name)
+    console.log(closeBtn)
     btn.addEventListener('click', () => {
-      if(btn.name === 'close'){
+      // if(btn.name === 'close'){
         searchContent.classList.add('content-slide-in');
         searchOverlay.classList.add('search-visible');
-        btn.name = 'open';
-      }else{
-        searchContent.classList.remove('content-slide-in');
-        searchOverlay.classList.remove('search-visible');
-        btn.name = 'close';
-      }
+      //   btn.name = 'open';
+      // }else{
+      //   searchContent.classList.remove('content-slide-in');
+      //   searchOverlay.classList.remove('search-visible');
+      //   btn.name = 'close';
+      // }
+    })
+    closeBtn.addEventListener('click', () => {
+      searchContent.classList.remove('content-slide-in');
+      searchOverlay.classList.remove('search-visible');
     })
   </script>
 
