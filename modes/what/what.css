@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-.wrapper {
+body {
   font-family: Avenir-regular;
   background-image: url(./../../images/bg-what-right.png);
   background-position: center;
@@ -162,7 +162,7 @@
 }
 
 @media screen and (max-width: 768px){
-  .wrapper {    
+  body {    
     background: #f1f6f8 !important;
   }
 }

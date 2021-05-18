@@ -294,3 +294,54 @@ li {
   color: white  !important;
   background: transparent !important;
 }
+
+/* ------------------------------------- search
+ ------------------------------------- */
+
+ .search-overlay {
+  position: fixed;
+  top: 0px;
+  right: -10px;
+  width: 30vw;
+  height: 100%;
+  z-index: -1;
+  background-color: #07114d;
+  animation: all 1s ease;
+  visibility: hidden;
+}
+
+.search-content{
+  position: fixed;
+  padding: 10px 20px;
+  margin-top: 80px;
+  top: 0px;
+  right: -10px;
+  width: 30vw;
+  z-index: 5;
+  height: 100%;
+  overflow: scroll;
+  color: white;
+  animation: all 1s ease;
+  transform: translateX(100%);
+}
+
+.content-slide-in {
+  transform: translateX(0);
+} 
+
+.search-visible {
+  visibility: visible;
+}
+
+@media screen and (max-width: 1200px) {
+  .search-content{
+      width: 95vw;
+      right: 0px;
+      margin-top: 10px;
+  }
+  .search-overlay{
+      width: 100vw;
+      z-index: 5;
+      right: 0px;
+  }
+}

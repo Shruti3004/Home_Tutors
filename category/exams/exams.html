@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+    <!-- Base tag -->
+    <base href="../../" />
+
+    <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Grow Learners" />
@@ -33,11 +37,12 @@
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/bd43ee06c8.js" crossorigin="anonymous"></script>
 
+    <!-- css -->
+    <link rel="stylesheet" href="css/category.css" />
+
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!-- css -->
-    <link rel="stylesheet" href="../css/category.css">
     <style>
         .form-check .form-check-input {
             float: left;
@@ -58,480 +63,10 @@
 </head>
 
 <body>
-
     <!------------------------------------- Navbar ------------------------------------->
+    <div w3-include-html="navbar.html"></div>
 
-    <div class="fluid-container">
-        <center>
-            <nav class="navbar navbar-expand-xl navbar-dark sticky-top nav-white">
-                <a class="navbar-brand" href="#">
-                    <h4 class="text-white font-bold ">Grow Learners</h4>
-                </a>
-                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavDropdown01"
-                    aria-controls="navbarNavDropdown01" aria-expanded="false" aria-label="Toggle navigation"
-                    style="outline-color:#fff">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarNavDropdown01">
-
-                    <ul class="navbar-nav ml-auto">
-
-                        <!--dropdown item of menu-->
-                        <li class="nav-item font-medium text-white dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                School Tuition
-                            </a>
-
-                            <!--dropdown sub items of menu-->
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <div class="row m-1">
-                                    <div class="col-12">
-                                        <a class="dropdown-item font-medium text-white" href="#">
-                                            Class 1
-                                        </a>
-                                        <a class="dropdown-item font-medium text-white" href="#">
-                                            Class 2
-                                        </a>
-                                        <a class="dropdown-item font-medium text-white" href="#">
-                                            Class 3
-                                        </a>
-                                        <a class="dropdown-item font-medium text-white" href="#">
-                                            Class 4
-                                        </a>
-                                        <a class="dropdown-item font-medium text-white" href="#">
-                                            Class 5
-                                        </a>
-                                        <a class="dropdown-item font-medium text-white" href="#">
-                                            Class 6
-                                        </a>
-                                        <a class="dropdown-item font-medium text-white" href="#">
-                                            Class 7
-                                        </a>
-                                        <a class="dropdown-item font-medium text-white" href="#">
-                                            Class 8
-                                        </a>
-                                        <a class="dropdown-item font-medium text-white" href="#">
-                                            Class 9
-                                        </a>
-                                        <a class="dropdown-item font-medium text-white" href="#">
-                                            Class 10
-                                        </a>
-                                        <a class="dropdown-item font-medium text-white" href="#">
-                                            Class 11
-                                        </a>
-                                        <a class="dropdown-item font-medium text-white" href="#">
-                                            Class 12
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav-item font-medium text-white dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                College Tuition
-                            </a>
-
-                            <!--dropdown sub items of menu-->
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <div class="row m-1">
-                                    <div class="col-md-1 col-sm-12 col-12"></div>
-                                    <div class="col-md-2 col-sm-12 col-12 text-center">
-                                        <h3 class="my-2 font-24 font-bold">Engineering</h3>
-                                        <a class="dropdown-item font-medium text-white" href="#">B.Tech Tuition</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">BE Tuition</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">M.Tech Tuition</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">B.Sc. Tuition</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">M.Sc. Tuition</a>
-                                    </div>
-                                    <div class="col-md-2 col-sm-12 col-12 text-center">
-                                        <h3 class="my-2 font-24 font-bold">Medical</h3>
-                                        <a class="dropdown-item font-medium text-white" href="#">MBBS Tuition</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">BAMS Tuition</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">MD Tuition</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">BDS Tuition</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">MDS Tuition</a>
-                                    </div>
-                                    <div class="col-md-2 col-sm-12 col-12 text-center">
-                                        <h3 class="my-2 font-24 font-bold">Commerce</h3>
-                                        <a class="dropdown-item font-medium text-white" href="#">
-                                            B Com Tuition
-                                        </a>
-                                        <a class="dropdown-item font-medium text-white" href="#">
-                                            M Com Tuition
-                                        </a>
-                                        <a class="dropdown-item font-medium text-white" href="#">
-                                            BBA Tuition
-                                        </a>
-                                        <a class="dropdown-item font-medium text-white" href="#">
-                                            MBA Tuition
-                                        </a>
-                                        <a class="dropdown-item font-medium text-white" href="#">
-                                            BFM Tuition
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 col-sm-12 col-12 text-center">
-                                        <h3 class="my-2 font-24 font-bold">Others</h3>
-                                        <div class="row">
-                                            <div class="col-sm-1 text-center"></div>
-                                            <div class="col-sm-4">
-                                                <a class="dropdown-item font-medium text-white" href="#">LLB Tuition</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">BCA Tuition</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">MCA Tuition</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">BHM Tuition</a>
-                                                
-                                                <a class="dropdown-item font-medium text-white" href="#">B.Arch
-                                                    Tuition</a>
-                                            </div>
-                                            <div class="col-sm-2"></div>
-                                            <div class="col-sm-4">
-                                                <a class="dropdown-item font-medium text-white" href="#">CA Tuition</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">CFA Tuition</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">CS Tuition</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">BA Tuition</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">More</a>
-                                            </div>
-                                            <div class="col-sm-1"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-1 col-sm-12 col-12"></div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="nav-item font-medium text-white dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Exam Coaching
-                            </a>
-
-                            <!--dropdown sub items of menu-->
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <div class="row m-1">
-                                    <div class="col-md-4 col-sm-12 col-12 text-center">
-                                        <h3 class="ml-3 mt-2 font-24 font-bold">Entrance Exams</h3>
-                                        <div class="row">
-                                            <div class="col-sm-1 text-center"></div>
-                                            <div class="col-sm-4">
-                                                <a class="dropdown-item font-medium text-white" href="#">NEET Exam
-                                                    Coaching</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">JEE Exam
-                                                    Coaching</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">GATE Exam
-                                                    Coaching</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">CLAT Exam
-                                                    Coaching</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">CAT Exam
-                                                    Coaching</a>
-                                            </div>
-                                            <div class="col-sm-2"></div>
-                                            <div class="col-sm-4">
-                                                <a class="dropdown-item font-medium text-white" href="#">XAT Exam
-                                                    Coaching</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">SAT Exam
-                                                    Coaching</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">LSAT Exam
-                                                    Coaching</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">BITSAT Exam
-                                                    Coaching</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">AICEE Exam
-                                                    Coaching</a>
-                                            </div>
-                                            <div class="col-sm-1"></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-1 col-sm-12 col-12"></div>
-                                    <div class="col-md-2 col-sm-12 col-12 text-center">
-                                        <h3 class="ml-3 mt-2 font-24 font-bold">Study Abroad</h3>
-                                        <a class="dropdown-item font-medium text-white" href="#">IELTS Exam Coaching</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">GRE Exam Coaching</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">GMAT Exam Coaching</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">TOEFL Exam Coaching</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">PTE Exam Coaching</a>
-                                    </div>
-
-
-                                    <div class="col-md-4 col-sm-12 col-12 text-center">
-                                        <h3 class="ml-3 mt-2 font-24 font-bold">Competitive Exams</h3>
-                                        <div class="row">
-                                            <div class="col-sm-1 text-center"></div>
-                                            <div class="col-sm-4">
-                                                <a class="dropdown-item font-medium text-white" href="#">UPSC Exam
-                                                    Coaching</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">MPPSC Exam
-                                                    Coaching</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">AFCAT Exam
-                                                    Coaching</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">IAS Exam
-                                                    Preparation</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">EPFO Exam
-                                                    Coaching</a>
-                                            </div>
-                                            <div class="col-sm-2"></div>
-                                            <div class="col-sm-4">
-                                                <a class="dropdown-item font-medium text-white" href="#">CET Exam
-                                                    Coaching</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">IBPS Exam
-                                                    Coaching</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">CDS Exam
-                                                    Coaching</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">UGC NET Exam
-                                                    Coaching</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">More</a>
-                                            </div>
-                                            <div class="col-sm-1"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-1 col-sm-12 col-12"></div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="nav-item font-medium text-white dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                IT Courses
-                            </a>
-
-                            <!--dropdown sub items of menu-->
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <div class="row m-1">
-                                    <!-- <div class="col-md-1 col-sm-12 col-12"></div> -->
-                                    <div class="col-md-3 col-sm-12 col-12 text-center">
-                                        <h3 class="my-2 font-24 font-bold">Programming Languages</h3>
-                                        <a class="dropdown-item font-medium text-white" href="#">C Language</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">C++ Language</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">Python</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">Java</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">PHP</a>
-                                    </div>
-                                    <div class="col-md-2 col-sm-12 col-12 text-center">
-                                        <h3 class="my-2 font-24 font-bold">Technology</h3>
-                                        <a class="dropdown-item font-medium text-white" href="#">Data Science</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">Amazon Web Services</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">Angular JS</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">Android</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">HACCP</a>
-                                    </div>
-                                    <div class="col-md-3 col-sm-12 col-12 text-center">
-                                        <h3 class="my-2 font-24 font-bold">Web Technologies</h3>
-                                        <a class="dropdown-item font-medium text-white" href="#">React Js</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">Node Js</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">Java Script</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">J Query</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">Bootstrap</a>
-                                    </div>
-                                    <div class="col-md-2 col-sm-12 col-12 text-center">
-                                        <h3 class="my-2 font-24 font-bold">Designing</h3>
-                                        <a class="dropdown-item font-medium text-white" href="#">Web Designing</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">Corel Draw</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">Adobe Photoshop</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">AutoCAD</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">2D & 3D Animation</a>
-                                    </div>
-                                    <div class="col-md-2 col-sm-12 col-12 text-center">
-                                        <h3 class="my-2 font-24 font-bold">Other Courses</h3>
-                                        <a class="dropdown-item font-medium text-white" href="#">Microsoft Excel</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">Digital Marketing</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">DevOps Training</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">Big Data & Hadoop</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="nav-item font-medium text-white dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Hobbies
-                            </a>
-
-                            <!--dropdown sub items of menu-->
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <div class="row m-1">
-                                    <div class="col-md-2 col-sm-12 col-12 text-center">
-                                        <h3 class="my-2 font-24 font-bold">Dance</h3>
-                                        <a class="dropdown-item font-medium text-white" href="#">Bollywood Dance</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">Bharatanatyam Dance</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">Kathak Dance</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">Hip hop Dance</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">Free Style Dance</a>
-                                    </div>
-                                    <div class="col-md-2 col-sm-12 col-12 text-center">
-                                        <h3 class="my-2 font-24 font-bold">Singing</h3>
-                                        <a class="dropdown-item font-medium text-white" href="#">Carnatic Singing</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">Hindustani Singing </a>
-                                        <a class="dropdown-item font-medium text-white" href="#">Western Singing</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">Folk Singing </a>
-                                        <a class="dropdown-item font-medium text-white" href="#">Bhajan Singing</a>
-                                    </div>
-                                    <div class="col-md-2 col-sm-12 col-12 text-center">
-                                        <h3 class="my-2 font-24 font-bold">Guitar</h3>
-                                        <a class="dropdown-item font-medium text-white" href="#">Acoustic</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">Electrical</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">Bass</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">Classical</a>
-                                    </div>
-                                    <div class="col-md-2 col-sm-12 col-12 text-center">
-                                        <h3 class="my-2 font-24 font-bold">Instruments</h3>
-                                        <a class="dropdown-item font-medium text-white" href="#">Voilin</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">Keyboard</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">Tabla</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">Dholak</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">Bongo</a>
-                                    </div>
-                                    <div class="col-md-4 col-sm-12 col-12 text-center">
-                                        <h3 class="my-2 font-24 font-bold">Others</h3>
-                                        <div class="row">
-                                            <div class="col-sm-1 text-center"></div>
-                                            <div class="col-sm-4">
-                                                <a class="dropdown-item font-medium text-white" href="#">Yoga</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">Health and
-                                                    Nutrition </a>
-                                                <a class="dropdown-item font-medium text-white" href="#">Photography</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">Painting </a>
-                                                
-                                            </div>
-                                            <div class="col-sm-2"></div>
-                                            <div class="col-sm-4">
-                                                <a class="dropdown-item font-medium text-white" href="#">Handwriting</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">Chess</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">Art & Craft</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">Art &
-                                                    CraftZumba</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">More</a>
-                                            </div>
-                                            <div class="col-sm-1"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="nav-item font-medium text-white dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Languages
-                            </a>
-
-                            <!--dropdown sub items of menu-->
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <div class="row m-1">
-                                    <div class="col-md-4 col-sm-12 col-12 text-center">
-                                        <h3 class="my-2 font-24 font-bold">Foreign Languages</h3>
-                                        <div class="row">
-                                            <div class="col-sm-1 text-center"></div>
-                                            <div class="col-sm-4">
-                                                <a class="dropdown-item font-medium text-white" href="#">Spoken
-                                                    English</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">French
-                                                    Language</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">German
-                                                    Language</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">Japanese
-                                                    Language</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">Spanish
-                                                    Language</a>
-                                            </div>
-                                            <div class="col-sm-2"></div>
-                                            <div class="col-sm-4">
-                                                <a class="dropdown-item font-medium text-white" href="#">Russian
-                                                    Language</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">Korean
-                                                    Language</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">Chinese
-                                                    Language</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">Dutch
-                                                    Language</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">Italian
-                                                    Language</a>
-                                            </div>
-                                            <div class="col-sm-1"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 col-sm-12 col-12 text-center">
-                                        <h3 class="my-2 font-24 font-bold">Indian Languages</h3>
-                                        <div class="row">
-                                            <div class="col-sm-1 text-center"></div>
-                                            <div class="col-sm-4">
-                                                <a class="dropdown-item font-medium text-white" href="#">Hindi
-                                                    Language</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">Tamil
-                                                    Language</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">Sanskrit
-                                                    Language</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">Telugu
-                                                    Language</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">Bengali
-                                                    Language</a>
-                                            </div>
-                                            <div class="col-sm-2"></div>
-                                            <div class="col-sm-4">
-                                                <a class="dropdown-item font-medium text-white" href="#">Marathi
-                                                    Language</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">Kannada
-                                                    Language</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">Punjabi
-                                                    Language</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">Gujarati
-                                                    Language</a>
-                                                <a class="dropdown-item font-medium text-white" href="#">Malayalam
-                                                    Language</a>
-                                            </div>
-                                            <div class="col-sm-1"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-1 col-sm-12 col-12"></div>
-                                    <div class="col-md-2 col-sm-12 col-12 text-center">
-                                        <h3 class="my-2 font-24 font-bold">Other Languages</h3>
-                                        <a class="dropdown-item font-medium text-white" href="#">Urdu Language</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">Sindhi Language</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">Arabic Language</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">Chinese Language</a>
-                                        <a class="dropdown-item font-medium text-white" href="#">More</a>
-                                    </div>
-                                    <div class="col-md-1 col-sm-12 col-12"></div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <a class="nav-item nav-link font-medium text-white" href="../englishCourses.html">
-                        Courses
-                    </a>
-
-                    <a class="nav-item nav-link font-medium text-white" href="../contact.html">
-                        More
-                    </a>
-
-                    <li class="nav-item font-medium text-white dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-search fa-2x text-white text-center"></i>
-                        </a>
-
-                        <!--dropdown sub items of menu-->
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <div class="row m-1">
-                                <div class="col-12">
-                                    <input class="form-control w-100 mx-xl-2 ml-0" maxlength="40" type="search"
-                                        placeholder="Search" aria-label="Search">
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <a class="nav-item btn-initial-styling btn-background text-white font-bold px-3 my-2 my-xl-0" href="./form.html">
-                        Login
-                    </a>
-
-                </div>
-            </nav>
-        </center>
-    </div>
+    <!------------------------------------- Main ------------------------------------->
 
     <div class="container center my-lg-0 my-5">
         <div class="card px-lg-4 px-2 py-4 w-100">
@@ -562,7 +97,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         ACET
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -570,7 +105,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         ACS
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -578,7 +113,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         ACT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -586,7 +121,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         ADVANCED PLACEMENT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -594,7 +129,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         AFCAT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -602,7 +137,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         AICEE
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -610,7 +145,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         AIEED
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -618,7 +153,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         AIEEE
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -626,7 +161,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         AIIMS
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -634,7 +169,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         AILET
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -642,7 +177,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         AIPG
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -650,7 +185,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         AIPMT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -658,7 +193,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         AITMT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -666,7 +201,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         AMAESI
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -674,7 +209,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         AMIE
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -682,7 +217,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         AMIE
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -690,7 +225,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         AMITE
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -698,7 +233,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         APSET
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -706,7 +241,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         ARCHITECTURE
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -714,7 +249,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         B.ED
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -722,7 +257,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         BANK CLERICAL
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -730,7 +265,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         BANK PO
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -738,7 +273,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         BBA ENTRANCE
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -746,7 +281,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         BBE
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -754,7 +289,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         BCA ENTRANCE
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -762,7 +297,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         BDS
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -770,7 +305,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         BFIA
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -778,7 +313,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         BIOLOGY
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -786,7 +321,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         BITSAT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -794,7 +329,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         BOTANY
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -802,7 +337,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         CA - CPT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -810,7 +345,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         CA - FINAL
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -818,7 +353,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         CA - IPCC
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -826,7 +361,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         CA FOUNDATION
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -834,7 +369,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         CA INTERMEDIATE
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -842,7 +377,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         CAREER COUNSELLING FOR STUDY ABROAD
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -850,7 +385,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         CAT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -858,7 +393,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         CDS/OTA
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -866,7 +401,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         CEEB
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -874,7 +409,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         CEED
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -882,7 +417,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         CENTRAL TEACHER ELIGIBILITY
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -890,7 +425,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         CEPTAM
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -898,7 +433,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         CET
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -906,7 +441,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         CET
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -914,7 +449,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         CFA
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -922,7 +457,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         CFP
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -930,7 +465,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         CHEMISTRY
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -938,7 +473,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         CHEMISTRY
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -946,7 +481,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         CIMA CERTIFICATION
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -954,7 +489,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         CLAT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -962,7 +497,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         CMA FINAL
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -970,7 +505,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         CMA FOUNDATION
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -978,7 +513,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         CMA INTERMEDIATE
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -986,7 +521,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         CMSE
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -994,7 +529,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         COLLEGE ESSAY WRITING
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1002,7 +537,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         COMEDK
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1010,7 +545,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         CORPORATE LAWS
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1018,7 +553,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         COSTING
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1026,7 +561,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         CPA
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1034,7 +569,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         CPFA
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1042,7 +577,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         CS - EXECUTIVE
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1050,7 +585,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         CS - FOUNDATION
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1058,7 +593,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         CS PROFESSIONAL
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1066,7 +601,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         CSAT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1074,7 +609,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         CSEET
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1082,7 +617,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         CTET
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1090,7 +625,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         CUET
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1098,7 +633,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         DEFENCE S
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1106,7 +641,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         DESIGN ENTRANCE
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1114,7 +649,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         DHA
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1122,7 +657,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         DIRECT TAX LAWS
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1130,7 +665,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         DMRC ENTRANCE
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1138,7 +673,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         DSC
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1146,7 +681,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         DSSB
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1154,7 +689,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         DU JAT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1162,7 +697,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         DUOLINGO
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1170,7 +705,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         EAMCET
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1178,7 +713,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         ENGLISH OLYMPIAD
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1186,7 +721,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         EPFO
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1194,7 +729,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         ESI
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1202,7 +737,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         FASHION DESIGNING
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1210,7 +745,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         FDDI
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1218,7 +753,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         FOREST DEPARTMENT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1226,7 +761,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         GAT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1234,7 +769,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         GATE
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1242,7 +777,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         GIC
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1250,7 +785,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         GOAT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1258,7 +793,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         GPAT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1266,7 +801,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         GPSC
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1274,7 +809,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         GSEB GUJCET
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1282,7 +817,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         HAAD
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1290,7 +825,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         HOMI BHABLA
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1298,7 +833,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         HOTEL MANAGEMENT ENTRANCE
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1306,7 +841,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         IAS PREPARATION
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1314,7 +849,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         IBPS
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1322,7 +857,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         IBPS PO
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1330,7 +865,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         IBSAT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1338,7 +873,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         ICWA & ICWAI
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1346,7 +881,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         IES
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1354,7 +889,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         IFRS
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1362,7 +897,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         IIFT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1370,7 +905,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         IIMC ENTRANCE
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1378,7 +913,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         IISER
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1386,7 +921,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         IISER
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1394,7 +929,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         IIT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1402,7 +937,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         IIT JAM
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1410,7 +945,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         IIT JEE ADVANCE
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1418,7 +953,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         IIT JEE MAIN
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1426,7 +961,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         INSURANCE S
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1434,7 +969,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         IPMAT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1442,7 +977,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         IPS
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1450,7 +985,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         ISI
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1458,7 +993,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         JAWAHAR NAVODAYA VIDYALAYA ENTRANCE
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1466,7 +1001,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         JECA
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1474,7 +1009,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         JELET
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1482,7 +1017,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         JIPMER
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1490,7 +1025,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         JUDICIAL SERVICES
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1498,7 +1033,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         KARTET
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1506,7 +1041,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         KAS
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1514,7 +1049,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         KMAT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1522,7 +1057,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         KPSC
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1530,7 +1065,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         KVPY
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1538,7 +1073,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         LAW ENTRANCE
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1546,7 +1081,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         LAWCET
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1554,7 +1089,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         LDC
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1562,7 +1097,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         LIC
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1570,7 +1105,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         LNAT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1578,7 +1113,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         LSAT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1586,7 +1121,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         MANAGEMENT SUBJECTS
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1594,7 +1129,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         MAT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1602,7 +1137,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         MATH OLYMPIAD
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1610,7 +1145,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         MATHEMATICS
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1618,7 +1153,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         MBA ENTRANCE
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1626,7 +1161,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         MCA ENTRANCE
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1634,7 +1169,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         MCAT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1642,7 +1177,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         MCI
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1650,7 +1185,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         MDS
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1658,7 +1193,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         MEDICAL ENTRANCE S
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1666,7 +1201,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         MICA
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1674,7 +1209,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         MOH
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1682,7 +1217,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         MPPSC
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1690,7 +1225,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         MPSC
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1698,7 +1233,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         MUNICIPAL SERVICE COMMISSION S
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                         </ul>
@@ -1712,7 +1247,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         NATA
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1720,7 +1255,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         NATIONAL SCHOLARSHIP
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1728,7 +1263,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         NCHMCT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1736,7 +1271,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         NCHMCT JEE
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1744,7 +1279,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         NDA
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1752,7 +1287,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         NDEB
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1760,7 +1295,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         NEET
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1768,7 +1303,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         NEST
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1776,7 +1311,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         NET
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1784,7 +1319,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         NID
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1792,7 +1327,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         NIFT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1800,7 +1335,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         NIMCET
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1808,7 +1343,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         NIOS
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1816,7 +1351,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         NIRRH
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1824,7 +1359,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         NISM
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1832,7 +1367,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         NMAT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1840,7 +1375,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         NMIMS
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1848,7 +1383,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         NON VERBAL APTITUDE
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1856,7 +1391,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         NPAT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1864,7 +1399,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         NPTT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1872,7 +1407,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         NTSE
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1880,7 +1415,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         NTT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1888,7 +1423,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         PCS
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1896,7 +1431,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         PET
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1904,7 +1439,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         PG MEDICAL
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1912,7 +1447,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         PHYSICS
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1920,7 +1455,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         PHYSICS
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1928,7 +1463,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         PHYSIOLOGY
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1936,7 +1471,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         PLAB 1 PREPARATION
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1944,7 +1479,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         PLAB 2 PREPARATION
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1952,7 +1487,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         POLICE DEPARTMENT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1960,7 +1495,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         POLYTECHNIC ENTRANCE
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1968,7 +1503,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         PSAT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1976,7 +1511,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         PSC
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1984,7 +1519,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         PSU
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -1992,7 +1527,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         PTE
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2000,7 +1535,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         PTT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2008,7 +1543,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         PUBLIC SECTOR UNDERTAKING
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2016,7 +1551,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         PWD & CPWD
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2024,7 +1559,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         QUANTITATIVE APTITUDE
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2032,7 +1567,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         RAILWAYS S
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2040,7 +1575,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         RBI
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2048,7 +1583,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         RRB
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2056,7 +1591,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         RRB JE
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2064,7 +1599,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         RRB NTPC
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2072,7 +1607,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         SANIK SCHOOL ENTRANCE
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2080,7 +1615,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         SBI
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2088,7 +1623,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         SCHOOL SERVICE COMMISSION
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2096,7 +1631,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         SCIENCE OLYMPIAD
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2104,7 +1639,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         SEBI
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2112,7 +1647,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         SET
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2120,7 +1655,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         SLET
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2128,7 +1663,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         SLET
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2136,7 +1671,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         SNAP
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2144,7 +1679,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         SSB
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2152,7 +1687,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         SSC CGL S
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2160,7 +1695,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         SSC JE
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2168,7 +1703,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         SSC S
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2176,7 +1711,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         STAFF SELECTION COMMISSION
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2184,7 +1719,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         STRATEGIC BUSINESS REPORTING
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2192,7 +1727,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         SUB-INSPECTOR
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2200,7 +1735,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         TANCET
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2208,7 +1743,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         TEST DAF
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2216,7 +1751,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         TET
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2224,7 +1759,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         TIFR
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2232,7 +1767,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         TISS BAT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2240,7 +1775,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         TISSMAT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2248,7 +1783,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         TISSNET
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2256,7 +1791,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         TNPSC
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2264,7 +1799,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         TOPIK
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2272,7 +1807,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         UGC NET
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2280,7 +1815,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         UGC S
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2288,7 +1823,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         UKCAT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2296,7 +1831,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         UPESEAT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2304,7 +1839,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         UPPSC
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2312,7 +1847,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         UPSC
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2320,7 +1855,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         VERBAL APTITUDE
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2328,7 +1863,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         WBCS
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2336,7 +1871,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         WBJEE
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2344,7 +1879,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         XAT
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                             <li class="list-group-item">
@@ -2352,7 +1887,7 @@
                                     <input type="checkbox" class="form-check-input mt-3">
                                     <label for="" class="form-check-label ml-2">
                                         ZOOLOGY
-                                     Exam Coaching</label>
+                                        Exam Coaching</label>
                                 </div>
                             </li>
                         </ul>
@@ -2362,7 +1897,7 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
-                        <a href="./language.html" class="btn font-bold">Next</a>
+                        <a href="category/language/language.html" class="btn font-bold">Next</a>
                     </div>
                 </div>
             </div>
