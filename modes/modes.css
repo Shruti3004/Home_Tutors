@@ -9,7 +9,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .wrapper-2 {
@@ -18,7 +18,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .wrapper-3 {
@@ -27,7 +27,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .wrapper-4 {
@@ -36,7 +36,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh;
   }
   
   ::-webkit-scrollbar {
@@ -98,7 +98,7 @@
     width: 100%;
     background-color: #f0f0f0;
     margin: 10px 0;
-    height: 50px;
+    height: 55px;
     border-radius: 55px;
     display: grid;
     grid-template-columns: 15% 85%;
@@ -135,10 +135,22 @@
     color: #333;
   }
 
+  .input-field textarea {
+    background: none;
+    outline: none;
+    border: none;
+    border-radius: 55px;
+    color: #333;
+    background-color: #f0f0f0;
+    padding: 10px 0px;
+    font-size: 1.1rem;
+    color: #333;
+    height: 50px !important;
+  }
   ::placeholder {
     color: #aaa;
     background: transparent !important;
-    font-weight: 600;
+    font-weight: 400;
   }
   
   .btn {
@@ -204,6 +216,7 @@
       background: #f1f6f8 !important;
     }
   }
+  
   
   /* ------------------------------------- Footer ------------------------------------- */
   #footer{
@@ -284,4 +297,10 @@
     background-image: linear-gradient(-45deg, #2e6cd8 0%, #04befe 100%);
     padding: 7px 0px;
     border-radius: 5px;
+  }
+
+  @media screen and (max-width: 768px){
+    .wrapper-1, .wrapper-2, .wrapper-3, .wrapper-4 {    
+      background: #f1f6f8 !important;
+    }
   }
