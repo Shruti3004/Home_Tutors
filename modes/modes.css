@@ -38,6 +38,15 @@
     background-repeat: no-repeat;
     min-height: 100vh;
   }
+
+  .wrapper-5 {
+    font-family: Avenir-regular;
+    background-image: url(../images/common-background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
   
   ::-webkit-scrollbar {
     width: 5px;
