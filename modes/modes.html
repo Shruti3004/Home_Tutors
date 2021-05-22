@@ -33,15 +33,15 @@
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/bd43ee06c8.js" crossorigin="anonymous"></script>
 
-     <!-- Jquery -->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
-     <!-- Popper JS -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
- 
-     <!-- Latest compiled JavaScript -->
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-     <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
 
     <link rel="stylesheet" href="./modes.css">
 </head>
@@ -351,29 +351,60 @@
                                 <i class="fas fa-clock"></i>
                                 <input required type="text" placeholder="Preferred Callback time" />
                             </div>
-                            <div class="input-field">
-                                <i class="fas fa-clock"></i>
-                                <select required type="text" placeholder="Enter Country">
-                                    <option value="time" selected disabled style="color: #aaa; font-weight: 400">
-                                        Preferred Callback time
-                                    </option>
-                                    <option value="time">IST</option>
-                                    <option value="time">GMT</option>
-                                    <option value="time">GMT</option>
-                                    <option value="time">GMT</option>
-                                    <option value="time">GMT</option>
-                                    <option value="time">GMT</option>
-                                    <option value="time">GMT</option>
-                                    <option value="time">GMT</option>
-                                    <option value="time">GMT</option>
-                                    <option value="time">GMT</option>
-                                    <option value="time">GMT</option>
-                                </select>
+                            <div class="d-flex">
+                                <div class="input-field w-75">
+                                    <i class="fas fa-clock"></i>
+                                    <select required type="text" placeholder="Enter Country">
+                                        <option value="time" selected disabled style="color: #aaa; font-weight: 400">
+                                            Callback time
+                                        </option>
+                                        <option value="time">IST</option>
+                                        <option value="time">GMT</option>
+                                        <option value="time">GMT</option>
+                                        <option value="time">GMT</option>
+                                        <option value="time">GMT</option>
+                                        <option value="time">GMT</option>
+                                        <option value="time">GMT</option>
+                                        <option value="time">GMT</option>
+                                        <option value="time">GMT</option>
+                                        <option value="time">GMT</option>
+                                        <option value="time">GMT</option>
+                                    </select>
+                                </div>
+                                <div class="input-field w-50">
+                                    <i class="fas fa-clock"></i>
+                                    <input required type="time"/>
+                                </div>
                             </div>
-                            <div class="input-field">
+                            <div class="d-flex">
+                                <div class="input-field w-75">
+                                    <i class="fas fa-clock"></i>
+                                    <select required type="text" placeholder="Enter Country">
+                                        <option value="time" selected disabled style="color: #aaa; font-weight: 400">
+                                            Study time
+                                        </option>
+                                        <option value="time">IST</option>
+                                        <option value="time">GMT</option>
+                                        <option value="time">GMT</option>
+                                        <option value="time">GMT</option>
+                                        <option value="time">GMT</option>
+                                        <option value="time">GMT</option>
+                                        <option value="time">GMT</option>
+                                        <option value="time">GMT</option>
+                                        <option value="time">GMT</option>
+                                        <option value="time">GMT</option>
+                                        <option value="time">GMT</option>
+                                    </select>
+                                </div>
+                                <div class="input-field w-50">
+                                    <i class="fas fa-clock"></i>
+                                    <input required type="time"/>
+                                </div>
+                            </div>
+                            <!-- <div class="input-field">
                                 <i class="fas fa-clock"></i>
                                 <input required type="time" placeholder="Preferred Study time" />
-                            </div>
+                            </div> -->
                             <div class="input-field">
                                 <i class="fas fa-font"></i>
                                 <textarea maxlength="240" class="form-control" id="comment"
