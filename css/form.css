@@ -235,13 +235,30 @@ form.sign-in-form {
   z-index: 6;
 }
 
+.chanel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 6;
+}
+
+.chanel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 6;
+}
+
+
 .left-panel {
   pointer-events: all;
   padding: 3rem 17% 2rem 12%;
 }
 
 .right-panel {
-  pointer-events: none;
+  pointer-events: all;
   padding: 3rem 12% 2rem 17%;
 }
 
@@ -258,6 +275,23 @@ form.sign-in-form {
 }
 
 .panel p {
+  font-size: 0.95rem;
+  padding: 0.7rem 0;
+}
+
+.chanel .content {
+  /* color: #fff; */
+  transition: transform 0.9s ease-in-out;
+  transition-delay: 0.6s;
+}
+
+.chanel h3 {
+  font-weight: 600;
+  line-height: 1;
+  font-size: 1.5rem;
+}
+
+.chanel p {
   font-size: 0.95rem;
   padding: 0.7rem 0;
 }
@@ -468,4 +502,13 @@ form.sign-in-form {
 .copyright-text {
   font-size: 14px;
   letter-spacing: 0.6px !important;
+}
+
+/* btn focus */
+#sign-up-ctn:focus{
+  outline: none;
+}
+
+#sign-in-ctn:focus{
+  outline: none;
 }
