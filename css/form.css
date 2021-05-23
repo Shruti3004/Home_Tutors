@@ -49,15 +49,15 @@ input {
 }
 
 
-.container {
+.wrapper {
   position: relative;
-  width: 100%;
+  width: 100% !important;
   background-color: #fff;
   min-height: 100vh;
   overflow: hidden;
 }
 
-.forms-container {
+.forms-wrapper {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -171,7 +171,7 @@ form.sign-in-form {
   border-color: #4481eb;
 }
 
-.btn {
+.ctn {
   width: 150px;
   background-color: #5995fd;
   border: none;
@@ -186,7 +186,7 @@ form.sign-in-form {
   transition: 0.5s;
 }
 
-.btn:hover {
+.ctn:hover {
   background-color: #4d84e2;
 }
 
@@ -196,7 +196,7 @@ form.sign-in-form {
   color: red;
 }
 
-.panels-container {
+.panels-wrapper {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -206,7 +206,7 @@ form.sign-in-form {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.container:before {
+.wrapper:before {
   content: "";
   position: absolute;
   height: 2000px;
@@ -262,7 +262,7 @@ form.sign-in-form {
   padding: 0.7rem 0;
 }
 
-.btn.transparent {
+.ctn.transparent {
   margin: 0;
   background: none;
   border: 2px solid #fff;
@@ -279,45 +279,45 @@ form.sign-in-form {
 
 /* ANIMATION */
 
-.container.sign-up-mode:before {
+.wrapper.sign-up-mode:before {
   transform: translate(100%, -50%);
   right: 52%;
 }
 
-.container.sign-up-mode .left-panel .image,
-.container.sign-up-mode .left-panel .content {
+.wrapper.sign-up-mode .left-panel .image,
+.wrapper.sign-up-mode .left-panel .content {
   transform: translateX(-800px);
 }
 
-.container.sign-up-mode .signin-signup {
+.wrapper.sign-up-mode .signin-signup {
   left: 25%;
 }
 
-.container.sign-up-mode form.sign-up-form {
+.wrapper.sign-up-mode form.sign-up-form {
   opacity: 1;
   z-index: 2;
 }
 
-.container.sign-up-mode form.sign-in-form {
+.wrapper.sign-up-mode form.sign-in-form {
   opacity: 0;
   z-index: 1;
 }
 
-.container.sign-up-mode .right-panel .image,
-.container.sign-up-mode .right-panel .content {
+.wrapper.sign-up-mode .right-panel .image,
+.wrapper.sign-up-mode .right-panel .content {
   transform: translateX(0%);
 }
 
-.container.sign-up-mode .left-panel {
+.wrapper.sign-up-mode .left-panel {
   pointer-events: none;
 }
 
-.container.sign-up-mode .right-panel {
+.wrapper.sign-up-mode .right-panel {
   pointer-events: all;
 }
 
 @media (max-width: 870px) {
-  .container {
+  .wrapper {
     min-height: 800px;
     height: 100vh;
   }
@@ -329,11 +329,11 @@ form.sign-in-form {
   }
 
   .signin-signup,
-  .container.sign-up-mode .signin-signup {
+  .wrapper.sign-up-mode .signin-signup {
     left: 50%;
   }
 
-  .panels-container {
+  .panels-wrapper {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr 1fr;
   }
@@ -375,13 +375,13 @@ form.sign-in-form {
     padding: 0.5rem 0;
   }
 
-  .btn.transparent {
+  .ctn.transparent {
     width: 110px;
     height: 35px;
     font-size: 0.7rem;
   }
 
-  .container:before {
+  .wrapper:before {
     width: 1500px;
     height: 1500px;
     transform: translateX(-50%);
@@ -392,19 +392,19 @@ form.sign-in-form {
     transition: 2s ease-in-out;
   }
 
-  .container.sign-up-mode:before {
+  .wrapper.sign-up-mode:before {
     transform: translate(-50%, 100%);
     bottom: 32%;
     right: initial;
   }
 
-  .container.sign-up-mode .left-panel .image,
-  .container.sign-up-mode .left-panel .content {
+  .wrapper.sign-up-mode .left-panel .image,
+  .wrapper.sign-up-mode .left-panel .content {
     transform: translateY(-300px);
   }
 
-  .container.sign-up-mode .right-panel .image,
-  .container.sign-up-mode .right-panel .content {
+  .wrapper.sign-up-mode .right-panel .image,
+  .wrapper.sign-up-mode .right-panel .content {
     transform: translateY(0px);
   }
 
@@ -413,7 +413,7 @@ form.sign-in-form {
     transform: translateY(300px);
   }
 
-  .container.sign-up-mode .signin-signup {
+  .wrapper.sign-up-mode .signin-signup {
     top: 5%;
     transform: translate(-50%, 0);
   }
@@ -430,16 +430,16 @@ form.sign-in-form {
   .panel .content {
     padding: 0.5rem 1rem;
   }
-  .container {
+  .wrapper {
     padding: 1.5rem;
   }
 
-  .container:before {
+  .wrapper:before {
     bottom: 72%;
     left: 50%;
   }
 
-  .container.sign-up-mode:before {
+  .wrapper.sign-up-mode:before {
     bottom: 28%;
     left: 50%;
   }
@@ -451,3 +451,21 @@ form.sign-in-form {
   padding: 5px;
   background-image: linear-gradient(-45deg, #2e6cd8 0%, #04befe 100%);     
 } */
+
+
+/* ------------------------------------- Footer ------------------------------------- */
+#footer {
+  padding: 100px 0px 40px 0px;
+  background: #07114d;
+}
+.subscribe-box {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+.subscribe-button {
+  background: #a75cf8 !important;
+}
+.copyright-text {
+  font-size: 14px;
+  letter-spacing: 0.6px !important;
+}
